@@ -28336,11 +28336,6 @@
 	icon_state = "airbridge"
 	},
 /area/station/turret_protected/AIsat)
-"mSz" = (
-/obj/storage/closet/radiation,
-/obj/machinery/light,
-/turf/simulated/floor/black,
-/area/station/engine/storage)
 "mSE" = (
 /obj/decal/tile_edge/line/white{
 	dir = 6;
@@ -28408,6 +28403,11 @@
 /obj/storage/secure/closet/medical/medkit,
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
+"mZQ" = (
+/obj/storage/closet/radiation,
+/obj/machinery/light,
+/turf/simulated/floor/black,
+/area/station/engine/storage)
 "naK" = (
 /obj/machinery/door/airlock/pyro/maintenance{
 	dir = 4;
@@ -28475,8 +28475,12 @@
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/Zeta)
 "ncU" = (
+/obj/cable{
+	icon_state = "1-6"
+	},
+/obj/lattice,
 /turf/space,
-/area/station/engine/proto)
+/area/station/engine/proto_gangway)
 "ncY" = (
 /obj/cable/colored/brown{
 	icon_state = "6-9"
@@ -28499,14 +28503,13 @@
 /turf/simulated/floor/blue,
 /area/station/medical/medbay)
 "neo" = (
-/obj/lattice,
 /obj/machinery/power/terminal{
 	dir = 1
 	},
 /obj/cable{
 	icon_state = "0-2"
 	},
-/turf/space,
+/turf/simulated/floor/plating/airless,
 /area/station/engine/proto_gangway)
 "neG" = (
 /obj/cable{
@@ -73015,7 +73018,7 @@ alN
 amh
 amG
 and
-mSz
+mZQ
 axT
 aaa
 aaB
@@ -118211,16 +118214,16 @@ aaa
 aaa
 aaa
 aaB
-pTA
-pTA
-ncU
-ncU
-ncU
-ncU
-ncU
-ncU
-ncU
-ncU
+aaB
+aaB
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -120927,7 +120930,7 @@ aaB
 aaa
 aaa
 flC
-flC
+amC
 flC
 ezt
 rgy
@@ -121531,7 +121534,7 @@ bob
 eek
 eDF
 ggg
-eDF
+ncU
 amC
 aqA
 oKl
