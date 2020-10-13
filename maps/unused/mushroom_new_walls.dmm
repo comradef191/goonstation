@@ -14418,7 +14418,7 @@
 	name = "S light switch";
 	pixel_y = -24
 	},
-/obj/machinery/nanofab,
+/obj/machinery/nanofab/refining,
 /turf/simulated/floor/grime,
 /area/station/mining/magnet)
 "bcF" = (
@@ -28403,11 +28403,6 @@
 /obj/storage/secure/closet/medical/medkit,
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
-"mZQ" = (
-/obj/storage/closet/radiation,
-/obj/machinery/light,
-/turf/simulated/floor/black,
-/area/station/engine/storage)
 "naK" = (
 /obj/machinery/door/airlock/pyro/maintenance{
 	dir = 4;
@@ -34644,6 +34639,11 @@
 /obj/disposalpipe/trunk/mail/north,
 /turf/simulated/floor/purple,
 /area/station/science)
+"tDw" = (
+/obj/storage/closet/radiation,
+/obj/machinery/light,
+/turf/simulated/floor/black,
+/area/station/engine/storage)
 "tEF" = (
 /obj/wingrille_spawn/auto,
 /obj/cable{
@@ -73018,7 +73018,7 @@ alN
 amh
 amG
 and
-mZQ
+tDw
 axT
 aaa
 aaB
