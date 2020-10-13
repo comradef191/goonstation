@@ -24777,7 +24777,8 @@
 /area/station/medical/medbay)
 "isb" = (
 /obj/machinery/door/airlock/pyro/medical{
-	name = "Chemistry Department Access"
+	name = "Chemistry Department Access";
+	req_access = null
 	},
 /obj/access_spawn/research,
 /obj/cable{
@@ -26722,7 +26723,9 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "kEY" = (
-/obj/machinery/door/airlock/pyro/maintenance,
+/obj/machinery/door/airlock/pyro/maintenance{
+	req_access = null
+	},
 /obj/access_spawn/research,
 /obj/cable{
 	icon_state = "1-2"
@@ -28333,6 +28336,11 @@
 	icon_state = "airbridge"
 	},
 /area/station/turret_protected/AIsat)
+"mSz" = (
+/obj/storage/closet/radiation,
+/obj/machinery/light,
+/turf/simulated/floor/black,
+/area/station/engine/storage)
 "mSE" = (
 /obj/decal/tile_edge/line/white{
 	dir = 6;
@@ -28695,7 +28703,8 @@
 "nuy" = (
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 8;
-	name = "Artifact Lab"
+	name = "Artifact Lab";
+	req_access = null
 	},
 /obj/access_spawn/research,
 /obj/cable{
@@ -35865,7 +35874,8 @@
 /area/station/engine/engineering/private)
 "uVe" = (
 /obj/machinery/door/airlock/pyro/command{
-	name = "Computer Core"
+	name = "Computer Core";
+	req_access = null
 	},
 /obj/access_spawn/heads,
 /obj/cable{
@@ -35933,7 +35943,8 @@
 "vcv" = (
 /obj/machinery/door/airlock/pyro/medical{
 	dir = 8;
-	name = "Mixing Room"
+	name = "Mixing Room";
+	req_access = null
 	},
 /obj/access_spawn/research,
 /obj/cable{
@@ -36500,7 +36511,8 @@
 /area/station/crew_quarters/hor)
 "vIF" = (
 /obj/machinery/door/airlock/pyro/command{
-	name = "Research Director's Office"
+	name = "Research Director's Office";
+	req_access = null
 	},
 /obj/access_spawn/research_director,
 /obj/cable{
@@ -73003,7 +73015,7 @@ alN
 amh
 amG
 and
-anJ
+mSz
 axT
 aaa
 aaB
