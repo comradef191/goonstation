@@ -21190,7 +21190,8 @@
 "dXx" = (
 /obj/machinery/door/airlock/pyro/security{
 	dir = 4;
-	name = "Detective's Office"
+	name = "Detective's Office";
+	req_access = null
 	},
 /obj/access_spawn/forensics,
 /obj/cable{
@@ -22794,7 +22795,8 @@
 "gaO" = (
 /obj/machinery/door/airlock/pyro/security{
 	dir = 4;
-	name = "Detective's Office"
+	name = "Detective's Office";
+	req_access = null
 	},
 /obj/access_spawn/forensics,
 /obj/firedoor_spawn,
