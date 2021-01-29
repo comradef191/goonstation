@@ -190,7 +190,7 @@ var/global/atom_emergency_stop = 0
 	if (!target)
 		return
 
-	if (target && target.emag_act())
+	if (target?.emag_act())
 		target.emag_act(null,null)
 
 		logTheThing("admin", usr, null, "emagged [target] via Emag Target ([showCoords(target.x, target.y, target.z)] in [target.loc])")
@@ -660,7 +660,7 @@ var/global/atom_emergency_stop = 0
 			else
 				if (!istype(A, /obj) && !ismob(A))
 					continue
-				if (istype(A, /obj/screen) || istype(A, /obj/overlay/tile_effect))
+				if (istype(A, /atom/movable/screen) || istype(A, /obj/overlay/tile_effect))
 					continue
 				A:set_loc(user_location)
 				gotten ++

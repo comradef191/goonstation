@@ -47,7 +47,7 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 
 	// let's try doing this here, yoloooo
 	// zamu 20200823: idk if this is even getting called...
-	//if (mining_controls && mining_controls.mining_z && mining_controls.mining_z_asteroids_max)
+	//if (mining_controls?.mining_z && mining_controls.mining_z_asteroids_max)
 	//	mining_controls.spawn_mining_z_asteroids()
 
 	if(master_mode == "battle_royale")
@@ -59,11 +59,7 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 	pregame_timeleft = 1
 	#endif
 
-	#if ASS_JAM
-	SPAWN_DBG(10 SECONDS) // wait for people to login etc.
-		vote_manager.active_vote = new/datum/vote_new/mode("everyone-is-a-traitor")
-		boutput(world, "<B>ASS JAM: Everyone-Is-A-Traitor Mode vote has been started: [newVoteLinkStat.chat_link()] (120 seconds remaining)<br>(or click on the Status map as you do for map votes)</B>")
-	#endif
+
 
 	var/did_mapvote = 0
 	var/obj/overlay/zamujasa/round_start_countdown/timer/title_countdown = new()
@@ -238,7 +234,7 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 
 		logTheThing("ooc", null, null, "<b>Current round begins</b>")
 		boutput(world, "<FONT class='notice'><B>Enjoy the game!</B></FONT>")
-		boutput(world, "<span class='notice'><b>Tip:</b> [pick(tips)]</span>")
+		boutput(world, "<span class='notice'><b>Tip:</b> [pick(dd_file2list("strings/roundstart_hints.txt"))]</span>")
 
 		//Setup the hub site logging
 		var hublog_filename = "data/stats/data.txt"
@@ -503,6 +499,9 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 				if (player.check_contents_for(/obj/item/gnomechompski))
 					player.unlock_medal("Guardin' gnome", 1)
 
+				if (player.mind.assigned_role == "Security Assistant")
+					player.unlock_medal("I helped!", 1)
+
 				if (ishuman(player))
 					var/mob/living/carbon/human/H = player
 					if (H && istype(H) && H.implant && H.implant.len > 0)
@@ -604,7 +603,7 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 	logTheThing("debug", null, null, "Revving up the spacebux loop...")
 
 	for(var/mob/player in mobs)
-		if (player && player.client && player.mind && !player.mind.joined_observer && !istype(player,/mob/new_player))
+		if (player?.client && player.mind && !player.mind.joined_observer && !istype(player,/mob/new_player))
 			logTheThing("debug", null, null, "Iterating on [player.client]")
 			//logTheThing("debug", null, null, "Zamujasa: [world.timeofday] spacebux calc start: [player.mind.ckey]")
 
@@ -612,7 +611,7 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 
 			//get base wage + initial earnings calculation
 			var/job_wage = 100
-			if (wagesystem.jobs.Find(player.mind.assigned_role))
+			if (player.mind.assigned_role in wagesystem.jobs)
 				job_wage = wagesystem.jobs[player.mind.assigned_role]
 
 			if (isrobot(player))
@@ -672,14 +671,14 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 				player_loses_held_item = 1
 
 			//handle traitors
-			if (player.mind && ticker.mode.traitors.Find(player.mind)) // Roundstart people get the full bonus
+			if (player.mind && (player.mind in ticker.mode.traitors)) // Roundstart people get the full bonus
 				earnings = job_wage
 				bank_earnings.badguy = 1
 				player_loses_held_item = 0
-			else if (istype(player.loc, /obj/cryotron) || player.mind && all_the_baddies.Find(player.mind)) // Cryo'd or was a baddie at any point? Keep your shit, but you don't get the extra bux
+			else if (istype(player.loc, /obj/cryotron) || player.mind && (player.mind in all_the_baddies)) // Cryo'd or was a baddie at any point? Keep your shit, but you don't get the extra bux
 				player_loses_held_item = 0
 			//some might not actually have a wage
-			if (isnukeop(player) ||  (isblob(player) && (player.mind && player.mind.special_role == "blob")) || iswraith(player) || (iswizard(player) && (player.mind && player.mind.special_role == "wizard")) )
+			if (!isvirtual(player) && (isnukeop(player) ||  (isblob(player) && (player.mind && player.mind.special_role == "blob")) || iswraith(player) || (iswizard(player) && (player.mind && player.mind.special_role == "wizard")) ))
 				bank_earnings.wage_base = 0 //only effects the end of round display
 				earnings = 800
 
@@ -690,9 +689,6 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 					earnings += 100; // ALL CREW OBJECTIVE SBUX BONUS
 					bank_earnings.all_objs = 100
 
-#if ASS_JAM
-				earnings *= 2
-#endif
 
 			//pilot's bonus check and reward
 			var/pilot_bonus = 500 //for receipt
@@ -737,6 +733,11 @@ var/global/current_state = GAME_STATE_WORLD_INIT
 
 	for_by_tcl(P, /obj/bookshelf/persistent) //make the bookshelf save its contents
 		P.build_curr_contents()
+
+#ifdef SECRETS_ENABLED
+	for_by_tcl(S, /obj/santa_helper)
+		S.save_mail()
+#endif
 
 	logTheThing("debug", null, null, "Done with books")
 

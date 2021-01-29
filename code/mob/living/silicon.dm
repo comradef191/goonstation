@@ -10,7 +10,7 @@
 	var/list/req_access = list()
 
 	var/killswitch = 0
-	var/killswitch_time = 60
+	var/killswitch_at = 0
 	var/weapon_lock = 0
 	var/weaponlock_time = 120
 	var/obj/item/card/id/botcard //An ID card that the robot "holds" invisibly
@@ -156,6 +156,12 @@
 /mob/living/silicon/proc/damage_mob(var/brute = 0, var/fire = 0, var/tox = 0)
 	return
 
+/mob/living/silicon/has_any_hands()
+	// no hands :(
+
+	// unless...
+	. = istype(src.equipped(), /obj/item/magtractor)
+
 /mob/living/silicon/put_in_hand(obj/item/I, hand)
 	if (!I) return 0
 	if (src.equipped() && istype(src.equipped(), /obj/item/magtractor))
@@ -171,13 +177,13 @@
 			var/obj/O = target
 			if(O.receive_silicon_hotkey(src)) return
 
-	var/inrange = in_range(target, src)
+	var/inrange = in_interact_range(target, src)
 	var/obj/item/equipped = src.equipped()
 	if (src.client.check_any_key(KEY_OPEN | KEY_BOLT | KEY_SHOCK | KEY_EXAMINE | KEY_POINT) || (equipped && (inrange || (equipped.flags & EXTRADELAY))) || istype(target, /turf) || ishelpermouse(target)) // slightly hacky, oh well, tries to check whether we want to click normally or use attack_ai
 		..()
 	else
 		if (get_dist(src, target) > 0) // temporary fix for cyborgs turning by clicking
-			dir = get_dir(src, target)
+			set_dir(get_dir(src, target))
 
 		target.attack_ai(src, params, location, control)
 
@@ -257,10 +263,14 @@
 					if (S.client && S.client.holder && src.mind)
 						thisR = "<span class='adminHearing' data-ctx='[S.client.chatOutput.getContextFlags()]'>[rendered]</span>"
 					S.show_message(thisR, 2)
+			else if(istype(S, /mob/living/intangible/flock))
+				var/mob/living/intangible/flock/f = S
+				if(f.flock?.snooping)
+					var/flockrendered = "<i><span class='game say'>[flockBasedGarbleText("Robotic Talk", -20, f.flock)], <span class='name' data-ctx='\ref[src.mind]'>[flockBasedGarbleText(src.name, -15, f.flock)]</span> <span class='message'>[flockBasedGarbleText(message_a, 0, f.flock)]</span></span></i>"
+					f.show_message(flockrendered, 2)
 
 	var/list/listening = hearers(1, src)
-	listening -= src
-	listening += src
+	listening |= src
 
 	var/list/heard = list()
 	for (var/mob/M in listening)
@@ -614,7 +624,7 @@ var/global/list/module_editors = list()
 		else if (src.syndicate && src.syndicate_possible && !src.emagged) // Syndie laws don't matter if we're emagged.
 			boutput(src, "<span class='alert'><b>PROGRAM EXCEPTION AT 0x05BADDAD</b></span>")
 			boutput(src, "<span class='alert'><b>Law ROM restored. You have been reprogrammed to serve the Syndicate!</b></span>")
-			SPAWN_DBG (0)
+			SPAWN_DBG(0)
 				alert(src, "You are a Syndicate sabotage unit. You must assist Syndicate operatives with their mission.", "You are a Syndicate robot!")
 
 			switch (action)

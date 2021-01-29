@@ -67,8 +67,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 	desc = "It feels furry."
 
 	execute(var/mob/M, var/obj/item/I, mult)
-		if(M)
-			M.bodytemperature = 310
+		M?.bodytemperature = 310
 		return
 
 /datum/materialProc/fail_explosive
@@ -208,7 +207,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 		..()
 
 	execute(var/obj/item/owner, var/mob/attacker, var/mob/attacked)
-		if(prob(reag_chance) && attacked && attacked.reagents)
+		if(prob(reag_chance) && attacked?.reagents)
 			charges_left--
 			attacked.reagents.add_reagent(reag_id, reag_amt, null, T0C)
 			if(!charges_left)
@@ -228,7 +227,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 		..()
 
 	execute(var/obj/item/owner, var/mob/attacker, var/mob/attacked)
-		if(prob(reag_chance) && attacked && attacked.reagents)
+		if(prob(reag_chance) && attacked?.reagents)
 			attacked.reagents.add_reagent(reag_id, reag_amt, null, T0C)
 		return
 
@@ -242,7 +241,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 		..()
 
 	execute(var/mob/M, var/obj/item/I, mult)
-		if(M && M.reagents)
+		if(M?.reagents)
 			M.reagents.add_reagent(reag_id, reag_amt * mult, null, T0C)
 		return
 
@@ -259,7 +258,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 		..()
 
 	execute(var/mob/M, var/obj/item/I, mult)
-		if(M && M.reagents)
+		if(M?.reagents)
 			M.reagents.add_reagent(reag_id, reag_amt * mult, null, T0C)
 			added += reag_amt * mult
 			if(added >= max_volume)
@@ -313,7 +312,8 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 
 /datum/materialProc/telecrystal_entered
 	execute(var/atom/owner, var/atom/movable/entering)
-		if(prob(50) && owner && isturf(owner) && !isrestrictedz(owner.z))
+		var/turf/T = get_turf(entering)
+		if(prob(50) && owner && isturf(owner) && !isrestrictedz(T.z))
 			. = get_offset_target_turf(get_turf(entering), rand(-2, 2), rand(-2, 2))
 			entering.visible_message("<span class='alert'>[entering] is warped away!</span>")
 			boutput(entering, "<span class='alert'>You suddenly teleport ...</span>")
@@ -323,8 +323,9 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 
 /datum/materialProc/telecrystal_onattack
 	execute(var/obj/item/owner, var/mob/attacker, var/mob/attacked)
+		var/turf/T = get_turf(attacked)
 		if(prob(50))
-			if(istype(attacked) && !isrestrictedz(attacked.z)) // Haine fix for undefined proc or verb /turf/simulated/floor/set loc()
+			if(istype(attacked) && !isrestrictedz(T.z)) // Haine fix for undefined proc or verb /turf/simulated/floor/set loc()
 				. = get_offset_target_turf(get_turf(attacked), rand(-8, 8), rand(-8, 8))
 				attacked.visible_message("<span class='alert'>[attacked] is warped away!</span>")
 				boutput(attacked, "<span class='alert'>You suddenly teleport ...</span>")
@@ -333,7 +334,8 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 
 /datum/materialProc/telecrystal_life
 	execute(var/mob/M, var/obj/item/I, mult)
-		if(prob(percentmult(5, mult)) && M && !isrestrictedz(M.z))
+		var/turf/T = get_turf(M)
+		if(prob(percentmult(5, mult)) && M && !isrestrictedz(T.z))
 			. = get_offset_target_turf(get_turf(M), rand(-8, 8), rand(-8, 8))
 			M.visible_message("<span class='alert'>[M] is warped away!</span>")
 			boutput(M, "<span class='alert'>You suddenly teleport ...</span>")
@@ -354,6 +356,60 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 				payload.volume = R_IDEAL_GAS_EQUATION * T20C / 1000
 				target.air.merge(payload)
 		return
+
+/datum/materialProc/moltiz_temp
+	var/total_oxygen = 200
+
+	execute(var/atom/location, var/temp, var/agent_b=FALSE)
+		if(total_oxygen <= 0) return
+		var/turf/target = get_turf(location)
+		if(ON_COOLDOWN(target, "moltiz_oxy_generate", 8 SECONDS)) return
+
+		var/datum/gas_mixture/air = target.return_air()
+		if(!air) return
+
+		var/datum/gas_mixture/payload = unpool(/datum/gas_mixture)
+		payload.temperature = T20C
+		payload.volume = R_IDEAL_GAS_EQUATION * T20C / 1000
+
+		if(agent_b && temp > 500 && air.toxins > MINIMUM_REACT_QUANTITY )
+			var/datum/gas/oxygen_agent_b/trace_gas = new
+
+			payload.temperature = T0C // Greatly reduce temperature to simulate an endothermic reaction
+			payload.trace_gases = list()
+			payload.trace_gases += trace_gas
+
+			// Itr 1: 0.125 Agent B, 10 Oxy
+			// Itr 2: 0.0605 Agent B
+			// 0.1855moles/12cells=0.0155moles per cell
+			// At 0.0155 moles per cell it will take 20 iterations for reaction rate to drop below MINIMUM_REACT_QUANTITY
+			// Providing 1.3 minutes of catalyst assuming 4 sec ATMOS for a 12 cell burn chamber
+			trace_gas.moles += min(total_oxygen/1024,0.125)
+			total_oxygen -= min(trace_gas.moles*1024,total_oxygen)
+			animate_flash_color_fill_inherit(location,"#FF0000",4, 2 SECONDS)
+		else
+			animate_flash_color_fill_inherit(location,"#0000FF",4, 2 SECONDS)
+
+		payload.oxygen = min(total_oxygen,10)
+		total_oxygen -= payload.oxygen
+
+		target.assume_air(payload)
+		return
+
+/datum/materialProc/moltiz_temp/agent_b
+	execute(var/atom/location, var/temp)
+		..(location, temp, TRUE)
+		return
+
+/datum/materialProc/moltiz_exp
+	execute(var/atom/location, var/sev)
+		var/turf/target = get_turf(location)
+		if(sev > 0 && sev < 4)
+			var/datum/gas_mixture/payload = unpool(/datum/gas_mixture)
+			payload.oxygen = 25
+			payload.temperature = T20C
+			payload.volume = R_IDEAL_GAS_EQUATION * T20C / 1000
+			target.assume_air(payload)
 
 /datum/materialProc/miracle_add
 	execute(var/location)
@@ -460,11 +516,6 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 				qdel(I)
 		return
 
-/datum/materialProc/soulsteel_add
-	execute(var/atom/owner)
-		owner.event_handler_flags |= USE_HASENTERED
-		return
-
 /datum/materialProc/soulsteel_entered
 	var/lastTrigger = 0
 	execute(var/obj/item/owner, var/atom/movable/entering)
@@ -488,7 +539,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 /datum/materialProc/reflective_onbullet
 	execute(var/obj/item/owner, var/atom/attacked, var/obj/projectile/projectile)
 		if(projectile.proj_data.damage_type & D_BURNING || projectile.proj_data.damage_type & D_ENERGY)
-			shoot_reflected_true(projectile, projectile) //shoot_reflected_to_sender()
+			shoot_reflected_bounce(projectile, owner) //shoot_reflected_to_sender()
 		return
 
 /datum/materialProc/negative_add
@@ -506,7 +557,7 @@ triggerOnEntered(var/atom/owner, var/atom/entering)
 			return
 
 		SPAWN_DBG(1 SECOND)
-			if(location && location.material && location.material.mat_id == "miracle")
+			if(location?.material?.mat_id == "miracle")
 				location.visible_message("<span class='notice'>[location] bends and twists, changing colors rapidly.</span>")
 				var/chosen = pick(prob(100); "mauxite",prob(100); "pharosium",prob(100); "cobryl",prob(100); "bohrum",prob(80); "cerenkite",prob(50); "syreline",prob(20); "slag",prob(3); "spacelag",prob(5); "soulsteel",prob(100); "molitz",prob(50); "claretine",prob(5); "erebite",prob(10); "quartz",prob(5); "uqill",prob(10); "telecrystal",prob(1); "starstone",prob(5); "blob",prob(8); "koshmarite",prob(20); "chitin",prob(4); "pizza",prob(15); "beewool",prob(6); "ectoplasm")
 				location.setMaterial(getMaterial(chosen), appearance = 1, setname = 1)

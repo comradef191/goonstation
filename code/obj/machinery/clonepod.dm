@@ -94,8 +94,7 @@
 		if(connected?.scanner?.pods)
 			connected?.scanner?.pods -= src
 		connected = null
-		if(occupant)
-			occupant.set_loc(src.loc)
+		occupant?.set_loc(get_turf(src.loc))
 		occupant = null
 		..()
 
@@ -111,19 +110,18 @@
 		if(!pda_connection)
 			return
 
-		for(var/mailgroup in mailgroups)
-			var/datum/signal/newsignal = get_free_signal()
-			newsignal.source = src
-			newsignal.transmission_method = TRANSMISSION_RADIO
-			newsignal.data["command"] = "text_message"
-			newsignal.data["sender_name"] = "CLONEPOD-MAILBOT"
-			newsignal.data["message"] = "[msg]"
+		var/datum/signal/newsignal = get_free_signal()
+		newsignal.source = src
+		newsignal.transmission_method = TRANSMISSION_RADIO
+		newsignal.data["command"] = "text_message"
+		newsignal.data["sender_name"] = "CLONEPOD-MAILBOT"
+		newsignal.data["message"] = "[msg]"
 
-			newsignal.data["address_1"] = "00000000"
-			newsignal.data["group"] = mailgroup
-			newsignal.data["sender"] = src.net_id
+		newsignal.data["address_1"] = "00000000"
+		newsignal.data["group"] = mailgroups + MGA_CLONER
+		newsignal.data["sender"] = src.net_id
 
-			pda_connection.post_signal(src, newsignal)
+		pda_connection.post_signal(src, newsignal)
 
 	attack_hand(mob/user as mob)
 		interact_particle(user, src)
@@ -225,6 +223,10 @@
 		if (istype(oldholder))
 			oldholder.clone_generation++
 			src.occupant.bioHolder.CopyOther(oldholder, copyActiveEffects = gen_analysis)
+			src.occupant?.set_mutantrace(oldholder?.mobAppearance?.mutant_race?.type)
+			if(ishuman(src.occupant))
+				var/mob/living/carbon/human/H = src.occupant
+				H.update_colorful_parts()
 		else
 			logTheThing("debug", null, null, "<b>Cloning:</b> growclone([english_list(args)]) with invalid holder.")
 
@@ -235,7 +237,10 @@
 			src.occupant.abilityHolder.transferOwnership(src.occupant) //mbc : fixed clone removing abilities bug!
 			src.occupant.abilityHolder.remove_unlocks()
 
-		ghost.client.mob = src.occupant
+		ghost.mind.transfer_to(src.occupant)
+
+		if(src.occupant.client) // gross hack for resetting tg layout bleh bluh
+			src.occupant.client.set_layout(src.occupant.client.tg_layout)
 
 		if(src.occupant.bioHolder.clone_generation > 1)
 			var/health_penalty = (src.occupant.bioHolder.clone_generation - 1) * 15
@@ -244,7 +249,7 @@
 				src.occupant.unlock_medal("Quit Cloning Around")
 
 		src.mess = 0
-		if (traits && traits.len && src.occupant.traitHolder)
+		if (length(traits) && src.occupant.traitHolder)
 			src.occupant.traitHolder.traits = traits
 			if (src.occupant.traitHolder.hasTrait("puritan"))
 				src.mess = 1
@@ -288,13 +293,14 @@
 		else //welp
 			logTheThing("debug", null, null, "<b>Mind</b> Clonepod forced to create new mind for key \[[src.occupant.key ? src.occupant.key : "INVALID KEY"]]")
 			src.occupant.mind = new /datum/mind(  )
+			src.occupant.mind.ckey = src.occupant.ckey
 			src.occupant.mind.key = src.occupant.key
 			src.occupant.mind.transfer_to(src.occupant)
 			ticker.minds += src.occupant.mind
 
 		// -- Mode/mind specific stuff goes here
 
-			if ((ticker && ticker.mode && istype(ticker.mode, /datum/game_mode/revolution)) && ((src.occupant.mind in ticker.mode:revolutionaries) || (src.occupant.mind in ticker.mode:head_revolutionaries)))
+			if ((ticker?.mode && istype(ticker.mode, /datum/game_mode/revolution)) && ((src.occupant.mind in ticker.mode:revolutionaries) || (src.occupant.mind in ticker.mode:head_revolutionaries)))
 				ticker.mode:update_all_rev_icons() //So the icon actually appears
 
 		// -- End mode specific stuff
@@ -800,11 +806,17 @@
 		SPAWN_DBG(0)
 			src.find_pods()
 
+	disposing()
+		occupant?.set_loc(get_turf(src.loc))
+		occupant = null
+		..()
+
+
 	proc/find_pods()
 		if (!islist(src.pods))
 			src.pods = list()
-		if (!isnull(src.id) && genResearch && islist(genResearch.clonepods) && genResearch.clonepods.len)
-			for (var/obj/machinery/clonepod/pod in genResearch.clonepods)
+		if (!isnull(src.id) && genResearch && islist(genResearch.clonepods) && length(genResearch.clonepods))
+			for (var/obj/machinery/clonepod/pod as() in genResearch.clonepods)
 				if (pod.id == src.id && !src.pods.Find(pod))
 					src.pods += pod
 					DEBUG_MESSAGE("[src] adds pod [log_loc(pod)] (ID [src.id]) in genResearch.clonepods")
@@ -1035,7 +1047,7 @@
 			boutput(user, "<span class='alert'>There is already somebody in there.</span>")
 			return
 
-		else if (G && G.affecting && !src.emagged && !isdead(G.affecting) && !ismonkey(G.affecting))
+		else if (G?.affecting && !src.emagged && !isdead(G.affecting) && !ismonkey(G.affecting))
 			user.visible_message("<span class='alert'>[user] tries to stuff [G.affecting] into [src], but it beeps angrily as the safety overrides engage!</span>")
 			return
 
@@ -1147,12 +1159,14 @@
 				for (var/obj/item/implant/I in target.implant)
 					if (istype(I,/obj/item/implant/projectile))
 						continue
-					var/obj/item/implantcase/newcase = new /obj/item/implantcase(target.loc)
-					newcase.imp = I
+					var/obj/item/implantcase/newcase = new /obj/item/implantcase(target.loc, usedimplant = I)
 					I.on_remove(target)
 					target.implant.Remove(I)
-					I.set_loc(newcase)
-					newcase.icon_state = "implantcase-b"
+					var/image/wadblood = image('icons/obj/surgery.dmi', icon_state = "implantpaper-blood")
+					wadblood.color = target.blood_color
+					newcase.UpdateOverlays(wadblood, "blood")
+					newcase.blood_DNA = target.bioHolder.Uid
+					newcase.blood_type = target.bioHolder.bloodType
 
 		target.set_loc(grinder)
 		grinder.occupant = target

@@ -45,6 +45,7 @@
 				return augmentation
 
 	post_setup()
+		. = ..()
 		recharge_time = rand(5,10) * 10
 		// decide what augmentation this does
 		switch(artitype.name)
@@ -196,7 +197,7 @@
 			return
 		if(part_loc in part_list)
 			var/list/augmented_part_types = part_list[part_loc]
-			if(augmented_part_types && augmented_part_types.len > 0)
+			if(length(augmented_part_types))
 				return pick(augmented_part_types)
 
 	// check if given body part (in specific body location) should count as augmented or not

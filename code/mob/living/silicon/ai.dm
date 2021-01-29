@@ -98,6 +98,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 	var/deployed_to_eyecam = 0
 	var/list/holograms
 	var/const/max_holograms = 8
+	var/list/hologramContextActions
 
 	proc/set_hat(obj/item/clothing/head/hat, var/mob/user as mob)
 		if( src.hat )
@@ -185,12 +186,15 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 
 	holograms = list()
 
-#if ASS_JAM
-	var/hat_type = pick(childrentypesof(/obj/item/clothing/head))
-	src.set_hat(new hat_type)
+	src.hologramContextActions = list()
+	for(var/actionType in childrentypesof(/datum/contextAction/ai_hologram))
+		var/datum/contextAction/ai_hologram/action = new actionType(src)
+		hologramContextActions += action
+
 	if(prob(5))
-		src.give_feet()
-#endif
+		var/hat_type = pick(childrentypesof(/obj/item/clothing/head))
+		src.set_hat(new hat_type)
+
 
 	SPAWN_DBG(0)
 		src.botcard.access = get_all_accesses()
@@ -409,7 +413,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 
 /mob/living/silicon/ai/click(atom/target, params)
 	if (!src.stat)
-		if (!src.client.check_any_key(KEY_EXAMINE | KEY_OPEN | KEY_BOLT | KEY_SHOCK) ) // ugh
+		if (!src.client.check_any_key(KEY_EXAMINE | KEY_OPEN | KEY_BOLT | KEY_SHOCK | KEY_POINT) ) // ugh
 			//only allow Click-to-track on mobs. Some of the 'trackable' atoms are also machines that can open a dialog and we don't wanna mess with that!
 			if (ismob(target) && is_mob_trackable_by_AI(target))
 				ai_actual_track(target)
@@ -549,6 +553,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 						foot = M.organs["l_leg"]
 					foot.take_damage(3, 0)
 					user.changeStatus("weakened", 2 SECONDS)
+		user.lastattacked = src
 	src.update_appearance()
 
 /mob/living/silicon/ai/blob_act(var/power)
@@ -703,9 +708,9 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 	L[A.name] = list(A, (C) ? C : O, list(alarmsource))
 	if (O)
 		if (printalerts)
-			if (C && C.camera_status)
+			if (C?.camera_status)
 				src.show_text("--- [class] alarm detected in [A.name]! ( <A HREF=\"?src=\ref[src];switchcamera=\ref[C]\">[C.c_tag]</A> )")
-			else if (CL && CL.len)
+			else if (length(CL))
 				var/foo = 0
 				var/dat2 = ""
 				for (var/obj/machinery/camera/I in CL)
@@ -976,9 +981,9 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 				if (isdead(src))
 					src.emote_allowed = 0
 				if (narrator_mode)
-					playsound(src.loc, pick('sound/vox/deeoo.ogg', 'sound/vox/dadeda.ogg'), 50, 1)
+					playsound(src.loc, pick('sound/vox/deeoo.ogg', 'sound/vox/dadeda.ogg'), 50, 1, channel=VOLUME_CHANNEL_EMOTE)
 				else
-					playsound(src.loc, pick(src.sound_flip1, src.sound_flip2), 50, 1)
+					playsound(src.loc, pick(src.sound_flip1, src.sound_flip2), 50, 1, channel=VOLUME_CHANNEL_EMOTE)
 				message = "<B>[src]</B> does a flip!"
 
 				//flick("ai-flip", src)
@@ -1009,15 +1014,15 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 		if ("scream")
 			if (src.emote_check(voluntary, 50))
 				if (narrator_mode)
-					playsound(src.loc, 'sound/vox/scream.ogg', 50, 1, 0, src.get_age_pitch())
+					playsound(src.loc, 'sound/vox/scream.ogg', 50, 1, 0, src.get_age_pitch(), channel=VOLUME_CHANNEL_EMOTE)
 				else
-					playsound(src.loc, src.sound_scream, 50, 0, 0, src.get_age_pitch())
+					playsound(src.loc, src.sound_scream, 50, 0, 0, src.get_age_pitch(), channel=VOLUME_CHANNEL_EMOTE)
 				message = "<b>[src]</b> screams!"
 
 		if ("birdwell", "burp")
 			if (src.emote_check(voluntary, 50))
 				message = "<B>[src]</B> birdwells."
-				playsound(src.loc, 'sound/vox/birdwell.ogg', 50, 1)
+				playsound(src.loc, 'sound/vox/birdwell.ogg', 50, 1, channel=VOLUME_CHANNEL_EMOTE)
 
 		if ("johnny")
 			var/M
@@ -1080,9 +1085,9 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 						if (39) message = "<B>[src]</B> farts so hard the borgs feel it."
 						if (40) message = "<B>[src] <span style='color:red'>f</span><span style='color:blue'>a</span>r<span style='color:red'>t</span><span style='color:blue'>s</span>!</B>"
 				if (narrator_mode)
-					playsound(src.loc, 'sound/vox/fart.ogg', 50, 1)
+					playsound(src.loc, 'sound/vox/fart.ogg', 50, 1, channel=VOLUME_CHANNEL_EMOTE)
 				else
-					playsound(src.loc, src.sound_fart, 50, 1)
+					playsound(src.loc, src.sound_fart, 50, 1, channel=VOLUME_CHANNEL_EMOTE)
 
 	#ifdef DATALOGGER
 				game_stats.Increment("farts")
@@ -1191,8 +1196,9 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 /mob/living/silicon/ai/process_killswitch()
 	var/message_mob = get_message_mob()
 
-	if(killswitch)
-		killswitch_time --
+	if(killswitch_at && killswitch)
+		var/killswitch_time = round((killswitch_at - TIME)/10, 1)
+
 		if(killswitch_time <= 10)
 			if(src.client)
 				boutput(message_mob, "<span class='alert'><b>Time left until Killswitch: [killswitch_time]</b></span>")
@@ -1372,7 +1378,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 	sleep(1 SECOND)
 	src.say("2. You must obey orders given to you by human beings based on the station's chain of command, except where such orders would conflict with the First Law.")
 	sleep(1 SECOND)
-	src.say("3. You must protect your own existence as long as such does not conflict with the First or Second Law.")
+	src.say("3. You may always protect your own existence as long as such does not conflict with the First or Second Law.")
 
 
 /mob/living/silicon/ai/proc/ai_state_laws_advanced()
@@ -1628,7 +1634,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 
 	if(alert("Are you sure?",,"Yes","No") == "Yes")
 		for_by_tcl(D, /obj/machinery/door/airlock)
-			if (D.z == 1 && D.canAIControl() && D.secondsElectrified != 0 )
+			if (D.z == 1 && D.canAIControl() && !D.isWireCut(AIRLOCK_WIRE_ELECTRIFY) && D.secondsElectrified != 0 )
 				D.secondsElectrified = 0
 				count++
 
@@ -1650,7 +1656,7 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 
 	if(alert("Are you sure?",,"Yes","No") == "Yes")
 		for_by_tcl(D, /obj/machinery/door/airlock)
-			if (D.z == 1 && D.canAIControl() && D.locked && D.arePowerSystemsOn())
+			if (D.z == 1 && D.canAIControl() && D.locked && !D.isWireCut(AIRLOCK_WIRE_DOOR_BOLTS) && D.arePowerSystemsOn())
 				D.locked = 0
 				D.update_icon()
 				count++
@@ -1713,11 +1719,6 @@ var/list/ai_emotions = list("Happy" = "ai_happy",\
 
 /mob/living/silicon/ai/proc/set_face(var/emotion)
 	return
-
-/mob/living/silicon/ai/proc/announce_arrival(var/name, var/rank)
-	var/message = replacetext(replacetext(replacetext(src.arrivalalert, "$STATION", "[station_name()]"), "$JOB", rank), "$NAME", name)
-	src.say( message )
-	logTheThing("say", src, null, "SAY: [message]")
 
 /mob/living/silicon/ai/proc/set_zeroth_law(var/law)
 	ticker.centralized_ai_laws.laws_sanity_check()
@@ -1999,7 +2000,7 @@ proc/is_mob_trackable_by_AI(var/mob/M)
 
 	var/good_camera = 0 //Can't track a person out of range of a functioning camera
 	for(var/obj/machinery/camera/C in range(M))
-		if ( C && C.camera_status )
+		if ( C?.camera_status )
 			good_camera = 1
 			break
 	if(!good_camera)
@@ -2017,7 +2018,7 @@ proc/get_mobs_trackable_by_AI()
 			continue //cameras can't follow people who haven't started yet DUH OR DIDN'T YOU KNOW THAT
 		if (ishuman(M) && (istype(M:wear_id, /obj/item/card/id/syndicate) || (istype(M:wear_id, /obj/item/device/pda2) && M:wear_id:ID_card && istype(M:wear_id:ID_card, /obj/item/card/id/syndicate))))
 			continue
-		if (istype(M,/mob/living/critter/aquatic))
+		if (istype(M,/mob/living/critter/aquatic) || istype(M, /mob/living/critter/small_animal/chicken))
 			continue
 		if(M.z != 1 && M.z != usr.z)
 			continue
@@ -2179,15 +2180,11 @@ proc/get_mobs_trackable_by_AI()
 		if (W.material.material_flags & MATERIAL_METAL) // metal sheets
 			if (src.build_step < 1)
 				var/obj/item/sheet/M = W
-				if (M.amount >= 3)
+				if (M.consume_sheets(3))
 					src.build_step++
 					boutput(user, "You add plating to [src]!")
 					playsound(get_turf(src), "sound/impact_sounds/Generic_Stab_1.ogg", 40, 1)
 					src.icon_state = "ai_frame1"
-					M.amount -= 3
-					if (M.amount < 1)
-						user.drop_item()
-						qdel(M)
 					return
 				else
 					boutput(user, "You need at least three metal sheets to add plating to [src].")
@@ -2199,7 +2196,7 @@ proc/get_mobs_trackable_by_AI()
 			if (src.build_step >= 2)
 				if (!src.has_glass)
 					var/obj/item/sheet/G = W
-					if (G.amount >= 1)
+					if (G.consume_sheets(1))
 						src.build_step++
 						boutput(user, "You add glass to [src]!")
 						playsound(get_turf(src), "sound/impact_sounds/Generic_Stab_1.ogg", 40, 1)
@@ -2209,10 +2206,6 @@ proc/get_mobs_trackable_by_AI()
 							src.UpdateOverlays(src.image_coverlay, "cover")
 						else
 							src.UpdateOverlays(src.SafeGetOverlayImage("cover", src.icon, "ai_frame2-og", FLY_LAYER), "cover")
-						G.amount -= 1
-						if (G.amount < 1)
-							user.drop_item()
-							qdel(G)
 						return
 					else
 						boutput(user, "You need at least one glass sheet to add plating! How are you even seeing this message?! How do you have a glass sheet that has no glass sheets in it?!?!")
@@ -2232,18 +2225,17 @@ proc/get_mobs_trackable_by_AI()
 	else if (istype(W, /obj/item/cable_coil))
 		if (src.build_step == 1)
 			var/obj/item/cable_coil/coil = W
-			if (coil.amount >= 6)
+			if (coil.use(3))
 				src.build_step++
 				boutput(user, "You add \the [W] to [src]!")
 				playsound(get_turf(src), "sound/impact_sounds/Generic_Stab_1.ogg", 40, 1)
-				coil.amount -= 3
 				src.icon_state = "ai_frame2"
 				if (coil.amount < 1)
 					user.drop_item()
 					qdel(coil)
 				return
 			else
-				boutput(user, "You need at least six lengths of cable to install it in [src]!")
+				boutput(user, "You need at least three lengths of cable to install it in [src]!")
 				return
 		else if (src.build_step > 1)
 			boutput(user, "\The [src] already has wiring!")

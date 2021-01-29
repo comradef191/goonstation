@@ -133,8 +133,7 @@
 		update_icon()
 
 		SPAWN_DBG(0.5 SECONDS)
-			if(radio_controller)
-				radio_controller.add_object(src, "[report_freq]")
+			radio_controller?.add_object(src, "[report_freq]")
 
 			if(!net_id)
 				net_id = generate_net_id(src)
@@ -301,8 +300,7 @@
 				for (var/datum/plant_gene_strain/X in DNA.commuts)
 					X.on_process(src)
 
-		if(src.reagents)
-			src.reagents.remove_any_except(drink_rate, "nectar")
+		src.reagents?.remove_any_except(drink_rate, "nectar")
 		// This is where drink_rate does its thing. It will remove a bit of all reagents to meet
 		// it's quota, except nectar because that's supposed to stay in the plant pot.
 
@@ -396,7 +394,7 @@
 					src.add_fingerprint(user)
 					if(!(user in src.contributors))
 						src.contributors += user
-					if(do_after(user, 30)) // Same as the gibber and reclaimer. Was 20 (Convair880).
+					if(do_after(user, 3 SECONDS)) // Same as the gibber and reclaimer. Was 20 (Convair880).
 						if(src && W && W.loc == user && C)
 							user.visible_message("<span class='alert'>[src.name] grabs [C] and devours them ravenously!</span>")
 							logTheThing("combat", user, (C), "feeds [constructTarget(C,"combat")] to a man-eater at [log_loc(src)].")
@@ -408,7 +406,7 @@
 								qdel(C)
 							playsound(src.loc, "sound/items/eatfood.ogg", 30, 1, -2)
 							src.reagents.add_reagent("blood", 120)
-							SPAWN_DBG (25)
+							SPAWN_DBG(2.5 SECONDS)
 								if(src)
 									playsound(src.loc, pick("sound/voice/burp_alien.ogg"), 50, 0)
 							return
@@ -740,7 +738,7 @@
 		return
 
 	MouseDrop_T(atom/over_object as obj, mob/user as mob) // ty to Razage for the initial code
-		if(get_dist(user, src) > 1 || get_dist(user, over_object) > 1 || user.stat || user.getStatusDuration("paralysis") || user.getStatusDuration("stunned") || user.getStatusDuration("weakened") || isAI(user))
+		if(get_dist(user, src) > 1 || get_dist(user, over_object) > 1 || is_incapacitated(user) || isAI(user))
 			return
 		if(istype(over_object, /obj/item/seed))  // Checks to make sure it's a seed being dragged onto the tray.
 			if(get_dist(user, src) > 1)
@@ -817,7 +815,7 @@
 		var/iconname = 'icons/obj/hydroponics/plants_weed.dmi'
 		if(growing.plant_icon)
 			iconname = growing.plant_icon
-		else if(MUT && MUT.iconmod)
+		else if(MUT?.iconmod)
 			if(MUT.plant_icon)
 				iconname = MUT.plant_icon
 			else
@@ -840,9 +838,7 @@
 				UpdateOverlays(null, "health_display")
 
 		var/planticon = null
-		if(growing.sprite)
-			planticon = "[growing.sprite]-G[src.grow_level]"
-		if(MUT && MUT.iconmod)
+		if(MUT?.iconmod)
 			planticon = "[MUT.iconmod]-G[src.grow_level]"
 		else if(growing.sprite)
 			planticon = "[growing.sprite]-G[src.grow_level]"
@@ -863,7 +859,7 @@
 		var/datum/plant/growing = src.current
 		var/datum/plantgenes/DNA = src.plantgenes
 		var/datum/plantmutation/MUT = DNA.mutation
-		if(growing && growing.cantscan) // what if we disable this for a bit, what will happen...
+		if(growing?.cantscan) // what if we disable this for a bit, what will happen...
 			src.name = "\improper strange plant"
 		else
 			if(istype(MUT,/datum/plantmutation/))
@@ -916,7 +912,7 @@
 
 		if(growing.harvested_proc)
 			if(growing.HYPharvested_proc(src,user)) return
-			if(MUT && MUT.HYPharvested_proc_M(src,user)) return
+			if(MUT?.HYPharvested_proc_M(src,user)) return
 			// Does this plant react to being harvested? If so, do it - it also functions as
 			// a check since harvesting will stop here if this returns anything other than 0.
 

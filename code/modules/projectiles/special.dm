@@ -52,7 +52,7 @@ ABSTRACT_TYPE(/datum/projectile/special)
 
 /datum/projectile/special/acidspit
 	name = "acid splash"
-	icon_state = "cbbolt"
+	icon_state = "acidspit"
 	power = 0.8
 	dissipation_rate = 20
 	dissipation_delay = 10
@@ -61,6 +61,9 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	hit_mob_sound = 'sound/impact_sounds/burn_sizzle.ogg'
 	hit_object_sound = 'sound/impact_sounds/burn_sizzle.ogg'
 	shot_sound = null
+
+	on_launch(var/obj/projectile/projectile)
+		projectile.Scale(0.5, 0.5)
 
 	on_hit(atom/hit, direction, var/obj/projectile/projectile)
 		..()
@@ -133,7 +136,7 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	var/spread_projectile_type = /datum/projectile/bullet/flak_chunk
 	var/split_type = 0
 	var/pellet_shot_volume = 100
-	nomsg = 1
+	silentshot = 1
 	// 0 = on spawn
 	// 1 = on impact
 
@@ -795,10 +798,10 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	var/spread_angle = 10
 	var/current_angle = 0
 	var/angle_adjust_per_pellet = 0
-	var/initial_angle_offset_mult = 0
+	var/initial_angle_offset_mult = 0.5
 
 	on_launch(var/obj/projectile/P)
-		angle_adjust_per_pellet = ((spread_angle *3) / pellets_to_fire)
+		angle_adjust_per_pellet = ((spread_angle * 2) / pellets_to_fire)
 		current_angle = (0 - spread_angle) + (angle_adjust_per_pellet * initial_angle_offset_mult)
 		..()
 
@@ -846,16 +849,21 @@ ABSTRACT_TYPE(/datum/projectile/special)
 /datum/projectile/special/spawner //shoot stuff
 	name = "dimensional pocket"
 	power = 1
+	dissipation_rate = 0
+	max_range = 10
 	cost = 1
-	shot_sound = 'sound/weapons/rocket.ogg'
+	shot_sound = "sound/weapons/rocket.ogg"
 	icon_state = "bullet"
 	implanted= null
 	casing = null
 	icon_turf_hit = null
 	var/typetospawn = null
 	var/hasspawned = null
+	var/hit_sound = null
 
 	on_hit(atom/hit, direction, projectile)
+		if(src.hit_sound)
+			playsound(hit, src.hit_sound, 50, 1)
 		if(ismob(hit) && typetospawn)
 			hasspawned = 1
 			. = new typetospawn(get_turf(hit))
@@ -944,6 +952,7 @@ ABSTRACT_TYPE(/datum/projectile/special)
 /datum/projectile/special/spawner/battlecrate
 	name = "Battlecrate"
 	power = 100
+	max_range = 30
 	cost = 0
 	shot_sound = 'sound/weapons/rocket.ogg'
 	icon = 'icons/obj/large_storage.dmi'

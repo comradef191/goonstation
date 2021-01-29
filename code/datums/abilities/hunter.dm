@@ -212,7 +212,7 @@
 	var/value = 0
 
 	var/list/L = src.get_all_items_on_mob()
-	if (L && L.len)
+	if (length(L))
 		for (var/obj/item/skull/S in L)
 			if (ishuman(src))
 				var/mob/living/carbon/human/H = src
@@ -223,7 +223,7 @@
 
 //////////////////////////////////////////// Ability holder /////////////////////////////////////////
 
-/obj/screen/ability/topBar/hunter
+/atom/movable/screen/ability/topBar/hunter
 	clicked(params)
 		var/datum/targetable/hunter/spell = owner
 		if (!istype(spell))
@@ -267,7 +267,7 @@
 	var/hunter_only = 0
 
 	New()
-		var/obj/screen/ability/topBar/hunter/B = new /obj/screen/ability/topBar/hunter(null)
+		var/atom/movable/screen/ability/topBar/hunter/B = new /atom/movable/screen/ability/topBar/hunter(null)
 		B.icon = src.icon
 		B.icon_state = src.icon_state
 		B.owner = src
@@ -279,7 +279,7 @@
 	updateObject()
 		..()
 		if (!src.object)
-			src.object = new /obj/screen/ability/topBar/hunter()
+			src.object = new /atom/movable/screen/ability/topBar/hunter()
 			object.icon = src.icon
 			object.owner = src
 		if (src.last_cast > world.time)

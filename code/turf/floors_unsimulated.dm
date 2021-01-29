@@ -1,6 +1,6 @@
 /*
  * Hey! You!
- * Remember to mirror your changes!
+ * Remember to mirror your changes (unless you use the [DEFINE_FLOORS] macro)
  * floors.dm & floors_airless.dm
  */
 
@@ -59,6 +59,7 @@
 	name = "plating"
 	icon_state = "plating"
 	intact = 0
+	layer = PLATING_LAYER
 
 /turf/unsimulated/floor/plating/scorched
 	icon_state = "panelscorched"
@@ -805,6 +806,7 @@
 	name = "plating"
 	icon_state = "plating"
 	intact = 0
+	layer = PLATING_LAYER
 	step_material = "step_plating"
 	step_priority = STEP_PRIORITY_MED
 
@@ -859,7 +861,7 @@
 			icon_state = "snow3"
 		else if (prob(5))
 			icon_state = "snow4"
-		src.dir = pick(cardinal)
+		src.set_dir(pick(cardinal))
 
 /turf/unsimulated/floor/snow/green
 	name = "snow-covered floor"
@@ -878,7 +880,7 @@
 
 	New()
 		..()
-		src.dir = pick(cardinal)
+		src.set_dir(pick(cardinal))
 
 /////////////////////////////////////////
 
@@ -900,7 +902,7 @@
 /turf/unsimulated/floor/grass/random
 	New()
 		..()
-		src.dir = pick(cardinal)
+		src.set_dir(pick(cardinal))
 
 /turf/unsimulated/floor/grass/random/alt
 	icon_state = "grass_eh"

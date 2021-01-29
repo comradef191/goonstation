@@ -315,6 +315,7 @@ datum
 			name = "rat venom"
 			id = "rat_venom"
 			description = "Unbelievably deadly. Not to be mistaken with rat poison."
+			random_chem_blacklisted = 1
 			reagent_state = LIQUID
 			fluid_r = 255
 			fluid_g = 40
@@ -401,7 +402,7 @@ datum
 			fluid_b = 177
 			transparency = 0
 			disease = /datum/ailment/malady/heartfailure
-		#if ASS_JAM
+
 		disease/toomuch // High Fever
 			name = "too much" //your'e
 			id = "too much"
@@ -413,7 +414,7 @@ datum
 			transparency = 255
 			disease = /datum/ailment/disease/high_fever
 
-		#endif
+
 
 		disease/heartworms // please do not give a recipe, just a thing for testing heart-related things atm
 			name = "space heartworms"

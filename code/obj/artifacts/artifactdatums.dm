@@ -9,7 +9,7 @@ ABSTRACT_TYPE(/datum/artifact/)
 	// Tweaked rarity 1 to contain all the uninteresting garbage artifacts. Explosion artifacts still appear at 3/4 because explodey is not boring - Phyvo
 
 	var/datum/artifact_origin/artitype = null
-	var/list/validtypes = list("ancient","martian","wizard","eldritch","precursor",/*"reliquary"*/)
+	var/list/validtypes = list("ancient","martian","wizard","eldritch","precursor")
 	// During setup, artitype will be set from a pick() from within the validtypes list.
 	// Keep it to only the five here or shit will probably get a bit weird. This allows us to exclude things that don't make
 	// any sense such as martian robot builders or ancient robot plant seeds.
@@ -64,7 +64,8 @@ ABSTRACT_TYPE(/datum/artifact/)
 	var/list/touch_descriptors = list()
 
 	proc/post_setup()
-		return
+		SHOULD_CALL_PARENT(TRUE)
+		src.artitype.post_setup(holder)
 
 	proc/may_activate(var/obj/O)
 		if (!O)
@@ -136,7 +137,7 @@ ABSTRACT_TYPE(/datum/artifact/)
 
 ABSTRACT_TYPE(/datum/artifact/art)
 /datum/artifact/art
-	validtypes = list("ancient","martian","wizard","eldritch","precursor",/*"reliquary"*/)
+	validtypes = list("ancient","martian","wizard","eldritch","precursor")
 	activated = 0
 	min_triggers = 0
 	max_triggers = 0
