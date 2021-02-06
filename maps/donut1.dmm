@@ -609,14 +609,7 @@
 /turf/simulated/floor,
 /area/station/chapel/office)
 "cl" = (
-/obj/machinery/power/apc{
-	cell_type = 6000;
-	dir = 4;
-	environ_consumption = 600;
-	equip_consumption = 6666;
-	light_consumption = 600;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -662,14 +655,7 @@
 /turf/simulated/floor,
 /area/station/chapel/sanctuary)
 "ct" = (
-/obj/machinery/power/apc{
-	cell_type = 1250;
-	dir = 4;
-	environ_consumption = 100;
-	equip_consumption = 125;
-	light_consumption = 400;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -820,13 +806,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc{
-	dir = 4;
-	environ_consumption = 125;
-	equip_consumption = 225;
-	light_consumption = 750;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /turf/simulated/floor,
 /area/station/chapel/sanctuary)
 "cP" = (
@@ -996,17 +976,11 @@
 /turf/simulated/floor,
 /area/station/medical/research)
 "dn" = (
-/obj/machinery/power/apc{
-	cell_type = 20000;
-	environ_consumption = 666;
-	equip_consumption = 12666;
-	light_consumption = 1000;
-	name = "S APC"
-	},
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/medical/research)
 "do" = (
@@ -1482,13 +1456,7 @@
 /turf/simulated/floor/plating,
 /area/space)
 "ez" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	environ_consumption = 375;
-	equip_consumption = 55;
-	light_consumption = 120;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -2150,13 +2118,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc{
-	dir = 4;
-	environ_consumption = 55;
-	equip_consumption = 250;
-	light_consumption = 100;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /turf/simulated/floor,
 /area/station/science/storage)
 "gH" = (
@@ -2498,14 +2460,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc{
-	cell_type = 35000;
-	dir = 4;
-	environ_consumption = 1200;
-	equip_consumption = 10500;
-	light_consumption = 700;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /turf/simulated/floor,
 /area/station/science/lab)
 "hB" = (
@@ -2923,13 +2878,7 @@
 /turf/simulated/floor/plating,
 /area/space)
 "iC" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	environ_consumption = 225;
-	equip_consumption = 225;
-	light_consumption = 2000;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -3432,14 +3381,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 25;
-	equip_consumption = 156;
-	light_consumption = 656;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/secure)
 "jU" = (
@@ -3551,14 +3493,7 @@
 /turf/simulated/floor,
 /area/station/medical/medbay)
 "kh" = (
-/obj/machinery/power/apc{
-	cell_type = 25000;
-	dir = 4;
-	environ_consumption = 2200;
-	equip_consumption = 16900;
-	light_consumption = 3500;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /obj/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -3801,16 +3736,11 @@
 /turf/simulated/floor/plating,
 /area/space)
 "kR" = (
-/obj/machinery/power/apc{
-	environ_consumption = 250;
-	equip_consumption = 400;
-	light_consumption = 1500;
-	name = "S APC"
-	},
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "kS" = (
@@ -4159,12 +4089,7 @@
 	icon_state = "0-8"
 	},
 /obj/item/extinguisher,
-/obj/machinery/power/apc{
-	cell_type = 2000;
-	equip_consumption = 700;
-	light_consumption = 650;
-	name = "S APC"
-	},
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/storage/emergency2)
 "lI" = (
@@ -5419,14 +5344,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "pp" = (
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 650;
-	equip_consumption = 2150;
-	light_consumption = 75;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -5614,14 +5532,7 @@
 /turf/simulated/floor,
 /area/station/engine/power)
 "pP" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	environ_consumption = 150;
-	equip_consumption = 1600;
-	layer = 4;
-	light_consumption = 50;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -6567,14 +6478,7 @@
 /turf/simulated/floor,
 /area/station/security/checkpoint/arrivals)
 "se" = (
-/obj/machinery/power/apc{
-	cell_type = 25000;
-	dir = 1;
-	environ_consumption = 125;
-	equip_consumption = 4500;
-	light_consumption = 350;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -6783,17 +6687,7 @@
 /turf/simulated/wall,
 /area/station/teleporter)
 "sA" = (
-/obj/machinery/power/apc{
-	cell_type = 25000;
-	environ = 0;
-	environ_consumption = 2000;
-	equip_consumption = 75000;
-	equipment = 0;
-	light_consumption = 25;
-	lighting = 0;
-	name = "S APC";
-	operating = 0
-	},
+/obj/machinery/power/apc/autoname_south,
 /obj/cable,
 /turf/simulated/floor,
 /area/station/teleporter)
@@ -6951,14 +6845,7 @@
 /turf/simulated/floor,
 /area/station/storage/tools)
 "sW" = (
-/obj/machinery/power/apc{
-	cell_type = 20000;
-	dir = 8;
-	environ_consumption = 1000;
-	equip_consumption = 8500;
-	light_consumption = 2350;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable,
 /obj/cable{
 	d2 = 2;
@@ -7197,17 +7084,12 @@
 /turf/simulated/wall,
 /area/station/storage/tools)
 "tE" = (
-/obj/machinery/power/apc{
-	cell_type = 3000;
-	environ_consumption = 25;
-	equip_consumption = 950;
-	name = "S APC"
-	},
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/cable,
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/storage/tools)
 "tF" = (
@@ -8320,14 +8202,7 @@
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
 "wv" = (
-/obj/machinery/power/apc{
-	cell_type = 25000;
-	dir = 1;
-	environ_consumption = 125;
-	equip_consumption = 4500;
-	light_consumption = 350;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -8824,14 +8699,7 @@
 /turf/space,
 /area/space)
 "xL" = (
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 250;
-	equip_consumption = 400;
-	light_consumption = 2000;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -8886,14 +8754,7 @@
 /area/station/security/checkpoint/arrivals)
 "xT" = (
 /obj/cable,
-/obj/machinery/power/apc{
-	cell_type = 20000;
-	dir = 8;
-	environ_consumption = 1000;
-	equip_consumption = 8500;
-	light_consumption = 2350;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor,
 /area/station/bridge)
@@ -9228,12 +9089,7 @@
 /obj/item/aiModule/reset,
 /obj/item/aiModule/teleporterOffline,
 /obj/item/aiModule/freeform,
-/obj/machinery/power/apc{
-	environ_consumption = 1200;
-	equip_consumption = 15000;
-	light_consumption = 350;
-	name = "S APC"
-	},
+/obj/machinery/power/apc,
 /obj/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -9954,13 +9810,7 @@
 /turf/simulated/floor,
 /area/station/storage/emergency)
 "AB" = (
-/obj/machinery/power/apc{
-	cell_type = 1250;
-	dir = 4;
-	environ_consumption = 25;
-	light_consumption = 650;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /obj/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -10710,14 +10560,7 @@
 	c_tag = "Engine Generator South";
 	dir = 4
 	},
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 250;
-	equip_consumption = 400;
-	light_consumption = 2000;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable,
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -11022,14 +10865,7 @@
 	icon_state = "0-2"
 	},
 /obj/cable,
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 650;
-	equip_consumption = 2150;
-	light_consumption = 75;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /turf/simulated/floor,
 /area/station/security/brig)
 "CY" = (
@@ -11383,13 +11219,7 @@
 /turf/simulated/floor,
 /area/station/engine/gas)
 "DV" = (
-/obj/machinery/power/apc{
-	cell_type = 3000;
-	dir = 4;
-	environ_consumption = 25;
-	equip_consumption = 950;
-	name = "E APC"
-	},
+/obj/machinery/power/apc/autoname_east,
 /obj/cable,
 /obj/cable{
 	d2 = 2;
@@ -11445,14 +11275,7 @@
 /turf/space,
 /area/space)
 "Ef" = (
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 250;
-	equip_consumption = 400;
-	light_consumption = 2000;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -11847,10 +11670,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "Fh" = (
@@ -12074,14 +11894,7 @@
 /turf/simulated/floor,
 /area/station/security/detectives_office)
 "FO" = (
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 1;
-	environ_consumption = 600;
-	equip_consumption = 1500;
-	light_consumption = 350;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -12965,14 +12778,7 @@
 /area/station/storage/auxillary)
 "Iw" = (
 /obj/item/storage/firstaid/regular,
-/obj/machinery/power/apc{
-	cell_type = 2000;
-	dir = 1;
-	environ_consumption = 25;
-	equip_consumption = 300;
-	light_consumption = 350;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -12980,14 +12786,7 @@
 /turf/simulated/floor,
 /area/station/storage/auxillary)
 "Ix" = (
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 1;
-	environ_consumption = 250;
-	equip_consumption = 400;
-	light_consumption = 2000;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -13452,12 +13251,7 @@
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "JJ" = (
-/obj/machinery/power/apc{
-	cell_type = 2000;
-	equip_consumption = 700;
-	light_consumption = 650;
-	name = "S APC"
-	},
+/obj/machinery/power/apc/autoname_south,
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -13652,13 +13446,8 @@
 /area/station/crew_quarters/bar)
 "Ki" = (
 /obj/cable,
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	environ_consumption = 15;
-	light_consumption = 750;
-	name = "S APC"
-	},
 /obj/item/storage/firstaid/regular,
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "Kj" = (
@@ -13767,14 +13556,7 @@
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
 "Kv" = (
-/obj/machinery/power/apc{
-	cell_type = 2000;
-	dir = 1;
-	environ_consumption = 25;
-	equip_consumption = 400;
-	light_consumption = 165;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -14100,14 +13882,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 8;
-	environ_consumption = 550;
-	equip_consumption = 2000;
-	light_consumption = 1000;
-	name = "W APC"
-	},
+/obj/machinery/power/apc/autoname_west,
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -14284,13 +14059,7 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
 "Lu" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	environ_consumption = 800;
-	equip_consumption = 25;
-	light_consumption = 250;
-	name = "N APC"
-	},
+/obj/machinery/power/apc/autoname_north,
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
@@ -14431,16 +14200,11 @@
 /obj/stool/chair{
 	dir = 8
 	},
-/obj/machinery/power/apc{
-	environ_consumption = 15;
-	equip_consumption = 950;
-	light_consumption = 150;
-	name = "S APC"
-	},
 /obj/cable{
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor,
 /area/station/security/checkpoint)
 "LR" = (
@@ -14834,19 +14598,15 @@
 /turf/simulated/wall,
 /area/space)
 "MJ" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
 /obj/cable{
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc{
-	cell_type = 5000;
-	dir = 1;
-	environ_consumption = 750;
-	equip_consumption = 800;
-	light_consumption = 2000;
-	name = "N APC"
-	},
-/turf/simulated/wall,
+/obj/machinery/power/apc/autoname_north,
+/turf/simulated/floor/plating,
 /area/space)
 "MK" = (
 /obj/machinery/alarm{
@@ -29634,8 +29394,8 @@ Hy
 Hy
 Hy
 JE
+oF
 MJ
-LU
 Mx
 oF
 oF
