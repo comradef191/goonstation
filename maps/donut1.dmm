@@ -270,10 +270,6 @@
 	},
 /turf/simulated/floor,
 /area/station/chapel/sanctuary)
-"bo" = (
-/obj/machinery/hologram_ai,
-/turf/simulated/floor,
-/area/station/chapel/sanctuary)
 "bp" = (
 /obj/table,
 /turf/simulated/floor,
@@ -7729,7 +7725,6 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/hologram_ai,
 /turf/simulated/floor,
 /area/station/bridge)
 "xk" = (
@@ -9509,13 +9504,6 @@
 	},
 /turf/simulated/floor,
 /area/station/turret_protected/ai)
-"Cc" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/hologram_ai,
-/turf/simulated/floor,
-/area/station/turret_protected/ai)
 "Cd" = (
 /obj/machinery/turret,
 /obj/cable{
@@ -10932,10 +10920,6 @@
 	},
 /turf/simulated/floor,
 /area/space)
-"Ge" = (
-/obj/machinery/hologram_ai,
-/turf/simulated/floor,
-/area/station/crew_quarters/bar)
 "Gf" = (
 /obj/machinery/camera{
 	c_tag = "West Hallway South";
@@ -23434,7 +23418,7 @@ yN
 xX
 Aw
 Bk
-Cc
+yO
 xX
 xp
 wr
@@ -26472,7 +26456,7 @@ Pb
 EE
 Fe
 FC
-Ge
+Kj
 GB
 Hh
 HE
@@ -27227,7 +27211,7 @@ Pb
 Pb
 aO
 aW
-bo
+aW
 bn
 bn
 aW
