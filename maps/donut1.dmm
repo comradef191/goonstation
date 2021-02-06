@@ -270,6 +270,14 @@
 	},
 /turf/simulated/floor,
 /area/station/chapel/sanctuary)
+"bo" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/obj/machinery/power/apc/autoname_west,
+/obj/cable,
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "bp" = (
 /obj/table,
 /turf/simulated/floor,
@@ -9585,8 +9593,9 @@
 	c_tag = "Engine Generator South";
 	dir = 4
 	},
-/obj/machinery/power/apc/autoname_west,
-/obj/cable,
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Cq" = (
@@ -34327,7 +34336,7 @@ Ae
 AP
 BH
 Cp
-wL
+bo
 Dn
 Dn
 Ek
