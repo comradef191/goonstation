@@ -951,6 +951,12 @@
 /obj/window/reinforced/south,
 /turf/simulated/floor,
 /area/station/medical/research)
+"ds" = (
+/obj/storage/secure/closet/personal{
+	anchored = 1
+	},
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "dv" = (
 /obj/table,
 /obj/item/paper{
@@ -1635,6 +1641,19 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/simulated/floor,
 /area/station/chapel/sanctuary)
+"fB" = (
+/obj/indestructible/shuttle_corner{
+	icon_state = "wall_trans"
+	},
+/turf/simulated/floor/shuttle{
+	icon_state = "floor3"
+	},
+/area/shuttle/arrival/station)
+"fC" = (
+/obj/storage/closet/wardrobe/black,
+/obj/random_item_spawner/dressup/one_or_zero,
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "fE" = (
 /obj/stool/bed,
 /turf/simulated/floor,
@@ -2217,6 +2236,11 @@
 /obj/item/sheet/steel/fullstack,
 /turf/simulated/floor,
 /area/space)
+"ht" = (
+/turf/simulated/shuttle/wall/corner{
+	dir = 1
+	},
+/area/shuttle/arrival/station)
 "hv" = (
 /obj/machinery/camera{
 	c_tag = "Escape Shuttle Hallway Northwest";
@@ -8073,6 +8097,10 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"yl" = (
+/obj/storage/closet/wardrobe/pride,
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "ym" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -9169,14 +9197,16 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "Bg" = (
-/turf/simulated/shuttle/wall,
-/area/space)
+/turf/simulated/shuttle/wall/corner{
+	dir = 8
+	},
+/area/shuttle/arrival/station)
 "Bh" = (
 /obj/machinery/shuttle/engine/propulsion{
 	dir = 8
 	},
 /turf/space,
-/area/space)
+/area/shuttle/arrival/station)
 "Bi" = (
 /obj/machinery/power/smes{
 	charge = 5e+006;
@@ -9483,17 +9513,20 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "BX" = (
+/obj/indestructible/shuttle_corner{
+	dir = 4;
+	icon_state = "wall_trans"
+	},
 /turf/simulated/floor/shuttle,
-/area/space)
+/area/shuttle/arrival/station)
 "BY" = (
 /turf/simulated/floor/shuttle,
 /area/shuttle/arrival/station)
 "BZ" = (
-/obj/storage/secure/closet/personal{
-	anchored = 1
-	},
+/obj/table/reinforced/auto,
+/obj/item/storage/firstaid/regular,
 /turf/simulated/floor/shuttle,
-/area/space)
+/area/shuttle/arrival/station)
 "Ca" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -9685,9 +9718,10 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "Cz" = (
-/obj/stool/chair{
+/obj/stool/chair/comfy/shuttle/brown{
 	dir = 8
 	},
+/obj/landmark/start/latejoin,
 /turf/simulated/floor/shuttle,
 /area/shuttle/arrival/station)
 "CA" = (
@@ -10047,18 +10081,10 @@
 	c_tag = "Arrival Shuttle West";
 	dir = 4
 	},
-/obj/item/device/radio/intercom{
-	frequency = 1473;
-	name = "Station Intercom (Shuttle)";
-	pixel_x = -27
-	},
 /turf/simulated/floor/shuttle,
 /area/shuttle/arrival/station)
 "DC" = (
-/obj/landmark{
-	name = "new_player"
-	},
-/turf/simulated/floor/shuttle,
+/turf/simulated/shuttle/wall,
 /area/shuttle/arrival/station)
 "DD" = (
 /obj/grille,
@@ -10411,9 +10437,12 @@
 /turf/space,
 /area/space)
 "Ez" = (
-/obj/storage/closet/wardrobe,
+/obj/indestructible/shuttle_corner{
+	dir = 1;
+	icon_state = "wall_trans"
+	},
 /turf/simulated/floor/shuttle,
-/area/space)
+/area/shuttle/arrival/station)
 "EA" = (
 /obj/window/reinforced/west,
 /obj/machinery/atmospherics/pipe/manifold{
@@ -10589,6 +10618,15 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"Fa" = (
+/obj/indestructible/shuttle_corner{
+	dir = 8;
+	icon_state = "wall_trans"
+	},
+/turf/simulated/floor/shuttle{
+	icon_state = "floor3"
+	},
+/area/shuttle/arrival/station)
 "Fb" = (
 /obj/stool/chair{
 	dir = 4
@@ -10733,7 +10771,7 @@
 	req_access_txt = null
 	},
 /turf/simulated/floor/shuttle,
-/area/space)
+/area/shuttle/arrival/station)
 "Fx" = (
 /obj/machinery/door/window,
 /obj/machinery/camera{
@@ -11065,6 +11103,10 @@
 	},
 /turf/space,
 /area/space)
+"GE" = (
+/obj/machinery/computer/arcade,
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "GG" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -11447,6 +11489,10 @@
 	},
 /turf/simulated/wall,
 /area/space)
+"HR" = (
+/obj/wingrille_spawn/auto/crystal,
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "HS" = (
 /obj/table,
 /obj/item/locator,
@@ -14534,6 +14580,23 @@
 	icon_state = "wall3"
 	},
 /area/listeningpost)
+"Vz" = (
+/obj/table/reinforced/auto,
+/obj/item/storage/toolbox/emergency{
+	pixel_x = -1;
+	pixel_y = 9
+	},
+/obj/item/storage/toolbox/emergency{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/device/radio/intercom{
+	dir = 1;
+	frequency = 1473;
+	name = "Station Intercom (Shuttle)"
+	},
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "VE" = (
 /obj/table/wood/auto,
 /obj/machinery/microwave,
@@ -14591,6 +14654,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"Wg" = (
+/obj/storage/closet/wardrobe/mixed,
+/obj/random_item_spawner/dressup/one_or_zero,
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "Wh" = (
 /obj/machinery/vending/cola/blue{
 	credit = 12
@@ -14622,6 +14690,18 @@
 	},
 /turf/simulated/floor/caution/west,
 /area/listeningpost)
+"WH" = (
+/obj/table/reinforced/auto,
+/obj/item/device/radio{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/item/device/radio{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "WO" = (
 /obj/machinery/light,
 /turf/simulated/floor/shuttle{
@@ -14681,6 +14761,12 @@
 	icon_state = "fred2"
 	},
 /area/listeningpost)
+"Xw" = (
+/obj/cryotron{
+	layer = 3.9
+	},
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 "XB" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/shuttle{
@@ -14693,6 +14779,23 @@
 	},
 /turf/simulated/floor/circuit,
 /area/listeningpost)
+"Yj" = (
+/turf/simulated/shuttle/wall/corner,
+/area/shuttle/arrival/station)
+"Yu" = (
+/obj/storage/closet/emergency,
+/turf/simulated/floor/shuttle{
+	icon_state = "floor3"
+	},
+/area/shuttle/arrival/station)
+"Yy" = (
+/obj/machinery/sleeper/compact{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle{
+	icon_state = "floor3"
+	},
+/area/shuttle/arrival/station)
 "YE" = (
 /obj/machinery/vending/snack,
 /turf/simulated/floor/carpet{
@@ -14786,6 +14889,11 @@
 	},
 /turf/space,
 /area/space)
+"ZE" = (
+/turf/simulated/shuttle/wall/corner{
+	dir = 4
+	},
+/area/shuttle/arrival/station)
 "ZK" = (
 /obj/machinery/door/airlock{
 	name = "Maintenance";
@@ -14808,6 +14916,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"ZZ" = (
+/obj/landmark{
+	name = "Observer-Start"
+	},
+/turf/simulated/floor/shuttle,
+/area/shuttle/arrival/station)
 
 (1,1,1) = {"
 Pb
@@ -18985,10 +19099,10 @@ Pb
 Pb
 Pb
 Bg
-Bg
-Bg
-Bg
-Bg
+HR
+HR
+HR
+Yj
 Pb
 Pb
 Pb
@@ -19186,12 +19300,12 @@ Pb
 Pb
 Pb
 Bg
-Bg
+DC
 BY
 DB
 BY
-Bg
-Bg
+DC
+Yj
 Pb
 Pb
 Pb
@@ -19387,14 +19501,14 @@ ll
 Pb
 Pb
 Bg
-Bg
+DC
 BX
 BY
 BY
 BY
 Ez
-Bg
-Bg
+DC
+Yj
 Pb
 Pb
 Pb
@@ -19588,15 +19702,15 @@ wh
 ll
 Pb
 Pb
-Bg
+DC
 BX
-BX
+Cz
+Cz
 BY
-BY
-BY
+Cz
+Cz
 Ez
-Ez
-Bg
+DC
 FX
 Gv
 GS
@@ -19790,8 +19904,8 @@ wh
 ll
 Pb
 Pb
-Bg
-BY
+DC
+GE
 BY
 BY
 BY
@@ -19992,15 +20106,15 @@ wh
 ll
 Pb
 Pb
-Bg
+DC
 BZ
 Cz
 Cz
 BY
 Cz
 Cz
-BZ
-Bg
+Vz
+DC
 FX
 Gv
 GU
@@ -20194,15 +20308,15 @@ ll
 ll
 Pb
 Pb
-Bg
-BZ
-Cz
-Cz
+HR
+WH
 BY
-Cz
-Cz
-BZ
-Bg
+BY
+ZZ
+BY
+BY
+ds
+HR
 Pb
 Pb
 GV
@@ -20396,15 +20510,15 @@ wk
 ll
 Pb
 Pb
-Bg
-BZ
+HR
+Wg
 Cz
 Cz
-DC
+BY
 Cz
 Cz
-BZ
-Bg
+ds
+HR
 Pb
 Pb
 GV
@@ -20598,15 +20712,15 @@ wk
 ll
 Pb
 Pb
-Bg
-BZ
-Cz
-Cz
+HR
+fC
 BY
-Cz
-Cz
-BZ
-Bg
+BY
+BY
+BY
+BY
+ds
+HR
 Pb
 Pb
 GV
@@ -20800,15 +20914,15 @@ wk
 ll
 Pb
 Pb
-Bg
-BZ
+HR
+yl
 Cz
 Cz
 BY
 Cz
 Cz
-BZ
-Bg
+ds
+HR
 Pb
 Pb
 GV
@@ -21002,15 +21116,15 @@ ll
 ll
 Pb
 Pb
-Bg
-BZ
-Cz
-Cz
+DC
+Xw
 BY
-Cz
-Cz
-BZ
-Bg
+BY
+BY
+BY
+BY
+ds
+DC
 FX
 Gx
 GW
@@ -21204,7 +21318,7 @@ wn
 ll
 Pb
 Pb
-Bg
+DC
 BY
 BY
 BY
@@ -21406,15 +21520,15 @@ wn
 ll
 Pb
 Pb
-Bg
+DC
 BY
+Cz
+Cz
 BY
+Cz
+Cz
 BY
-BY
-BY
-BY
-BY
-Bg
+DC
 FX
 Gv
 GX
@@ -21608,15 +21722,15 @@ wn
 ll
 Pb
 Pb
-Bg
-Bg
-Bg
-BY
-BY
-BY
-Bg
-Bg
-Bg
+DC
+DC
+fB
+Yu
+Yy
+Yu
+Fa
+DC
+DC
 Pb
 Pb
 GY
@@ -21812,11 +21926,11 @@ Pb
 Pb
 Bh
 Bh
-Bg
-Bg
-Bg
-Bg
-Bg
+ht
+DC
+DC
+DC
+ZE
 Bh
 Bh
 Pb
