@@ -3789,7 +3789,7 @@
 	},
 /obj/machinery/camera{
 	c_tag = "Medical";
-	dir = 1;
+	dir = 1
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -11689,13 +11689,6 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
-"Ih" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/computer/general_air_control,
-/turf/simulated/floor,
-/area/space)
 "Ii" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -28636,7 +28629,7 @@ De
 Hc
 oF
 oF
-Ih
+ui
 IQ
 ui
 ui
