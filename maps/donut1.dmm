@@ -1710,7 +1710,6 @@
 /obj/machinery/alarm{
 	alarm_zone = "Toxins Lab A";
 	dir = 8;
-	layer = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor,
@@ -3423,7 +3422,6 @@
 /obj/machinery/door_control{
 	desc = "A remote control switch for the mixing room vent.";
 	id = "mixing room vent";
-	layer = 4;
 	name = "Vent Control";
 	pixel_x = 31
 	},
@@ -3792,7 +3790,6 @@
 /obj/machinery/camera{
 	c_tag = "Medical";
 	dir = 1;
-	layer = 4
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
@@ -5724,7 +5721,6 @@
 /obj/machinery/alarm{
 	alarm_zone = "Atmospherics";
 	dir = 8;
-	layer = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor,
@@ -8472,7 +8468,6 @@
 /area/station/turret_protected/ai_upload)
 "yS" = (
 /obj/machinery/turretid{
-	layer = 4;
 	pixel_y = 31;
 	req_access_txt = "19"
 	},
@@ -9333,9 +9328,7 @@
 /turf/simulated/floor,
 /area/station/turret_protected/ai)
 "Bk" = (
-/obj/machinery/turretid{
-	layer = 4
-	},
+/obj/machinery/turretid,
 /obj/cable{
 	icon_state = "4-8"
 	},
@@ -9423,7 +9416,6 @@
 	alarm_frequency = "";
 	alarm_zone = "Engine Reactor Airlock";
 	dir = 8;
-	layer = 4;
 	pixel_x = 24
 	},
 /turf/simulated/floor,
@@ -10842,7 +10834,6 @@
 /obj/machinery/alarm{
 	alarm_zone = "Engine Gas Storage";
 	dir = 8;
-	layer = 4;
 	pixel_x = 24
 	},
 /obj/machinery/atmospherics/pipe/tank/carbon_dioxide{
