@@ -367,6 +367,7 @@
 					else
 						alert("Unable to use this emote, must be either audible or visible.")
 						return
+					phrase_log.log_phrase("emote", input)
 					message = "<B>[src]</B> [input]"
 					maptext_out = "<I>[input]</I>"
 					custom = copytext(input, 1, 10)
@@ -378,6 +379,7 @@
 					if(!param) return
 
 				param = sanitize(html_encode(param))
+				phrase_log.log_phrase("emote", param)
 				message = "<b>[src]</b> [param]"
 				maptext_out = "<I>[param]</I>"
 				m_type = 1
@@ -389,6 +391,7 @@
 					param = input("Choose an emote to display.")
 					if(!param) return
 				param = sanitize(html_encode(param))
+				phrase_log.log_phrase("emote", param)
 				message = "<b>[src]</b> [param]"
 				maptext_out = "<I>[param]</I>"
 				m_type = 2
@@ -399,6 +402,7 @@
 				if (!param)
 					return
 				param = sanitize(html_encode(param))
+				phrase_log.log_phrase("emote", param)
 				message = "<b>[src]</b> [param]"
 				maptext_out = "<I>[param]</I>"
 				m_type = 1 // default to visible
@@ -1354,7 +1358,7 @@
 							animate_flash_color_fill(src,"#5C0E80", 1, 10)
 							animate_levitate(src, 1, 10)
 							SPAWN_DBG(0) // some movement to make it look cooler
-								for (var/i = 0, i < 10, i++)
+								for (var/i in 0 to 9)
 									src.set_dir(turn(src.dir, 90))
 									sleep(0.2 SECONDS)
 
@@ -2143,6 +2147,8 @@
 
 /mob/living/proc/do_suplex(obj/item/grab/G)
 	if (!(G.state >= 1 && isturf(src.loc) && isturf(G.affecting.loc)))
+		return null
+	if(!IN_RANGE(src, G.affecting, 1))
 		return null
 
 	var/obj/table/tabl = locate() in src.loc.contents
