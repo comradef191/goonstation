@@ -27,23 +27,23 @@
 	network = "Tox"
 	},
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "al" = (
 /obj/item/device/radio/beacon,
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "am" = (
 /obj/machinery/igniter,
 /obj/machinery/portable_atmospherics/canister/toxins,
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "an" = (
 /obj/machinery/camera{
 	c_tag = "Toxins Test Chamber";
 	dir = 8
 	},
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "as" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -56,7 +56,7 @@
 	name = "Launcher Door"
 	},
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "aw" = (
 /obj/window/reinforced/south,
 /turf/space,
@@ -4628,7 +4628,7 @@
 /area/station/teleporter)
 "oF" = (
 /turf/simulated/wall/auto/supernorn,
-/area/space)
+/area/station/science/testchamber)
 "oI" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
@@ -8278,7 +8278,7 @@
 /area/station/turret_protected/ai_upload)
 "yT" = (
 /obj/grille,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless/plating,
 /area/space)
 "yV" = (
 /obj/cable{
@@ -13708,7 +13708,7 @@
 /area/listeningpost)
 "OL" = (
 /turf/simulated/floor,
-/area/space)
+/area/station/science/testchamber)
 "OO" = (
 /obj/cable{
 	icon_state = "1-2"
