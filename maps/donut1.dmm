@@ -8502,13 +8502,13 @@
 /obj/item/aiModule/reset,
 /obj/item/aiModule/teleporterOffline,
 /obj/item/aiModule/freeform,
-/obj/machinery/power/apc,
 /obj/cable{
 	icon_state = "0-8"
 	},
 /obj/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/apc/autoname_south,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "yO" = (
@@ -9381,6 +9381,9 @@
 	n_tag = "AI";
 	output = 20000
 	},
+/obj/cable{
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Bj" = (
@@ -9393,11 +9396,11 @@
 /turf/simulated/floor,
 /area/station/turret_protected/ai)
 "Bk" = (
-/obj/machinery/turretid,
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor,
+/obj/machinery/turretid,
+/turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/turret_protected/ai)
 "Bl" = (
 /obj/cable{
