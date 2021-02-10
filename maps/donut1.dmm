@@ -614,7 +614,7 @@
 /area/station/medical/research)
 "cr" = (
 /turf/space,
-/area/shuttle)
+/area/shuttle/escape/station/donut2)
 "cs" = (
 /obj/window/reinforced/north,
 /turf/simulated/floor/specialroom/chapel{
@@ -1763,9 +1763,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/hallway/secondary/exit)
 "fV" = (
-/obj/machinery/door/airlock/external{
-	name = "Airlock"
-	},
+/obj/machinery/door/airlock/pyro/external,
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "fW" = (
@@ -2220,12 +2218,8 @@
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
 "hv" = (
-/obj/machinery/camera{
-	c_tag = "Escape Shuttle Hallway Northwest";
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/secondary/exit)
+/turf/space,
+/area/shuttle_sound_spawn)
 "hw" = (
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
@@ -2376,8 +2370,8 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/storage/emergency)
 "hV" = (
-/obj/item/screwdriver,
-/turf/simulated/floor,
+/obj/decal/poster/wallsign/space,
+/turf/simulated/wall/auto/supernorn,
 /area/station/hallway/secondary/exit)
 "hW" = (
 /obj/item/device/radio/intercom{
@@ -13474,6 +13468,13 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
+"Oa" = (
+/obj/machinery/camera{
+	c_tag = "Escape Shuttle Hallway Northwest";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/exit)
 "Ob" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -13709,6 +13710,10 @@
 "OL" = (
 /turf/simulated/floor,
 /area/station/science/testchamber)
+"OM" = (
+/obj/item/screwdriver,
+/turf/simulated/floor,
+/area/station/hallway/secondary/exit)
 "OO" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -18894,9 +18899,9 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
+cr
+cr
+cr
 Pb
 Pb
 Pb
@@ -19497,6 +19502,7 @@ Pb
 Pb
 Pb
 Pb
+Pb
 cr
 cr
 cr
@@ -19504,8 +19510,7 @@ cr
 cr
 cr
 cr
-cr
-cr
+Pb
 Pb
 Pb
 Pb
@@ -19708,12 +19713,12 @@ cr
 cr
 cr
 cr
-fU
-iL
-iL
-iL
-iL
-iL
+Pb
+Pb
+Pb
+Pb
+Pb
+Pb
 Pb
 Pb
 Pb
@@ -19910,12 +19915,12 @@ cr
 cr
 cr
 cr
-fV
-gz
-fV
-hv
-hV
-iL
+Pb
+Pb
+Pb
+Pb
+Pb
+Pb
 Pb
 Pb
 Pb
@@ -20112,11 +20117,11 @@ cr
 cr
 cr
 cr
-fU
+hV
 iL
 iL
-gz
-gz
+iL
+iL
 iL
 Pb
 Pb
@@ -20314,11 +20319,11 @@ cr
 cr
 cr
 cr
-Pb
-Pb
-iL
+fV
 gz
-gz
+fV
+Oa
+OM
 iL
 Pb
 Pb
@@ -20516,8 +20521,8 @@ cr
 cr
 cr
 cr
-Pb
-Pb
+fU
+iL
 iL
 gz
 gz
@@ -21526,7 +21531,7 @@ cr
 cr
 cr
 cr
-fU
+hV
 iL
 iL
 gz
@@ -21718,7 +21723,6 @@ Pb
 Pb
 Pb
 Pb
-Pb
 cr
 cr
 cr
@@ -21728,7 +21732,8 @@ cr
 cr
 cr
 cr
-Pb
+cr
+cr
 Pb
 iL
 gz
@@ -21920,8 +21925,6 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
 cr
 cr
 cr
@@ -21929,8 +21932,10 @@ cr
 cr
 cr
 cr
-Pb
-Pb
+cr
+cr
+cr
+cr
 Pb
 iL
 gz
@@ -22122,17 +22127,17 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
 Pb
 iL
 gz
@@ -22325,15 +22330,15 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
 Pb
 Pb
 iL
@@ -22527,15 +22532,15 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+cr
 Pb
 Pb
 Pb
@@ -22733,7 +22738,7 @@ Pb
 Pb
 Pb
 Pb
-Pb
+hv
 GD
 GD
 GD
