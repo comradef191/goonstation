@@ -225,9 +225,15 @@
 /turf/space,
 /area/space)
 "bf" = (
-/obj/machinery/light/incandescent/warm,
-/turf/simulated/floor,
-/area/station/storage)
+/obj/lattice,
+/obj/window/reinforced/north,
+/obj/machinery/atmospherics/unary/outlet_injector{
+	icon_state = "on";
+	on = 1;
+	volume_rate = 200
+	},
+/turf/space,
+/area/space)
 "bg" = (
 /obj/machinery/door/window{
 	name = "Med Research";
@@ -369,10 +375,14 @@
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "bD" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/cable/blue{
+	icon_state = "0-2"
 	},
-/turf/simulated/floor/circuit,
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
 /area/station/turret_protected/ai)
 "bE" = (
 /obj/table,
@@ -983,6 +993,15 @@
 /obj/machinery/computer/arcade,
 /turf/simulated/floor/shuttle,
 /area/shuttle/arrival/station)
+"dt" = (
+/obj/cable/blue,
+/obj/cable/blue{
+	icon_state = "0-4"
+	},
+/obj/grille/steel,
+/obj/securearea,
+/turf/simulated/wall/auto/supernorn,
+/area/station/turret_protected/ai)
 "dv" = (
 /obj/table,
 /obj/item/paper{
@@ -4100,6 +4119,18 @@
 /obj/machinery/door/window,
 /turf/simulated/floor,
 /area/station/storage/autolathe)
+"mu" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "C4";
+	name = "Air Sensor"
+	},
+/turf/simulated/floor/plating{
+	name = "Nitrogen Storage";
+	nitrogen = 9000;
+	oxygen = 0
+	},
+/area/station/storage)
 "mv" = (
 /obj/machinery/light/incandescent/warm{
 	dir = 8
@@ -4111,19 +4142,18 @@
 /turf/simulated/floor/plating,
 /area/station/storage/autolathe)
 "my" = (
-/obj/lattice,
-/obj/window/reinforced/north,
-/obj/machinery/atmospherics/unary/outlet_injector{
-	icon_state = "on";
-	on = 1;
-	volume_rate = 200
+/obj/item/cable_coil,
+/obj/cable{
+	icon_state = "1-2"
 	},
-/turf/space,
-/area/space)
+/obj/machinery/door/window,
+/turf/simulated/floor,
+/area/station/storage)
 "mz" = (
 /obj/stool/chair{
 	dir = 4
 	},
+/obj/window/south,
 /turf/simulated/floor,
 /area/station/storage)
 "mA" = (
@@ -4277,19 +4307,26 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "na" = (
-/obj/machinery/atmospherics/pipe/simple,
-/turf/simulated/wall/auto/supernorn,
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Mixed Air Intake)";
+	open = 1
+	},
+/turf/simulated/floor,
 /area/station/storage)
 "nb" = (
-/obj/window/south,
+/obj/machinery/atmospherics/pipe/tank{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "nc" = (
-/obj/item/cable_coil,
-/obj/cable{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/binary/pump{
+	dir = 4
 	},
-/obj/machinery/door/window,
+/obj/machinery/light/incandescent/warm{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "nd" = (
@@ -4382,38 +4419,20 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "ns" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 4
-	},
+/obj/machinery/door/window,
 /turf/simulated/floor,
 /area/station/storage)
 "nt" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold,
 /turf/simulated/floor,
 /area/station/storage)
 "nu" = (
 /obj/machinery/atmospherics/pipe/manifold,
-/turf/simulated/floor,
-/area/station/storage)
-"nv" = (
-/obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
-	},
-/obj/machinery/meter,
-/turf/simulated/floor,
-/area/station/storage)
-"nw" = (
-/obj/machinery/atmospherics/pipe/tank{
-	dir = 8
-	},
+/obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/storage)
 "nx" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 6
-	},
+/obj/machinery/atmospherics/filter,
 /turf/simulated/floor,
 /area/station/storage)
 "ny" = (
@@ -4499,23 +4518,24 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "nN" = (
-/obj/machinery/door/window,
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 1
+	},
+/obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/storage)
 "nO" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"nP" = (
-/obj/machinery/atmospherics/filter,
-/turf/simulated/floor,
-/area/station/storage)
-"nQ" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 5
 	},
+/obj/window/west,
+/turf/simulated/floor,
+/area/station/storage)
+"nP" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9
+	},
+/obj/machinery/light/incandescent/warm,
 /turf/simulated/floor,
 /area/station/storage)
 "nR" = (
@@ -4531,7 +4551,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "nT" = (
-/obj/machinery/atmospherics/pipe/manifold{
+/obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -4740,10 +4760,11 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/west)
 "ou" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 1
 	},
-/obj/window/west,
+/obj/window/north,
+/obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/storage)
 "ov" = (
@@ -4753,38 +4774,30 @@
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"ow" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "ox" = (
-/obj/machinery/atmospherics/unary/vent_scrubber{
-	dir = 1
-	},
+/obj/window/north,
 /turf/simulated/floor,
 /area/station/storage)
 "oy" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 5
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "oz" = (
-/obj/rack,
-/obj/item/device/analyzer/atmospheric,
-/obj/item/clothing/under/misc/atmospheric_technician,
-/obj/item/clothing/shoes/black,
-/obj/item/clothing/mask/gas,
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "oA" = (
-/obj/item/extinguisher,
+/obj/machinery/atmospherics/portables_connector,
+/obj/window/north,
 /turf/simulated/floor,
 /area/station/storage)
 "oB" = (
 /obj/machinery/atmospherics/unary/vent_pump,
+/obj/window/south,
 /turf/simulated/floor,
 /area/station/storage)
 "oC" = (
@@ -4793,6 +4806,7 @@
 	name = "E Fire Alarm";
 	pixel_x = 24
 	},
+/obj/window/south,
 /turf/simulated/floor,
 /area/station/storage)
 "oD" = (
@@ -4937,27 +4951,72 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "pb" = (
+/obj/rack,
+/obj/item/device/analyzer/atmospheric,
+/obj/item/clothing/under/misc/atmospheric_technician,
+/obj/item/clothing/shoes/black,
+/obj/item/clothing/mask/gas,
+/obj/machinery/light/incandescent/warm,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/storage)
+"pc" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/storage)
+"pd" = (
+/obj/machinery/atmospherics/pipe/tank/oxygen{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/storage)
+"pe" = (
+/obj/machinery/atmospherics/pipe/simple,
+/obj/window/west,
+/turf/simulated/floor,
+/area/station/storage)
+"pf" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/station/storage)
+"pg" = (
+/obj/rack,
+/obj/item/device/analyzer/atmospheric,
+/obj/item/clothing/under/misc/atmospheric_technician,
+/obj/item/clothing/shoes/black,
+/obj/item/clothing/mask/gas,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/storage)
+"ph" = (
 /obj/machinery/camera{
 	c_tag = "Atmospherics Control West";
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"pc" = (
-/obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+"pi" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"pd" = (
-/obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+"pj" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
 	},
-/obj/window/north,
-/obj/machinery/meter,
+/obj/window/west,
 /turf/simulated/floor,
 /area/station/storage)
-"pe" = (
+"pk" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
@@ -4968,109 +5027,59 @@
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"pf" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/window/north,
-/turf/simulated/floor,
-/area/station/storage)
-"pg" = (
+"pl" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
 	},
 /obj/window/north,
 /turf/simulated/floor,
 /area/station/storage)
-"ph" = (
+"pm" = (
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 4
 	},
 /obj/window/north,
 /turf/simulated/floor,
 /area/station/storage)
-"pi" = (
-/obj/window/north,
-/turf/simulated/floor,
-/area/station/storage)
-"pj" = (
-/obj/machinery/door/window{
-	dir = 1
+"pp" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
 	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor,
 /area/station/storage)
-"pk" = (
+"pq" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple,
+/turf/simulated/floor,
+/area/station/storage)
+"pr" = (
 /obj/window/north,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"pl" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/window/north,
+"pt" = (
+/obj/machinery/camera{
+	c_tag = "Atmospherics East"
+	},
+/obj/machinery/portable_atmospherics/pump,
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"pm" = (
-/obj/window/north,
-/obj/machinery/atmospherics/binary/pump{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"pn" = (
-/obj/window/north,
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 10
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"po" = (
-/obj/machinery/atmospherics/portables_connector,
-/obj/window/north,
-/turf/simulated/floor,
-/area/station/storage)
-"pp" = (
-/obj/machinery/power/apc/autoname_west,
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/cable,
-/obj/window/north,
-/turf/simulated/floor,
-/area/station/storage)
-"pq" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/window/north,
-/turf/simulated/floor,
-/area/station/storage)
-"pr" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/window{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"ps" = (
-/obj/window/north,
-/obj/machinery/portable_atmospherics/pump,
-/turf/simulated/floor,
-/area/station/storage)
-"pt" = (
-/obj/machinery/camera{
-	c_tag = "Atmospherics East"
-	},
-/obj/window/north,
-/obj/machinery/portable_atmospherics/pump,
-/turf/simulated/floor,
-/area/station/storage)
 "pu" = (
 /obj/machinery/portable_atmospherics/pump,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "pv" = (
@@ -5317,76 +5326,65 @@
 	},
 /turf/simulated/floor,
 /area/station/bridge)
-"qg" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"qh" = (
-/obj/machinery/atmospherics/pipe/tank/oxygen{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "qi" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/window/west,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/machinery/door/window{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qj" = (
-/obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+/obj/machinery/atmospherics/pipe/tank/air{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "qk" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "ql" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 9
 	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor,
 /area/station/storage)
 "qm" = (
+/obj/machinery/atmospherics/pipe/simple,
+/obj/window/north,
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "qn" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple,
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qo" = (
+/obj/window/north,
 /obj/machinery/atmospherics/binary/pump{
-	dir = 4;
-	icon_state = "intact_on";
-	name = "Gas pump (To Engine)";
-	on = 1;
-	target_pressure = 4500
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "qp" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 5
+	},
+/obj/cable{
+	icon_state = "4-8"
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/storage)
@@ -5395,6 +5393,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple,
+/obj/cable{
+	icon_state = "4-8"
+	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/teleporter)
 "qr" = (
@@ -5675,76 +5676,72 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/door/window{
-	dir = 8
-	},
+/obj/window/west,
 /turf/simulated/floor,
 /area/station/storage)
 "rg" = (
-/obj/machinery/atmospherics/mixer{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"rh" = (
-/obj/machinery/atmospherics/valve{
-	dir = 4;
-	icon_state = "valve1";
-	name = "manual valve (Oxygen Distribution)";
-	open = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"ri" = (
-/obj/machinery/door/firedoor/border_only{
+/obj/machinery/atmospherics/binary/pump{
 	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"rj" = (
-/obj/cable{
-	icon_state = "1-4"
-	},
-/obj/cable{
-	icon_state = "4-8"
+"rh" = (
+/obj/window/north,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 10
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"rk" = (
+"ri" = (
+/obj/machinery/power/apc/autoname_west,
 /obj/cable{
-	icon_state = "4-8"
+	icon_state = "0-2"
 	},
+/obj/cable,
+/obj/window/south,
+/turf/simulated/floor,
+/area/station/storage)
+"rj" = (
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
+	},
+/obj/window/south,
+/turf/simulated/floor,
+/area/station/storage)
+"rk" = (
 /obj/machinery/alarm{
 	alarm_zone = "Atmospherics";
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/machinery/atmospherics/binary/pump{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "rl" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/storage)
 "rm" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/teleporter)
 "rn" = (
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/cable{
-	icon_state = "4-8"
-	},
 /obj/machinery/alarm{
 	alarm_zone = "Restricted Lab";
 	dir = 4;
 	pixel_x = -24
+	},
+/obj/cable{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor,
 /area/station/teleporter)
@@ -5759,13 +5756,11 @@
 /area/station/teleporter)
 "rp" = (
 /obj/cable{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/cable{
-	icon_state = "2-4"
-	},
+/obj/machinery/door/window,
 /turf/simulated/floor,
-/area/station/teleporter)
+/area/station/storage)
 "rq" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -6175,80 +6170,50 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "sq" = (
-/obj/machinery/atmospherics/valve{
-	dir = 4;
-	name = "manual valve (Air Tank Bypass)"
+/obj/machinery/door/airlock{
+	name = "Atmospherics";
+	req_access_txt = "27"
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "sr" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/window/west,
-/turf/simulated/floor,
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
 /area/station/storage)
 "ss" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+/obj/machinery/door/window{
+	dir = 1
 	},
-/obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/storage)
 "st" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 6
 	},
-/obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"su" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor,
 /area/station/storage)
 "sv" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
 /obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/storage)
-"sw" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/scrubber,
 /turf/simulated/floor,
 /area/station/storage)
 "sx" = (
-/obj/machinery/atmospherics/pipe/manifold,
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/simulated/floor,
 /area/station/storage)
 "sy" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple,
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/simulated/floor,
 /area/station/storage)
 "sz" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 4
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/teleporter)
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor,
+/area/station/storage)
 "sA" = (
 /obj/machinery/power/apc/autoname_south,
 /obj/cable,
@@ -6393,6 +6358,21 @@
 	},
 /turf/simulated/floor,
 /area/station/storage/primary)
+"sU" = (
+/obj/cable/blue{
+	icon_state = "5-8"
+	},
+/obj/cable/blue{
+	icon_state = "6-8"
+	},
+/obj/machinery/turret{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "sV" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -6462,9 +6442,13 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "tg" = (
-/obj/machinery/door/airlock{
-	name = "Atmospherics";
-	req_access_txt = "27"
+/obj/machinery/portable_atmospherics/pump,
+/obj/machinery/atmospherics/binary/pump{
+	dir = 4;
+	icon_state = "intact_on";
+	name = "Gas pump (To Engine)";
+	on = 1;
+	target_pressure = 4500
 	},
 /turf/simulated/floor,
 /area/station/storage)
@@ -6477,19 +6461,23 @@
 	},
 /area/station/chapel/office)
 "ti" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/wingrille_spawn/auto,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (CO2 Intake)";
+	open = 1
+	},
+/turf/simulated/floor,
 /area/station/storage)
 "tj" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/window/north,
-/obj/item/extinguisher,
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "tk" = (
-/obj/window/north,
-/obj/machinery/atmospherics/pipe/tank/air,
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "tl" = (
@@ -6775,63 +6763,61 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "tY" = (
-/obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (Mixed Air Intake)";
-	open = 1
+/obj/machinery/atmospherics/mixer{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "tZ" = (
 /obj/machinery/atmospherics/valve{
+	dir = 4;
 	icon_state = "valve1";
-	name = "manual valve (Mixed Air Outlet)";
+	name = "manual valve (Oxygen Distribution)";
 	open = 1
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "ua" = (
-/obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (CO2 Intake)";
-	open = 1
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "ub" = (
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor,
-/area/station/storage)
-"uc" = (
-/obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (Oxygen Intake)";
-	open = 1
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/storage)
+"uc" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor,
+/area/station/teleporter)
 "ud" = (
 /obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (Oxygen Outlet)";
-	open = 1
+	dir = 4;
+	name = "manual valve (Air Tank Bypass)"
 	},
 /turf/simulated/floor,
 /area/station/storage)
 "ue" = (
-/obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (Nitrogen Intake)";
-	open = 1
-	},
+/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/light/incandescent/warm,
 /turf/simulated/floor,
 /area/station/storage)
 "uf" = (
-/obj/machinery/atmospherics/valve{
-	icon_state = "valve1";
-	name = "manual valve (Nitrogen Outlet)";
-	open = 1
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
 	},
+/obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/storage)
 "ug" = (
@@ -6917,6 +6903,12 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/power)
+"ut" = (
+/obj/cable/blue{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "uu" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -7007,13 +6999,13 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/bridge)
 "uG" = (
-/obj/machinery/atmospherics/binary/pump,
-/turf/simulated/floor,
+/obj/machinery/atmospherics/pipe/simple,
+/turf/simulated/wall/auto/supernorn,
 /area/station/storage)
 "uH" = (
-/obj/machinery/atmospherics/pipe/tank/air{
-	dir = 1
-	},
+/obj/machinery/atmospherics/pipe/simple,
+/obj/window/north,
+/obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/storage)
 "uI" = (
@@ -7111,6 +7103,12 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"uZ" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/station/turret_protected/ai_upload)
 "va" = (
 /obj/grille/steel,
 /turf/space,
@@ -7176,35 +7174,57 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "vm" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/securearea{
-	name = "Mixed Air"
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1;
+	icon_state = "on";
+	on = 1;
+	volume_rate = 200
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/plating{
+	name = "Mixed Air Storage;
+	nitrogen = 7110;
+	oxygen = 1890
+	},
 /area/station/storage)
 "vn" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/securearea{
-	desc = "A warning sign which reads 'CO2 Storage'";
-	name = "CO2 Storage"
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1;
+	icon_state = "on";
+	on = 1;
+	volume_rate = 200
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/plating{
+	carbon_dioxide = 2500;
+	name = "CO2 Storage";
+	nitrogen = 0;
+	oxygen = 0
+	},
 /area/station/storage)
 "vo" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/securearea{
-	desc = "A warning sign which reads 'O2 Storage'";
-	name = "O2 Storage"
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1;
+	icon_state = "on";
+	on = 1;
+	volume_rate = 200
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/plating{
+	name = "Oxygen Storage";
+	nitrogen = 0;
+	oxygen = 9000
+	},
 /area/station/storage)
 "vp" = (
-/obj/machinery/atmospherics/pipe/simple,
-/obj/securearea{
-	desc = "A warning sign which reads 'N2 Storage'";
-	name = "N2 Storage"
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 1;
+	icon_state = "on";
+	on = 1;
+	volume_rate = 200
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/plating{
+	name = "Nitrogen Storage";
+	nitrogen = 9000;
+	oxygen = 0
+	},
 /area/station/storage)
 "vq" = (
 /turf/simulated/floor/specialroom/chapel{
@@ -7460,17 +7480,9 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "wd" = (
-/obj/machinery/atmospherics/unary/outlet_injector{
-	dir = 1;
-	icon_state = "on";
-	on = 1;
-	volume_rate = 200
-	},
-/turf/simulated/floor/plating{
-	name = "Mixed Air Storage;
-	nitrogen = 7110;
-	oxygen = 1890
-	},
+/obj/window/north,
+/obj/machinery/atmospherics/pipe/tank/air,
+/turf/simulated/floor,
 /area/station/storage)
 "we" = (
 /turf/simulated/floor/plating{
@@ -7480,33 +7492,16 @@
 	},
 /area/station/storage)
 "wf" = (
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 0;
-	icon_state = "in";
-	internal_pressure_bound = 4000;
-	pressure_checks = 2;
-	pump_direction = 0
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Mixed Air Outlet)";
+	open = 1
 	},
-/turf/simulated/floor/plating{
-	name = "Mixed Air Storage;
-	nitrogen = 7110;
-	oxygen = 1890
-	},
+/turf/simulated/floor,
 /area/station/storage)
 "wg" = (
-/obj/machinery/atmospherics/unary/outlet_injector{
-	dir = 1;
-	icon_state = "on";
-	on = 1;
-	volume_rate = 200
-	},
-/turf/simulated/floor/plating{
-	carbon_dioxide = 2500;
-	name = "CO2 Storage";
-	nitrogen = 0;
-	oxygen = 0
-	},
+/obj/machinery/atmospherics/portables_connector,
+/turf/simulated/floor,
 /area/station/storage)
 "wh" = (
 /turf/simulated/floor/plating{
@@ -7517,33 +7512,20 @@
 	},
 /area/station/storage)
 "wi" = (
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 0;
-	icon_state = "in";
-	internal_pressure_bound = 4000;
-	pressure_checks = 2;
-	pump_direction = 0
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Oxygen Intake)";
+	open = 1
 	},
-/turf/simulated/floor/plating{
-	carbon_dioxide = 2500;
-	name = "CO2 Storage";
-	nitrogen = 0;
-	oxygen = 0
-	},
+/turf/simulated/floor,
 /area/station/storage)
 "wj" = (
-/obj/machinery/atmospherics/unary/outlet_injector{
-	dir = 1;
-	icon_state = "on";
-	on = 1;
-	volume_rate = 200
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Oxygen Outlet)";
+	open = 1
 	},
-/turf/simulated/floor/plating{
-	name = "Oxygen Storage";
-	nitrogen = 0;
-	oxygen = 9000
-	},
+/turf/simulated/floor,
 /area/station/storage)
 "wk" = (
 /turf/simulated/floor/plating{
@@ -7553,32 +7535,20 @@
 	},
 /area/station/storage)
 "wl" = (
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 0;
-	icon_state = "in";
-	internal_pressure_bound = 4000;
-	pressure_checks = 2;
-	pump_direction = 0
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Nitrogen Intake)";
+	open = 1
 	},
-/turf/simulated/floor/plating{
-	name = "Oxygen Storage";
-	nitrogen = 0;
-	oxygen = 9000
-	},
+/turf/simulated/floor,
 /area/station/storage)
 "wm" = (
-/obj/machinery/atmospherics/unary/outlet_injector{
-	dir = 1;
-	icon_state = "on";
-	on = 1;
-	volume_rate = 200
+/obj/machinery/atmospherics/valve{
+	icon_state = "valve1";
+	name = "manual valve (Nitrogen Outlet)";
+	open = 1
 	},
-/turf/simulated/floor/plating{
-	name = "Nitrogen Storage";
-	nitrogen = 9000;
-	oxygen = 0
-	},
+/turf/simulated/floor,
 /area/station/storage)
 "wn" = (
 /turf/simulated/floor/plating{
@@ -7588,69 +7558,28 @@
 	},
 /area/station/storage)
 "wo" = (
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 1;
-	external_pressure_bound = 0;
-	icon_state = "in";
-	internal_pressure_bound = 4000;
-	pressure_checks = 2;
-	pump_direction = 0
-	},
-/turf/simulated/floor/plating{
-	name = "Nitrogen Storage";
-	nitrogen = 9000;
-	oxygen = 0
-	},
+/obj/machinery/light/incandescent/warm,
+/turf/simulated/floor,
 /area/station/storage)
 "wp" = (
-/obj/landmark{
-	icon_state = "x3";
-	name = "blobstart"
-	},
-/turf/space,
-/area/space)
-"wq" = (
-/obj/grille/steel,
-/obj/securearea,
-/obj/cable{
-	icon_state = "0-4"
-	},
-/obj/cable{
-	icon_state = "0-2"
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/turret_protected/ai)
-"wr" = (
-/obj/grille/steel,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/turret_protected/ai)
+/obj/machinery/atmospherics/binary/pump,
+/turf/simulated/floor,
+/area/station/storage)
 "ws" = (
-/obj/grille/steel,
-/obj/cable{
-	icon_state = "0-2"
+/obj/machinery/atmospherics/pipe/simple,
+/obj/securearea{
+	name = "Mixed Air"
 	},
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/turret_protected/ai)
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/storage)
 "wt" = (
-/obj/grille/steel,
-/obj/securearea,
-/obj/cable{
-	icon_state = "0-8"
+/obj/machinery/atmospherics/pipe/simple,
+/obj/securearea{
+	desc = "A warning sign which reads 'CO2 Storage'";
+	name = "CO2 Storage"
 	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/turret_protected/ai)
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/storage)
 "wu" = (
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
@@ -7966,10 +7895,29 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "xk" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "C1";
-	name = "Air Sensor"
+/obj/machinery/atmospherics/pipe/simple,
+/obj/securearea{
+	desc = "A warning sign which reads 'O2 Storage'";
+	name = "O2 Storage"
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/storage)
+"xl" = (
+/obj/machinery/atmospherics/pipe/simple,
+/obj/securearea{
+	desc = "A warning sign which reads 'N2 Storage'";
+	name = "N2 Storage"
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/storage)
+"xm" = (
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 0;
+	icon_state = "in";
+	internal_pressure_bound = 4000;
+	pressure_checks = 2;
+	pump_direction = 0
 	},
 /turf/simulated/floor/plating{
 	name = "Mixed Air Storage;
@@ -7977,11 +7925,14 @@
 	oxygen = 1890
 	},
 /area/station/storage)
-"xl" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "C2";
-	name = "Air Sensor"
+"xn" = (
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 0;
+	icon_state = "in";
+	internal_pressure_bound = 4000;
+	pressure_checks = 2;
+	pump_direction = 0
 	},
 /turf/simulated/floor/plating{
 	carbon_dioxide = 2500;
@@ -7990,49 +7941,13 @@
 	oxygen = 0
 	},
 /area/station/storage)
-"xm" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "C3";
-	name = "Air Sensor"
-	},
-/turf/simulated/floor/plating{
-	name = "Oxygen Storage";
-	nitrogen = 0;
-	oxygen = 9000
-	},
-/area/station/storage)
-"xn" = (
-/obj/machinery/air_sensor{
-	frequency = 1441;
-	id_tag = "C4";
-	name = "Air Sensor"
-	},
-/turf/simulated/floor/plating{
-	name = "Nitrogen Storage";
-	nitrogen = 9000;
-	oxygen = 0
-	},
-/area/station/storage)
-"xo" = (
-/obj/grille/steel,
-/obj/cable,
-/obj/cable{
-	icon_state = "0-2"
-	},
-/turf/simulated/wall/auto/supernorn,
-/area/station/turret_protected/ai)
 "xp" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/turret_protected/ai)
-"xq" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/turret_protected/ai)
 "xr" = (
-/obj/machinery/turret,
+/obj/machinery/turret{
+	dir = 6
+	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai_upload)
 "xs" = (
@@ -8099,9 +8014,6 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
 "xD" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
-	},
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/machinery/light/incandescent/warm,
 /turf/simulated/floor,
@@ -8225,13 +8137,24 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "xW" = (
-/obj/machinery/camera{
-	c_tag = "Atomospherics Gas Processing East";
-	dir = 4
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 0;
+	icon_state = "in";
+	internal_pressure_bound = 4000;
+	pressure_checks = 2;
+	pump_direction = 0
 	},
-/turf/space,
-/area/space)
+/turf/simulated/floor/plating{
+	name = "Oxygen Storage";
+	nitrogen = 0;
+	oxygen = 9000
+	},
+/area/station/storage)
 "xX" = (
+/obj/cable/blue{
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "xY" = (
@@ -8471,58 +8394,27 @@
 	},
 /turf/simulated/floor,
 /area/station/bridge)
-"yK" = (
-/obj/cable{
+"yL" = (
+/obj/cable/blue{
+	icon_state = "1-2"
+	},
+/obj/cable/blue{
+	icon_state = "1-10"
+	},
+/obj/cable/blue{
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
-"yL" = (
-/obj/machinery/turret,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
-"yM" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
 "yN" = (
-/obj/rack,
-/obj/item/aiModule/oneHuman,
-/obj/item/aiModule/protectStation,
-/obj/item/aiModule/prototypeEngineOffline,
-/obj/item/aiModule/quarantine,
-/obj/item/aiModule/reset,
-/obj/item/aiModule/teleporterOffline,
-/obj/item/aiModule/freeform,
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "0-8"
 	},
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/autoname_south,
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
-"yO" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/station/turret_protected/ai)
-"yP" = (
-/obj/machinery/turret,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/circuit,
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
 /area/station/turret_protected/ai)
 "yQ" = (
 /turf/simulated/floor/circuit,
@@ -8536,7 +8428,7 @@
 /area/station/turret_protected/ai_upload)
 "yS" = (
 /obj/machinery/turretid{
-	pixel_y = 31;
+	pixel_y = 24;
 	req_access_txt = "19"
 	},
 /obj/machinery/light/small/warm{
@@ -8825,6 +8717,9 @@
 	icon_state = "x3";
 	name = "blobstart"
 	},
+/obj/cable{
+	icon_state = "1-4"
+	},
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
 "zK" = (
@@ -9036,88 +8931,94 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "Ar" = (
-/obj/grille/steel,
-/obj/cable,
-/obj/cable{
+/obj/cable/blue,
+/obj/cable/blue{
 	icon_state = "0-2"
 	},
-/obj/cable{
-	icon_state = "0-4"
-	},
+/obj/grille/steel,
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "As" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 1;
+	external_pressure_bound = 0;
+	icon_state = "in";
+	internal_pressure_bound = 4000;
+	pressure_checks = 2;
+	pump_direction = 0
 	},
-/turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/turret_protected/ai)
+/turf/simulated/floor/plating{
+	name = "Nitrogen Storage";
+	nitrogen = 9000;
+	oxygen = 0
+	},
+/area/station/storage)
 "At" = (
-/obj/cable{
+/obj/landmark{
+	icon_state = "x3";
+	name = "blobstart"
+	},
+/turf/space,
+/area/space)
+"Au" = (
+/obj/cable/blue{
 	icon_state = "1-2"
 	},
-/obj/cable{
-	icon_state = "2-8"
+/obj/cable/blue{
+	icon_state = "2-9"
 	},
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
-"Au" = (
-/obj/machinery/power/terminal,
-/obj/cable{
-	icon_state = "0-4"
+/obj/cable/blue{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Av" = (
-/obj/cable{
-	icon_state = "2-8"
+/obj/cable/blue{
+	icon_state = "0-4"
 	},
-/obj/item/device/radio/intercom{
-	broadcasting = 0;
-	desc = "Address with \[1]";
-	frequency = 1457;
-	name = "Station Intercom (Radio) #1";
-	number = 1
+/obj/cable/blue{
+	icon_state = "0-8"
 	},
-/turf/simulated/floor/circuit,
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
 /area/station/turret_protected/ai)
 "Aw" = (
-/obj/item/device/radio/intercom{
-	broadcasting = 1;
-	desc = "Address with \[2]";
-	name = "Station Intercom (Radio) #2";
-	number = 2
+/obj/cable/blue{
+	icon_state = "0-8"
 	},
-/obj/landmark/start{
-	invisibility = 1;
-	name = "AI"
+/obj/cable/blue{
+	icon_state = "0-4"
 	},
-/turf/simulated/floor,
-/area/station/turret_protected/ai)
-"Ax" = (
-/obj/item/device/radio/intercom{
-	desc = "Address with #3";
-	frequency = 1449;
-	name = "Station Intercom (Radio) #3";
-	number = 3
-	},
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
-"Ay" = (
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/cable{
-	icon_state = "2-4"
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/turret_protected/ai)
+"Ax" = (
+/obj/cable/blue,
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/turret_protected/ai)
+"Ay" = (
+/obj/cable/blue{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Az" = (
-/obj/cable{
-	icon_state = "4-8"
+/obj/cable/blue{
+	icon_state = "0-4"
 	},
-/obj/machinery/turret,
-/turf/simulated/floor/circuit,
+/obj/cable/blue{
+	icon_state = "0-2"
+	},
+/obj/grille/steel,
+/obj/securearea,
+/turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "AA" = (
 /obj/cable{
@@ -9375,44 +9276,41 @@
 /turf/space,
 /area/shuttle/arrival/station)
 "Bi" = (
-/obj/machinery/power/smes{
-	charge = 5e+006;
-	chargelevel = 25000;
-	n_tag = "AI";
-	output = 20000
-	},
-/obj/cable{
-	icon_state = "0-4"
+/obj/cable/blue{
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Bj" = (
-/obj/cable{
-	icon_state = "2-8"
+/obj/cable/blue{
+	icon_state = "6-8"
 	},
-/obj/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor,
-/area/station/turret_protected/ai)
-"Bk" = (
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "4-8"
 	},
-/obj/machinery/turretid,
-/turf/simulated/wall/auto/reinforced/supernorn,
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
+"Bk" = (
+/obj/cable/blue{
+	icon_state = "4-8"
+	},
+/obj/cable/blue{
+	icon_state = "6-8"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Bl" = (
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Bm" = (
-/obj/machinery/computer/aiupload,
-/obj/cable{
-	icon_state = "0-2"
-	},
+/obj/cable,
+/obj/machinery/power/terminal,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Bo" = (
@@ -9696,39 +9594,32 @@
 /turf/simulated/floor/shuttle,
 /area/shuttle/arrival/station)
 "Ca" = (
-/obj/cable{
-	icon_state = "1-4"
+/obj/machinery/computer/aiupload{
+	dir = 4
 	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Cb" = (
 /obj/cable{
-	icon_state = "1-2"
-	},
-/obj/cable{
-	icon_state = "1-4"
-	},
-/obj/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/circuit,
-/area/station/turret_protected/ai)
-"Cd" = (
-/obj/machinery/turret,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/cable{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Ce" = (
-/obj/machinery/power/monitor,
-/obj/cable{
+/obj/machinery/power/smes{
+	charge = 5e+006;
+	chargelevel = 25000;
+	n_tag = "AI";
+	output = 20000
+	},
+/obj/cable/blue{
 	icon_state = "0-8"
 	},
-/obj/cable,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Cf" = (
@@ -9784,6 +9675,15 @@
 /obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"Cm" = (
+/obj/cable/blue{
+	icon_state = "5-8"
+	},
+/obj/cable/blue{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Cn" = (
 /obj/machinery/atmospherics/pipe/simple,
 /obj/machinery/atmospherics/pipe/simple/insulated{
@@ -10233,23 +10133,26 @@
 /turf/simulated/shuttle/wall,
 /area/shuttle/arrival/station)
 "DD" = (
-/obj/grille/steel,
-/obj/securearea,
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "0-4"
 	},
-/obj/cable,
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/grille/steel,
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "DE" = (
-/obj/grille/steel,
-/obj/cable,
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/cable{
+/obj/cable/blue{
 	icon_state = "0-4"
 	},
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/cable/blue{
+	icon_state = "0-2"
+	},
+/obj/grille/steel,
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "DF" = (
@@ -10820,6 +10723,16 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
+"Fh" = (
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/cable/blue{
+	icon_state = "0-4"
+	},
+/obj/grille/steel,
+/turf/simulated/wall/auto/supernorn,
+/area/station/turret_protected/ai)
 "Fi" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
@@ -11195,6 +11108,18 @@
 	},
 /turf/simulated/floor/carpet/grime,
 /area/station/security/detectives_office)
+"Gq" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "C3";
+	name = "Air Sensor"
+	},
+/turf/simulated/floor/plating{
+	name = "Oxygen Storage";
+	nitrogen = 0;
+	oxygen = 9000
+	},
+/area/station/storage)
 "Gr" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -11357,6 +11282,12 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
+"GV" = (
+/obj/cable/blue{
+	icon_state = "4-9"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "GY" = (
 /obj/lattice{
 	dir = 6;
@@ -13496,14 +13427,13 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
 "Nb" = (
-/obj/rack,
-/obj/item/device/analyzer/atmospheric,
-/obj/item/clothing/under/misc/atmospheric_technician,
-/obj/item/clothing/shoes/black,
-/obj/item/clothing/mask/gas,
-/obj/machinery/light/incandescent/warm,
-/turf/simulated/floor,
-/area/station/storage)
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/grille/steel,
+/obj/securearea,
+/turf/simulated/wall/auto/supernorn,
+/area/station/turret_protected/ai)
 "Nd" = (
 /obj/landmark{
 	icon_state = "x3";
@@ -13985,6 +13915,17 @@
 /turf/simulated/floor,
 /area/station/janitor/supply,
 /area/station/janitor/supply)
+"Oo" = (
+/obj/cable/blue,
+/obj/cable/blue{
+	icon_state = "0-2"
+	},
+/obj/cable/blue{
+	icon_state = "0-4"
+	},
+/obj/grille/steel,
+/turf/simulated/wall/auto/supernorn,
+/area/station/turret_protected/ai)
 "Op" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -14268,6 +14209,12 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/quartersA)
+"Ps" = (
+/obj/machinery/turret{
+	dir = 5
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai_upload)
 "Pt" = (
 /turf/simulated/floor/orange/side,
 /area/station/hallway/primary/east)
@@ -14397,6 +14344,18 @@
 /obj/machinery/door/airlock,
 /turf/simulated/floor,
 /area/station/crew_quarters/quartersA)
+"Qg" = (
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/turret{
+	dir = 8
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Qh" = (
 /obj/machinery/communications_dish{
 	tag = "MAIN_DISH_SS13"
@@ -14480,6 +14439,14 @@
 "QF" = (
 /turf/simulated/floor/black,
 /area/listeningpost)
+"QH" = (
+/obj/cable/blue,
+/obj/cable/blue{
+	icon_state = "0-2"
+	},
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/turret_protected/ai)
 "QJ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -14640,6 +14607,19 @@
 "Rw" = (
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/south)
+"Rx" = (
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "C2";
+	name = "Air Sensor"
+	},
+/turf/simulated/floor/plating{
+	carbon_dioxide = 2500;
+	name = "CO2 Storage";
+	nitrogen = 0;
+	oxygen = 0
+	},
+/area/station/storage)
 "Rz" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -14669,10 +14649,13 @@
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
-"RH" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+"RG" = (
+/obj/cable{
+	icon_state = "2-8"
 	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
+"RH" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light/incandescent/warm,
 /turf/simulated/floor,
@@ -14761,9 +14744,16 @@
 	},
 /area/listeningpost)
 "Sc" = (
-/obj/machinery/atmospherics/pipe/manifold,
-/obj/machinery/light/incandescent/warm,
-/turf/simulated/floor,
+/obj/machinery/air_sensor{
+	frequency = 1441;
+	id_tag = "C1";
+	name = "Air Sensor"
+	},
+/turf/simulated/floor/plating{
+	name = "Mixed Air Storage;
+	nitrogen = 7110;
+	oxygen = 1890
+	},
 /area/station/storage)
 "Sd" = (
 /obj/machinery/door/firedoor/border_only{
@@ -14835,6 +14825,21 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"Su" = (
+/obj/landmark/start{
+	invisibility = 1;
+	name = "AI"
+	},
+/obj/machinery/turretid{
+	pixel_x = -24;
+	req_access_txt = "19"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/data_terminal,
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Sw" = (
 /obj/storage/closet/syndicate/personal,
 /turf/simulated/floor/bot,
@@ -14851,6 +14856,14 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"SA" = (
+/obj/machinery/power/apc/autoname_east,
+/obj/cable/blue,
+/obj/cable/blue{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "SB" = (
 /obj/machinery/atmospherics/pipe/manifold,
 /turf/simulated/floor/plating,
@@ -14917,8 +14930,8 @@
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "SS" = (
-/obj/machinery/light/incandescent/warm{
-	dir = 1
+/obj/cable/blue{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
@@ -14946,9 +14959,9 @@
 /area/station/maintenance/south)
 "Tb" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 4
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/window/north,
 /turf/simulated/floor,
 /area/station/storage)
 "Tc" = (
@@ -15157,6 +15170,17 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/south)
+"Uc" = (
+/obj/cable/blue{
+	icon_state = "0-8"
+	},
+/obj/cable/blue{
+	icon_state = "0-4"
+	},
+/obj/cable/blue,
+/obj/grille/steel,
+/turf/simulated/wall/auto/supernorn,
+/area/station/turret_protected/ai)
 "Ud" = (
 /obj/stool/bed,
 /turf/simulated/floor,
@@ -15326,8 +15350,10 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/storage)
 "Ve" = (
-/obj/machinery/light/incandescent/warm,
-/turf/simulated/floor/circuit,
+/obj/cable/blue{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/turret_protected/ai)
 "Vh" = (
 /obj/table/wood/auto,
@@ -15387,6 +15413,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
+"Vr" = (
+/obj/machinery/light/incandescent/warm{
+	dir = 1
+	},
+/obj/cable/blue{
+	icon_state = "1-10"
+	},
+/obj/machinery/turret,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Vt" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/security/brig)
@@ -15406,6 +15445,13 @@
 	dir = 4
 	},
 /area/station/hallway/primary/south)
+"VD" = (
+/obj/machinery/camera{
+	c_tag = "Atomospherics Gas Processing East";
+	dir = 4
+	},
+/turf/space,
+/area/space)
 "VE" = (
 /obj/table/wood/auto,
 /obj/machinery/microwave,
@@ -15556,6 +15602,12 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/main)
+"Wm" = (
+/obj/cable/blue{
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/turret_protected/ai)
 "Wn" = (
 /obj/table/wood/auto,
 /obj/item/storage/toolbox/mechanical,
@@ -15618,12 +15670,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "WF" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 4
-	},
-/obj/machinery/light/incandescent/warm{
-	dir = 1
-	},
+/obj/window/south,
 /turf/simulated/floor,
 /area/station/storage)
 "WG" = (
@@ -15761,6 +15808,19 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/south)
+"Xs" = (
+/obj/machinery/power/monitor{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/data_terminal,
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Xt" = (
 /obj/cable{
 	icon_state = "2-4"
@@ -15790,6 +15850,10 @@
 /area/station/hallway/primary/east)
 "XG" = (
 /obj/machinery/computer/aiupload,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/data_terminal,
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
 "XH" = (
@@ -15887,6 +15951,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
+"Yn" = (
+/obj/machinery/light/incandescent/warm,
+/obj/cable/blue{
+	icon_state = "2-9"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/turret{
+	dir = 1
+	},
+/turf/simulated/floor/circuit,
+/area/station/turret_protected/ai)
 "Yo" = (
 /obj/machinery/door/window{
 	dir = 4
@@ -20025,23 +20102,23 @@ Pb
 Pb
 Pb
 Pb
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
+Pc
 Pb
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
-Pc
 Pb
 Pb
 Pb
@@ -20227,23 +20304,23 @@ Pb
 Pb
 Pb
 Pb
-Pb
 Pc
+pi
 ns
-nN
 lM
-pb
+ph
 Uo
-nx
-pc
+pf
+tj
+uG
 na
-tY
 lT
+ws
 vm
-wd
 we
 we
 Pc
+Pb
 Pb
 Pb
 Pb
@@ -20428,24 +20505,24 @@ Pb
 Pb
 Pb
 Pb
-Pb
 Rf
 Pc
+nc
 WF
-nb
 os
 os
 os
 nS
+ud
 sq
-tg
 lM
-bf
+wo
 Pc
 we
-xk
+Sc
 we
 Pc
+Pb
 Pb
 Pb
 Pb
@@ -20630,24 +20707,24 @@ Pb
 Pb
 Pb
 Pb
-Pb
-my
+bf
 Vd
-nu
+nt
 lM
-po
+oA
+tj
 pc
-qg
-pf
-nT
-na
-tZ
-lT
-vm
+Tb
+oz
+uG
 wf
+lT
+ws
+xm
 we
 we
 Pc
+Pb
 Pb
 Pb
 Pb
@@ -20834,13 +20911,12 @@ Pb
 Pc
 Pc
 Pc
-Pc
-nv
+nN
+ub
 nO
 ou
 pd
-qh
-pf
+Tb
 nS
 lQ
 lM
@@ -20850,6 +20926,7 @@ Pc
 Pc
 Pc
 Pc
+Pb
 Pb
 Pb
 Bg
@@ -21035,23 +21112,23 @@ Pb
 Pb
 Pc
 lK
-lM
+WF
 nb
-nw
-nx
+pf
 ov
+pk
 pe
 qi
 rf
 sr
 ti
-ua
 lT
+wt
 vn
-wg
 wh
 wh
 Pc
+Pb
 Pb
 Pb
 DC
@@ -21237,23 +21314,23 @@ Pb
 Pb
 Pc
 lL
-lM
-nb
+WF
+pf
 nx
 nP
 Tb
 pf
-nx
+tY
 rg
-nt
 lQ
 lM
 lM
 Pc
 wh
-xl
+Rx
 wh
 Pc
+Pb
 Pb
 Pb
 DC
@@ -21439,23 +21516,23 @@ Pb
 Pb
 Pc
 lM
-lM
-nb
+WF
 ny
 lT
-nQ
-pf
+oy
+Tb
 nS
 nS
 nS
 lQ
+wg
 ub
-nO
-vn
-wi
+wt
+xn
 wh
 wh
 Pc
+Pb
 Pb
 Pb
 DC
@@ -21641,23 +21718,23 @@ Pb
 Pb
 Pc
 Uj
-lM
-nb
+WF
 lM
 lM
 nS
-pg
+pl
 nS
 nS
 nS
 lQ
 lM
-bf
+wo
 Pc
 Pc
 Pc
 Pc
 Pc
+Pb
 Pb
 Pb
 fP
@@ -21843,23 +21920,23 @@ Pb
 Pb
 Pc
 lM
+WF
 lM
-nb
-lM
-nx
+pf
 ov
-ph
+pm
 ov
 ov
 ov
-ti
-uc
+sr
+wi
 lT
+xk
 vo
-wj
 wk
 wk
 Pc
+Pb
 Pb
 Pb
 fP
@@ -22045,12 +22122,11 @@ Pb
 Pb
 Pc
 lM
-lM
-nb
+WF
+pf
 nx
-nP
-ow
-pi
+ql
+ox
 nR
 nR
 nS
@@ -22059,9 +22135,10 @@ lM
 lM
 Pc
 wk
-xm
+Gq
 wk
 Pc
+Pb
 Pb
 Pb
 fP
@@ -22247,23 +22324,23 @@ Pb
 Pb
 Pc
 lM
-lM
-nb
+WF
 ny
 lT
-nQ
-pj
+oy
+ss
 nS
-nT
-qn
-ti
-ud
+oz
+pq
+sr
+wj
 lT
-vo
-wl
+xk
+xW
 wk
 wk
 Pc
+Pb
 Pb
 Pb
 fP
@@ -22449,14 +22526,13 @@ iL
 Sj
 Pc
 lM
-lM
-nb
+WF
 lM
 lM
 nS
-pk
+pr
 nS
-rh
+tZ
 nS
 lQ
 lM
@@ -22466,6 +22542,7 @@ Pc
 Pc
 Pc
 Pc
+Pb
 Pb
 Pb
 DC
@@ -22651,23 +22728,23 @@ gz
 gz
 Pc
 lM
+WF
 lM
-nb
-lM
-nx
+pf
 ov
-pl
+qm
 ov
 ov
 ov
-ti
-ue
+sr
+wl
 lT
+xl
 vp
-wm
 wn
 wn
 Pc
+Pb
 Pb
 Pb
 DC
@@ -22853,23 +22930,23 @@ gz
 kR
 Pc
 lM
-lM
-nb
+WF
+pf
 nx
 nP
-Tb
-pm
+qo
 nS
 nS
 nS
 lQ
 lM
-bf
+wo
 Pc
 wn
-xn
+mu
 wn
 Pc
+Pb
 Pb
 Pb
 DC
@@ -23055,23 +23132,23 @@ gz
 gz
 Pc
 Uj
-lM
-nb
+WF
 ny
-nQ
+oy
 lM
-pn
-qj
+rh
+tk
 ov
-qn
-ti
-uf
+pq
+sr
+wm
 lT
-vp
-wo
+xl
+As
 wn
 wn
 Pc
+Pb
 Pb
 Pb
 DC
@@ -23257,23 +23334,23 @@ jN
 jN
 Pc
 lM
-lM
-nb
+WF
 lM
 nR
 lM
-po
-nO
+oA
+ub
 ov
-Sc
+ue
 ll
 ll
-tg
+sq
 Pc
 Pc
 Pc
 Pc
 Pc
+Pb
 Pb
 Pb
 Bh
@@ -23459,23 +23536,23 @@ gz
 gz
 Pc
 lN
-lU
-nc
+my
 mC
 nS
 lM
+ox
 pi
-ns
 nS
+uf
 ss
-pj
 lM
 lM
 Pc
-wp
+At
 va
-xW
+VD
 va
+Pb
 Pb
 Pb
 Pb
@@ -23662,18 +23739,18 @@ gz
 Pc
 lO
 mz
-nb
 mE
+oz
 nT
 ox
-pi
 nR
 nS
-nT
+oz
+uH
 tj
-pc
-uG
+wp
 Vd
+ug
 ug
 ug
 ug
@@ -23867,26 +23944,26 @@ mA
 Pc
 nz
 nU
-oy
 ll
-nT
-ow
+ny
+nt
 nS
+wd
 tk
 qj
-uH
 Pc
-wq
-xo
-xo
-xo
-xo
+Az
 Ar
-xo
-xo
-xo
-xo
-DD
+Ar
+Ar
+Ar
+Oo
+Ar
+Ar
+Ar
+Ar
+dt
+Pb
 Pb
 EB
 Pb
@@ -24069,26 +24146,26 @@ lQ
 Pc
 nA
 nS
-lM
+ll
 ll
 qk
-oy
-st
+nU
 Pc
 Pc
 Pc
 Pc
-wr
+DD
 xp
 xp
 xp
 xp
-As
+Wm
 xp
 xp
 xp
 xp
-wr
+Fh
+Pb
 Pb
 EB
 Pb
@@ -24271,26 +24348,26 @@ lM
 nd
 mE
 nS
-lM
 ll
+st
 ql
-lM
-su
+nS
+sv
 Pc
 Pb
 Pb
-Pb
-wr
+DD
 xp
-xX
-yK
+Xs
 xY
-At
+xY
+sU
+xY
 xY
 Ca
-xX
 xp
-wr
+Fh
+Pb
 Pb
 EB
 Pb
@@ -24473,26 +24550,26 @@ mB
 nd
 mE
 nS
-lM
 ll
-ql
+sz
 lM
-su
+nS
+sv
 Pc
 Pb
 Pb
-Pb
-wr
+DD
 xp
+Cb
 xX
 yL
-xX
+SA
 Au
 Bi
-yL
-xX
+Cb
 xp
-wr
+Fh
+Pb
 Pb
 EB
 Pb
@@ -24674,27 +24751,27 @@ ll
 ll
 Pc
 JL
-nS
-Nb
+pb
 ll
-ql
+sz
 lM
-su
+nS
+sv
 Pc
 Pb
 Pb
-Pb
-ws
-xq
-xY
-yM
+DD
+xp
+Cb
+Cm
+Av
 xp
 Av
 Bj
 Cb
-xY
-xq
-DE
+xp
+Fh
+Pb
 Pb
 Ye
 ZP
@@ -24876,27 +24953,27 @@ lR
 Uo
 lM
 mE
-nS
-oz
+pg
 ll
-ql
+sz
 lM
+nS
 RH
 Pc
 Pb
 Pb
-Pb
-wr
-xp
+DE
+Ve
+Vr
 SS
 yN
-xp
+Su
 Aw
 Bk
-bD
+Yn
 Ve
-xp
-wr
+Uc
+Pb
 Pb
 Ye
 EY
@@ -25078,27 +25155,27 @@ lS
 lM
 lS
 mE
-nS
-oz
+pg
 ll
-ql
+sz
 lM
-su
+nS
+sv
 Pc
 Pb
 Pb
-Pb
-wr
+DD
 xp
-xX
+Cb
+SS
 bD
-xp
+QH
 Ax
-yO
-bD
-xX
+SS
+GV
 xp
-wr
+Fh
+Pb
 Pb
 Ye
 Ic
@@ -25281,26 +25358,26 @@ lT
 lT
 nB
 nu
-oA
 ll
-qm
-ri
+sz
+lM
+nS
 sv
 Pc
 Pb
 Pb
-Pb
-wt
+Nb
 xp
-xX
-yP
-yK
+Cb
+ut
+Ay
+Ay
 Ay
 Bl
-Cd
-xX
+SS
 xp
-wt
+Nb
+Pb
 Pb
 Ye
 ZP
@@ -25483,26 +25560,26 @@ lM
 lS
 nC
 nV
-lU
+ri
 pp
-nV
 mC
 nS
+sv
 Pc
 Pb
-Pb
 uL
-Vu
 xp
-xX
-xX
-bD
-Az
+xp
+RG
+xY
+xY
+Qg
+xY
 Bm
 Ce
-xX
 xp
-Vu
+xp
+uL
 Pb
 Ye
 Ic
@@ -25685,11 +25762,11 @@ mC
 ne
 nD
 nW
-lM
+WF
 pj
-nS
 mE
-sw
+nS
+Pc
 Pc
 Pb
 uI
@@ -25890,7 +25967,7 @@ nW
 oB
 pq
 qn
-nB
+nt
 sx
 Pc
 Pb
@@ -26089,10 +26166,10 @@ mE
 ng
 lM
 ny
-nO
+rj
 pq
 qn
-nB
+pq
 sy
 Vd
 ug
@@ -26105,7 +26182,7 @@ yQ
 zK
 yQ
 yQ
-xr
+Ps
 yQ
 Vu
 uJ
@@ -26291,19 +26368,19 @@ mF
 lU
 lU
 lU
-lU
-pr
+rp
 nV
-rj
-sw
+ua
+nS
+sx
 Pc
 Pb
 uL
 Vu
 XG
-wu
-wu
-wu
+uZ
+uZ
+uZ
 zJ
 wu
 wu
@@ -26494,10 +26571,10 @@ Rk
 lM
 nX
 oC
-ps
-nS
+pu
 mE
-sw
+nS
+sx
 Pc
 Pb
 uL
@@ -26697,8 +26774,8 @@ Pc
 Pc
 Pc
 pt
-nS
 mE
+nS
 xD
 Pc
 Pb
@@ -26899,9 +26976,9 @@ gz
 gz
 Pc
 pu
-nS
 mE
 nS
+sx
 Pc
 Pb
 uL
@@ -27100,10 +27177,10 @@ gz
 gz
 kR
 Pc
-pu
-qo
+tg
+mE
 rk
-nt
+lM
 Pc
 Pb
 uL
@@ -27302,10 +27379,10 @@ gz
 gz
 gz
 Pc
-Pc
+lo
 qp
 rl
-qp
+Pc
 Pc
 Pb
 uL
@@ -27507,7 +27584,7 @@ pv
 pv
 qq
 rm
-sz
+mX
 mX
 Pb
 Pb
@@ -27707,7 +27784,7 @@ gz
 gz
 mX
 pw
-qr
+uc
 rn
 sA
 mX
@@ -28112,7 +28189,7 @@ gz
 oE
 px
 qr
-rp
+ro
 sC
 mX
 uh
@@ -28314,7 +28391,7 @@ kR
 oD
 py
 qr
-rp
+ro
 sD
 mX
 Vy
