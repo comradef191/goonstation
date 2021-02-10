@@ -2778,7 +2778,7 @@
 /turf/simulated/floor/black,
 /area/listeningpost)
 "iY" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/west,
 /obj/window/reinforced/south,
@@ -3803,7 +3803,7 @@
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/secure)
 "mc" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/west,
 /obj/window/reinforced/south,
@@ -3826,7 +3826,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "me" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/east,
 /obj/window/reinforced/south,
@@ -3836,7 +3836,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
 "mg" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable{
 	icon_state = "0-4"
 	},
@@ -3878,7 +3878,7 @@
 /turf/simulated/floor,
 /area/station/medical/medbay)
 "ml" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable{
 	icon_state = "0-4"
 	},
@@ -3891,7 +3891,7 @@
 /turf/simulated/floor/plating,
 /area/station/medical/medbay)
 "mm" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable{
 	icon_state = "0-4"
 	},
@@ -6868,7 +6868,7 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "va" = (
-/obj/grille,
+/obj/grille/steel,
 /turf/space,
 /area/space)
 "vb" = (
@@ -7363,7 +7363,7 @@
 /turf/space,
 /area/space)
 "wq" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/securearea,
 /obj/cable{
 	icon_state = "0-4"
@@ -7374,7 +7374,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "wr" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable{
 	icon_state = "0-8"
 	},
@@ -7384,7 +7384,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "ws" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable{
 	icon_state = "0-2"
 	},
@@ -7397,7 +7397,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "wt" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/securearea,
 /obj/cable{
 	icon_state = "0-8"
@@ -7538,6 +7538,13 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/engineering)
+"wR" = (
+/obj/machinery/camera{
+	c_tag = "Escape Shuttle Hallway Northwest";
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/exit)
 "wS" = (
 /obj/machinery/atmospherics/pipe/simple/junction{
 	dir = 4
@@ -7752,7 +7759,7 @@
 	},
 /area/station/storage)
 "xo" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable,
 /obj/cable{
 	icon_state = "0-2"
@@ -8271,7 +8278,7 @@
 /turf/simulated/floor,
 /area/station/turret_protected/ai_upload)
 "yT" = (
-/obj/grille,
+/obj/grille/steel,
 /turf/simulated/floor/airless/plating,
 /area/space)
 "yV" = (
@@ -8758,7 +8765,7 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "Ar" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable,
 /obj/cable{
 	icon_state = "0-2"
@@ -9421,6 +9428,10 @@
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
+"Cc" = (
+/obj/item/screwdriver,
+/turf/simulated/floor,
+/area/station/hallway/secondary/exit)
 "Cd" = (
 /obj/machinery/turret,
 /obj/cable{
@@ -9937,7 +9948,7 @@
 /turf/simulated/shuttle/wall,
 /area/shuttle/arrival/station)
 "DD" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/securearea,
 /obj/cable{
 	icon_state = "0-4"
@@ -9946,7 +9957,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/turret_protected/ai)
 "DE" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/cable,
 /obj/cable{
 	icon_state = "0-8"
@@ -13468,13 +13479,6 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
-"Oa" = (
-/obj/machinery/camera{
-	c_tag = "Escape Shuttle Hallway Northwest";
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/secondary/exit)
 "Ob" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -13710,10 +13714,6 @@
 "OL" = (
 /turf/simulated/floor,
 /area/station/science/testchamber)
-"OM" = (
-/obj/item/screwdriver,
-/turf/simulated/floor,
-/area/station/hallway/secondary/exit)
 "OO" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -14225,7 +14225,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/northeast)
 "Sr" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/south,
 /obj/cable{
@@ -14680,7 +14680,7 @@
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "VI" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/south,
 /obj/cable{
@@ -14853,7 +14853,7 @@
 	},
 /area/listeningpost)
 "WV" = (
-/obj/grille,
+/obj/grille/steel,
 /obj/window/reinforced/north,
 /obj/window/reinforced/east,
 /obj/window/reinforced/south,
@@ -20322,8 +20322,8 @@ cr
 fV
 gz
 fV
-Oa
-OM
+wR
+Cc
 iL
 Pb
 Pb
