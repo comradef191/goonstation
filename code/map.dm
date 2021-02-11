@@ -140,9 +140,9 @@ var/global/list/mapNames = list(
 	rwalls = /turf/simulated/wall/auto/reinforced/supernorn
 	auto_walls = 1
 
-	escape_centcom = /area/shuttle/escape/centcom/donut3
-	escape_transit = /area/shuttle/escape/transit/donut3
-	escape_station = /area/shuttle/escape/station/donut3
+	escape_centcom = /area/shuttle/escape/centcom/donut2
+	escape_transit = /area/shuttle/escape/transit/donut2
+	escape_station = /area/shuttle/escape/station/donut2
 	escape_def = SHUTTLE_WEST
 	escape_dir = WEST
 	auto_windows = 1
