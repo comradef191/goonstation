@@ -10301,14 +10301,12 @@
 /area/station/security/brig)
 "Ep" = (
 /obj/storage/secure/closet/brig{
-	id = 1;
 	name = "Brig Locker 1"
 	},
 /turf/simulated/floor,
 /area/station/security/brig)
 "Eq" = (
 /obj/storage/secure/closet/brig{
-	id = 2;
 	name = "Brig Locker 2"
 	},
 /turf/simulated/floor,
@@ -12267,21 +12265,18 @@
 /area/station/security/brig)
 "JP" = (
 /obj/storage/secure/closet/brig{
-	id = 3;
 	name = "Brig Locker 3"
 	},
 /turf/simulated/floor,
 /area/station/security/brig)
 "JQ" = (
 /obj/storage/secure/closet/brig{
-	id = 4;
 	name = "Brig Locker 4"
 	},
 /turf/simulated/floor,
 /area/station/security/brig)
 "JR" = (
 /obj/storage/secure/closet/brig{
-	id = 5;
 	name = "Brig Locker 5"
 	},
 /turf/simulated/floor,
@@ -13782,7 +13777,6 @@
 /area/station/security/main)
 "On" = (
 /turf/space,
-/area/space,
 /area/space)
 "Oo" = (
 /obj/cable{
