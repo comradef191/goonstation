@@ -19,6 +19,9 @@
 #elif defined(MAP_OVERRIDE_COGMAP2)
 #include "cogmap2.dm"
 
+#elif defined(MAP_OVERRIDE_DONUT1)
+#include "donut1.dm"
+
 #elif defined(MAP_OVERRIDE_DONUT2)
 #include "donut2.dm"
 

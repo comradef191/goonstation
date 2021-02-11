@@ -90,6 +90,7 @@ o+`        `-` ``..-:yooos-..----------..`
 //#define MAP_OVERRIDE_CLARION			// Destiny/Alt RP
 //#define MAP_OVERRIDE_COGMAP			// Cogmap
 //#define MAP_OVERRIDE_COGMAP2			// Cogmap 2
+//#define MAP_OVERRIDE_DONUT1			// Donut 1 updated by f191, because i hate myself
 //#define MAP_OVERRIDE_DONUT2			// Updated Donut2
 //#define MAP_OVERRIDE_DONUT3			// Donut3 by Ryumi
 //#define MAP_OVERRIDE_MUSHROOM			// Updated Mushroom
