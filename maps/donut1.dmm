@@ -1801,6 +1801,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/solar/north)
+"fD" = (
+/obj/reagent_dispensers/watertank,
+/obj/machinery/light/incandescent/netural,
+/turf/simulated/floor,
+/area/station/storage/primary)
 "fE" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -5725,6 +5730,15 @@
 /obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/white/side,
 /area/station/hallway/secondary/exit)
+"rx" = (
+/obj/machinery/atmospherics/pipe/tank/oxygen{
+	dir = 8
+	},
+/obj/machinery/light/incandescent/netural{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "ry" = (
 /obj/firedoor_spawn,
 /turf/simulated/floor/white/side,
@@ -6458,6 +6472,9 @@
 /obj/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/light/incandescent/netural{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/station/engine/power)
 "tG" = (
@@ -6506,6 +6523,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 10
+	},
+/obj/machinery/light/incandescent/netural{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/engine/power)
@@ -7239,9 +7259,11 @@
 /turf/simulated/floor,
 /area/station/engine/power)
 "vM" = (
-/obj/machinery/light/small/floor/warm,
+/obj/machinery/light/incandescent/netural{
+	dir = 8
+	},
 /turf/simulated/floor,
-/area/station/engine/power)
+/area/station/storage/primary)
 "vN" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -7303,7 +7325,6 @@
 	icon_state = "x3";
 	name = "blobstart"
 	},
-/obj/machinery/light/small/floor/warm,
 /turf/simulated/floor,
 /area/station/engine/power)
 "vU" = (
@@ -8096,7 +8117,6 @@
 	pixel_y = -24
 	},
 /obj/storage/closet/emergency,
-/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage/primary)
 "ya" = (
@@ -50037,7 +50057,7 @@ lF
 iR
 mS
 nD
-oq
+qm
 pk
 nD
 pq
@@ -60015,7 +60035,7 @@ vD
 vD
 vD
 vD
-vD
+rx
 Ax
 Bz
 vH
@@ -66353,7 +66373,7 @@ rB
 sD
 tF
 uL
-vM
+uL
 uL
 uL
 tC
@@ -69674,7 +69694,7 @@ qY
 rH
 sH
 tP
-tR
+vM
 vX
 xf
 tR
@@ -70885,7 +70905,7 @@ tT
 tR
 vX
 xh
-yc
+fD
 za
 zM
 AQ
@@ -81165,7 +81185,7 @@ Fp
 xs
 GX
 rZ
-rZ
+vi
 rc
 rc
 Kn
