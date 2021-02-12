@@ -59,7 +59,7 @@
 /obj/landmark/spawner{
 	name = "monkeyspawn_normal"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/grass{
@@ -109,7 +109,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/chapel/sanctuary)
 "aD" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -141,7 +141,7 @@
 	},
 /area/station/chapel/office)
 "aL" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -393,7 +393,7 @@
 	id = "morguedefense";
 	pixel_y = 24
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/sanitary,
@@ -503,7 +503,7 @@
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "bW" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white,
@@ -540,7 +540,7 @@
 /obj/storage/secure/closet/animal{
 	anchored = 1
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/white,
@@ -640,7 +640,7 @@
 	},
 /area/station/chapel/sanctuary)
 "cm" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -726,7 +726,7 @@
 /area/station/chapel/sanctuary)
 "cz" = (
 /obj/storage/closet/coffin,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/specialroom/chapel,
 /area/station/chapel/office)
 "cA" = (
@@ -858,7 +858,7 @@
 /turf/space,
 /area/space)
 "cV" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/specialroom/chapel{
 	dir = 8
 	},
@@ -1007,7 +1007,7 @@
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "dw" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "dx" = (
@@ -1050,7 +1050,7 @@
 /area/station/medical/research)
 "dC" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "dD" = (
@@ -1075,7 +1075,7 @@
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "dH" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "dI" = (
@@ -1114,7 +1114,7 @@
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 8
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -1146,7 +1146,7 @@
 /area/station/chapel/sanctuary)
 "dT" = (
 /obj/stool,
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 4
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -1165,7 +1165,7 @@
 /area/station/chapel/sanctuary)
 "dW" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/specialroom/chapel,
 /area/station/chapel/sanctuary)
 "dX" = (
@@ -1430,7 +1430,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -1490,7 +1490,7 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -1558,7 +1558,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -1947,7 +1947,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/specialroom/chapel{
@@ -2078,7 +2078,7 @@
 /turf/simulated/floor/specialroom/chapel,
 /area/station/chapel/sanctuary)
 "gx" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -2135,7 +2135,7 @@
 /area/station/medical/medbay)
 "gH" = (
 /obj/storage/secure/closet/medical/anesthetic,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/white,
@@ -2196,7 +2196,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -2277,7 +2277,7 @@
 	icon_state = "1-2"
 	},
 /obj/item/storage/backpack,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -2290,7 +2290,7 @@
 /area/station/science/lab)
 "hh" = (
 /obj/storage/closet/biohazard,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -2319,7 +2319,7 @@
 /turf/simulated/floor,
 /area/station/science/storage)
 "hm" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -2364,7 +2364,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white,
@@ -2418,7 +2418,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/white,
@@ -2487,13 +2487,13 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
 "hL" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "hM" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -2729,7 +2729,7 @@
 /obj/item/medical/ointment,
 /obj/item/medical/ointment,
 /obj/item/medical/ointment,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/blue/side{
@@ -2966,14 +2966,14 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "jk" = (
 /obj/reagent_dispensers/fueltank,
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /turf/simulated/floor,
 /area/station/storage/auxillary)
 "jl" = (
@@ -3037,7 +3037,7 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "jv" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "jw" = (
@@ -3445,7 +3445,7 @@
 /area/station/science/lab)
 "kr" = (
 /obj/reagent_dispensers/fueltank,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/science/lab)
 "ks" = (
@@ -3457,7 +3457,7 @@
 /turf/simulated/floor,
 /area/station/science/lab)
 "ku" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -3476,7 +3476,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -3485,7 +3485,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -3543,7 +3543,7 @@
 /obj/item/storage/firstaid/old{
 	name = "stma_kit"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white,
@@ -3789,7 +3789,7 @@
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "lo" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "lp" = (
@@ -3885,7 +3885,7 @@
 	},
 /area/station/hallway/secondary/exit)
 "lD" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/purple/side{
@@ -3975,7 +3975,7 @@
 "lO" = (
 /obj/table,
 /obj/machinery/cell_charger,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -4159,7 +4159,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/blue/side{
@@ -4200,7 +4200,7 @@
 /area/station/medical/medbay)
 "mB" = (
 /obj/storage/closet/emergency,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -4230,7 +4230,7 @@
 /obj/machinery/camera{
 	c_tag = "Emergency Storage"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -4261,7 +4261,7 @@
 /turf/simulated/floor,
 /area/station/storage/autolathe)
 "mM" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /obj/reagent_dispensers/watertank,
@@ -4313,7 +4313,7 @@
 /turf/simulated/floor/yellow/side,
 /area/station/hallway/secondary/exit)
 "mU" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/yellow/side,
 /area/station/hallway/secondary/exit)
 "mV" = (
@@ -4418,7 +4418,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white,
@@ -4426,7 +4426,7 @@
 "nm" = (
 /obj/table,
 /obj/item/storage/firstaid/regular,
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 4
 	},
 /turf/simulated/floor/white,
@@ -4771,7 +4771,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "or" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -5040,7 +5040,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "pl" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -5075,7 +5075,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "pu" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/yellow/side{
@@ -5084,7 +5084,7 @@
 /area/station/hallway/secondary/exit)
 "pv" = (
 /obj/item/device/light/flashlight,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/purple/side{
@@ -5152,7 +5152,7 @@
 	},
 /area/station/hallway/primary/north)
 "pE" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/blue/side{
@@ -5206,7 +5206,7 @@
 	},
 /area/station/hallway/primary/north)
 "pL" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -5229,7 +5229,7 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "pQ" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -5241,7 +5241,7 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/east)
 "pS" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -5293,7 +5293,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -5344,7 +5344,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "qm" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -5542,7 +5542,7 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/north)
 "qR" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/hallway/primary/north)
 "qS" = (
@@ -5574,7 +5574,7 @@
 	name = "S Fire Alarm";
 	pixel_y = -24
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/orange/side,
 /area/station/hallway/primary/east)
 "qY" = (
@@ -5584,7 +5584,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/orange/side,
 /area/station/hallway/primary/east)
 "ra" = (
@@ -5632,7 +5632,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "ri" = (
@@ -5660,7 +5660,7 @@
 /obj/item/clothing/under/misc/atmospheric_technician,
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/mask/gas,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
@@ -5722,7 +5722,7 @@
 /turf/simulated/floor/white/side,
 /area/station/hallway/secondary/exit)
 "rw" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/white/side,
 /area/station/hallway/secondary/exit)
 "ry" = (
@@ -5735,7 +5735,7 @@
 	},
 /area/station/hallway/primary/west)
 "rA" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -6215,7 +6215,7 @@
 /area/station/maintenance/northeast)
 "sU" = (
 /obj/window/reinforced/east,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/maintenance/northeast)
 "sV" = (
@@ -6229,7 +6229,7 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "sX" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /obj/table/reinforced/bar/auto{
 	name = "table"
 	},
@@ -6420,7 +6420,7 @@
 	dir = 4
 	},
 /obj/window/south,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "tA" = (
@@ -6585,7 +6585,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/red/side{
@@ -6754,7 +6754,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white/side{
@@ -6855,7 +6855,7 @@
 /area/station/engine/engineering)
 "uG" = (
 /obj/machinery/atmospherics/pipe/tank/toxins,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -6973,7 +6973,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -7009,7 +7009,7 @@
 /area/station/crew_quarters/courtroom)
 "vc" = (
 /obj/storage/closet/law,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -7042,7 +7042,7 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "vi" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -7070,7 +7070,7 @@
 /area/station/storage)
 "vm" = (
 /obj/machinery/atmospherics/pipe/manifold,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "vn" = (
@@ -7470,7 +7470,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -7618,7 +7618,7 @@
 /area/station/storage)
 "wH" = (
 /obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "wI" = (
@@ -7632,7 +7632,7 @@
 /area/station/storage)
 "wL" = (
 /obj/machinery/portable_atmospherics/scrubber,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "wM" = (
@@ -7652,7 +7652,7 @@
 "wO" = (
 /obj/machinery/teleport/portal_ring,
 /obj/cable,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/purplewhite{
 	dir = 1
 	},
@@ -7812,7 +7812,7 @@
 /turf/simulated/floor,
 /area/station/storage/primary)
 "xi" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/red/side{
@@ -7854,7 +7854,7 @@
 /obj/landmark/start{
 	name = "Captain"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -7934,7 +7934,7 @@
 /turf/simulated/floor,
 /area/station/storage)
 "xC" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/white/side{
@@ -7944,7 +7944,7 @@
 "xD" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /obj/window/east,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -7987,7 +7987,7 @@
 /area/station/engine/engineering)
 "xJ" = (
 /obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -8096,7 +8096,7 @@
 	pixel_y = -24
 	},
 /obj/storage/closet/emergency,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage/primary)
 "ya" = (
@@ -8262,7 +8262,7 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "yx" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "yy" = (
@@ -8437,7 +8437,7 @@
 /obj/stool/chair{
 	dir = 4
 	},
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /turf/simulated/floor,
 /area/station/crew_quarters/courtroom)
 "zf" = (
@@ -8458,7 +8458,7 @@
 /turf/simulated/floor,
 /area/station/crew_quarters/courtroom)
 "zh" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/crew_quarters/courtroom)
 "zi" = (
@@ -8475,7 +8475,7 @@
 /turf/simulated/floor,
 /area/station/security/checkpoint/customs)
 "zk" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -8492,7 +8492,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/bridge)
 "zo" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -8632,7 +8632,7 @@
 /turf/space,
 /area/space)
 "zN" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/orange/side{
@@ -8662,7 +8662,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/security/brig)
 "zT" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/security/checkpoint/customs)
 "zU" = (
@@ -8679,7 +8679,7 @@
 /turf/simulated/floor,
 /area/station/bridge)
 "zW" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -8913,7 +8913,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/turret_protected/ai_upload)
 "Aw" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/hallway/primary/west)
 "Ax" = (
@@ -8983,7 +8983,7 @@
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/suit/fire/heavy,
 /obj/item/clothing/mask/gas,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -9008,7 +9008,7 @@
 	dir = 1;
 	name = "Gas pump \[To Pre-Heat]"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -9127,7 +9127,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/bridge)
 "Be" = (
@@ -9344,7 +9344,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "BJ" = (
@@ -9478,7 +9478,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -9544,7 +9544,7 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -9576,7 +9576,7 @@
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Cl" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /obj/cable/blue{
@@ -9607,7 +9607,7 @@
 /turf/simulated/floor/blue,
 /area/station/turret_protected/ai_upload)
 "Cq" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/circuit,
@@ -9762,7 +9762,7 @@
 /obj/storage/secure/closet/personal{
 	anchored = 1
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/red/side{
@@ -9867,7 +9867,7 @@
 	frequency = 1483;
 	name = "Station Intercom (AI Upload)"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/circuit,
@@ -10145,7 +10145,7 @@
 /obj/machinery/turretid{
 	pixel_y = 24
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 4
 	},
 /turf/simulated/floor/bluewhite{
@@ -10153,7 +10153,7 @@
 	},
 /area/station/turret_protected/ai_upload)
 "DQ" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -10205,7 +10205,7 @@
 	dir = 1
 	},
 /obj/machinery/meter,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "DY" = (
@@ -10249,7 +10249,7 @@
 	dir = 4;
 	name = "manual valve (Pre-Heat Bypass)"
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Ef" = (
@@ -10277,7 +10277,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -10318,7 +10318,7 @@
 /area/station/security/brig)
 "Eo" = (
 /obj/item/medical/bruise_pack,
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -10336,7 +10336,7 @@
 /turf/simulated/floor,
 /area/station/security/brig)
 "Er" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -10398,7 +10398,7 @@
 /obj/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -10548,7 +10548,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 1
 	},
 /turf/simulated/floor/white,
@@ -10954,7 +10954,7 @@
 /area/station/security/brig)
 "FS" = (
 /obj/machinery/light_switch/west,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -10965,7 +10965,7 @@
 /area/station/security/brig)
 "FU" = (
 /obj/stool/chair,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -11045,7 +11045,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai_upload)
 "Gj" = (
@@ -11129,7 +11129,7 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Gw" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -11395,7 +11395,7 @@
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
 "Hk" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /obj/cable/blue{
 	icon_state = "2-9"
 	},
@@ -11435,7 +11435,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -11444,7 +11444,7 @@
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 8
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -11597,7 +11597,7 @@
 /obj/storage/secure/closet/security/equipment{
 	anchored = 1
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -11729,7 +11729,7 @@
 /area/station/engine/engineering)
 "Ik" = (
 /obj/storage/closet/wardrobe/yellow/engineering,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Il" = (
@@ -11793,7 +11793,7 @@
 /area/station/security/brig)
 "It" = (
 /obj/storage/closet/emergency,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -11916,7 +11916,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
 "IM" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -12004,7 +12004,7 @@
 	c_tag = "Brig Office";
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /obj/cable{
@@ -12102,7 +12102,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/green/corner{
@@ -12202,7 +12202,7 @@
 /obj/machinery/atmospherics/binary/pump{
 	name = "Gas pump \[From Cold Loop]"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -12236,7 +12236,7 @@
 /area/station/hallway/primary/south)
 "JH" = (
 /obj/storage/closet,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/orange/side{
@@ -12258,7 +12258,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/orange/side{
@@ -12282,7 +12282,7 @@
 /area/station/security/brig)
 "JO" = (
 /obj/item/medical/bruise_pack,
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /turf/simulated/floor,
 /area/station/security/brig)
 "JP" = (
@@ -12331,7 +12331,7 @@
 	},
 /area/station/hallway/primary/west)
 "JW" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/airless/plating,
 /area/station/engine/engineering)
 "JX" = (
@@ -12550,7 +12550,7 @@
 "KB" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /obj/window/south,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -12641,7 +12641,7 @@
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 1
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/east)
 "KR" = (
@@ -12730,7 +12730,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/quartersB)
 "Lb" = (
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /obj/storage/closet/wardrobe/pink,
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersB)
@@ -12740,7 +12740,7 @@
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersB)
 "Ld" = (
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /obj/storage/closet/wardrobe/mixed,
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersB)
@@ -12752,7 +12752,7 @@
 /obj/stool/chair{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/neutral/side{
@@ -12791,7 +12791,7 @@
 	icon_state = "x3";
 	name = "blobstart"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/neutral/side{
@@ -12802,7 +12802,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/bar)
 "Lm" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/green/side{
@@ -12894,7 +12894,7 @@
 /turf/simulated/floor,
 /area/station/engine/gas)
 "Lz" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/red/side{
@@ -13010,7 +13010,7 @@
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/engineering)
 "LT" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "LU" = (
@@ -13025,14 +13025,14 @@
 /area/station/engine/engineering)
 "LV" = (
 /obj/machinery/atmospherics/pipe/manifold,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "LW" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "LX" = (
@@ -13046,7 +13046,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "LZ" = (
@@ -13274,7 +13274,7 @@
 	c_tag = "Forensics Office";
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/carpet/grime,
@@ -13313,7 +13313,7 @@
 /obj/landmark/start{
 	name = "Detective"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/grime,
@@ -13339,13 +13339,13 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
 "MP" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/blue/checker,
 /area/station/hallway/secondary/entry)
 "MQ" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/blue/checker,
@@ -13409,7 +13409,7 @@
 /obj/machinery/atmospherics/pipe/tank/carbon_dioxide{
 	dir = 4
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/gas)
 "Nb" = (
@@ -13425,7 +13425,7 @@
 /turf/simulated/floor,
 /area/station/engine/gas)
 "Ne" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -13552,7 +13552,7 @@
 /area/station/crew_quarters/quartersB)
 "Nw" = (
 /obj/storage/closet/wardrobe/pink,
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 1
 	},
 /turf/simulated/floor/neutral,
@@ -13661,7 +13661,7 @@
 	},
 /area/station/hallway/secondary/entry)
 "NT" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /obj/storage/secure/closet/civilian/bartender,
@@ -13771,7 +13771,7 @@
 "Oj" = (
 /obj/table,
 /obj/item/locator,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -13827,7 +13827,7 @@
 /obj/storage/secure/closet/security/equipment{
 	anchored = 1
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -13845,7 +13845,7 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
 "Ou" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
 "Ov" = (
@@ -13861,7 +13861,7 @@
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
 "Ox" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/arrival{
@@ -13872,7 +13872,7 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/crew_quarters/quartersA)
 "Oz" = (
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /obj/storage/closet/wardrobe/blue,
 /turf/simulated/floor,
 /area/station/crew_quarters/quartersA)
@@ -13882,7 +13882,7 @@
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersA)
 "OB" = (
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /obj/storage/closet/wardrobe/blue,
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersA)
@@ -13935,7 +13935,7 @@
 /turf/simulated/floor/plating,
 /area/listeningpost)
 "OK" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -14034,7 +14034,7 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -14214,7 +14214,7 @@
 /obj/item/device/igniter,
 /obj/item/device/igniter,
 /obj/item/device/igniter,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor,
@@ -14239,7 +14239,7 @@
 /obj/item/device/prox_sensor,
 /obj/item/device/prox_sensor,
 /obj/item/device/prox_sensor,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
@@ -14445,7 +14445,7 @@
 	},
 /area/listeningpost)
 "QU" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
 "QV" = (
@@ -14514,7 +14514,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 8
 	},
 /turf/simulated/floor/arrival{
@@ -14555,7 +14555,7 @@
 /turf/simulated/floor/black,
 /area/listeningpost)
 "Ro" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/neutral/side,
 /area/station/crew_quarters/bar)
 "Rp" = (
@@ -14583,7 +14583,7 @@
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/south)
 "Rw" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/south)
 "Rx" = (
@@ -14761,7 +14761,7 @@
 	dir = 4;
 	pixel_x = -9
 	},
-/obj/machinery/light/small/warm,
+/obj/machinery/light/small/netural,
 /turf/simulated/floor/sanitary/white,
 /area/station/crew_quarters/quartersA)
 "Sg" = (
@@ -14780,7 +14780,7 @@
 /turf/simulated/floor/sanitary/white,
 /area/station/crew_quarters/quartersA)
 "Sh" = (
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 1
 	},
 /obj/storage/closet/wardrobe/mixed,
@@ -14793,7 +14793,7 @@
 	icon_state = "x3";
 	name = "blobstart"
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/neutral/side{
 	dir = 10
 	},
@@ -14926,7 +14926,7 @@
 /obj/item/sheet/steel/fullstack,
 /obj/item/sheet/steel/fullstack,
 /obj/item/sheet/steel/fullstack,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -14993,7 +14993,7 @@
 /area/station/ai_monitored/storage/eva)
 "SU" = (
 /obj/item/crowbar,
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -15084,7 +15084,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
 "Tr" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
 /turf/simulated/floor/arrival/corner{
@@ -15120,7 +15120,7 @@
 /obj/machinery/camera{
 	c_tag = "Arrival Shuttle Hallway East"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/green/side{
@@ -15223,7 +15223,7 @@
 /obj/machinery/camera{
 	c_tag = "South Hallway Central"
 	},
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor,
@@ -15263,7 +15263,7 @@
 "Ua" = (
 /obj/table,
 /obj/item/device/timer,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/south)
 "Ub" = (
@@ -15308,7 +15308,7 @@
 	icon_state = "0-8"
 	},
 /obj/item/storage/firstaid/regular,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/security/main)
 "Uf" = (
@@ -15390,7 +15390,7 @@
 /obj/storage/secure/closet/security/equipment{
 	anchored = 1
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/security/main)
 "Uo" = (
@@ -15445,7 +15445,7 @@
 	},
 /area/station/hallway/secondary/entry)
 "Uw" = (
-/obj/machinery/light/incandescent/warm{
+/obj/machinery/light/incandescent/netural{
 	dir = 1
 	},
 /turf/simulated/floor/green/side{
@@ -15803,7 +15803,7 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/checker,
 /area/station/security/checkpoint/arrivals)
 "VO" = (
@@ -15826,7 +15826,7 @@
 /turf/simulated/floor/red/checker,
 /area/station/security/checkpoint/arrivals)
 "VQ" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/side{
 	dir = 8
 	},
@@ -15851,7 +15851,7 @@
 /area/station/ai_monitored/storage/eva)
 "VV" = (
 /obj/item/tank/jetpack,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
 "VW" = (
@@ -15877,7 +15877,7 @@
 /area/listeningpost)
 "Wa" = (
 /obj/reagent_dispensers/fueltank,
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
 "Wb" = (
@@ -16039,7 +16039,7 @@
 	},
 /area/station/hallway/secondary/entry)
 "WH" = (
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/arrival,
 /area/station/hallway/secondary/entry)
 "WI" = (
@@ -16060,7 +16060,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
 	},
-/obj/machinery/light/incandescent/warm,
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/red/side{
 	dir = 6
 	},
@@ -16733,7 +16733,7 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
 	},
-/obj/machinery/light/small/warm{
+/obj/machinery/light/small/netural{
 	dir = 4
 	},
 /turf/simulated/floor,
