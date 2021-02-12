@@ -2,6 +2,16 @@
 "aa" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/science/testchamber)
+"ab" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "ad" = (
 /turf/simulated/floor/green/corner,
 /area/station/science/testchamber)
@@ -3434,6 +3444,10 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/northeast)
+"ki" = (
+/obj/firedoor_spawn,
+/turf/simulated/floor,
+/area/station/storage)
 "kj" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -5449,7 +5463,9 @@
 /turf/simulated/floor,
 /area/station/storage)
 "qc" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qd" = (
@@ -5632,6 +5648,10 @@
 	icon_state = "4-8"
 	},
 /obj/firedoor_spawn,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qI" = (
@@ -5641,6 +5661,10 @@
 	},
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/storage)
@@ -5652,14 +5676,18 @@
 	name = "N Fire Alarm";
 	pixel_y = 24
 	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qK" = (
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/cable{
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple{
-	level = 2
 	},
 /turf/simulated/floor,
 /area/station/storage)
@@ -5670,16 +5698,28 @@
 /obj/cable{
 	icon_state = "2-8"
 	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qM" = (
 /obj/table,
 /obj/item/clipboard,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qN" = (
 /obj/table,
 /obj/item/device/multitool,
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "qO" = (
@@ -5829,10 +5869,6 @@
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/mask/gas,
 /obj/machinery/light/incandescent/netural,
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
 /turf/simulated/floor,
 /area/station/storage)
 "rm" = (
@@ -5841,14 +5877,9 @@
 /obj/item/clothing/under/misc/atmospheric_technician,
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/mask/gas,
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
 /turf/simulated/floor,
 /area/station/storage)
 "rn" = (
-/obj/machinery/atmospherics/pipe/manifold,
 /obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/storage)
@@ -5865,10 +5896,6 @@
 "rq" = (
 /obj/stool/chair{
 	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
 	},
 /turf/simulated/floor,
 /area/station/storage)
@@ -7337,7 +7364,9 @@
 /turf/simulated/floor,
 /area/station/storage)
 "vm" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
@@ -15825,6 +15854,11 @@
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"Tf" = (
+/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/artifact,
+/turf/simulated/floor,
+/area/station/storage)
 "Tg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
@@ -47365,7 +47399,7 @@ oq
 yD
 qf
 qC
-ri
+rh
 si
 qE
 qE
@@ -50083,7 +50117,7 @@ ou
 pj
 nC
 qH
-rk
+ki
 ox
 qi
 qc
@@ -50385,7 +50419,7 @@ ov
 ov
 nC
 qI
-qF
+oq
 ox
 ox
 uk
@@ -50686,8 +50720,8 @@ nD
 oq
 oq
 nD
-pq
-qF
+ab
+oq
 ox
 tg
 ri
@@ -50988,8 +51022,8 @@ nD
 qm
 pk
 nD
-pq
-qF
+ab
+oq
 ox
 th
 oq
@@ -51592,7 +51626,7 @@ nC
 oy
 pl
 oq
-pq
+ab
 rm
 ox
 th
@@ -51894,7 +51928,7 @@ nE
 oz
 oq
 oz
-pq
+ab
 rm
 ox
 th
@@ -52499,7 +52533,7 @@ oz
 oq
 oz
 qL
-rp
+oB
 so
 ti
 pm
@@ -53107,7 +53141,7 @@ rq
 sp
 tk
 ul
-qc
+Tf
 wI
 nC
 Pb
@@ -53404,8 +53438,8 @@ nC
 oC
 pq
 ql
-oq
 qi
+oA
 sq
 tk
 ul
