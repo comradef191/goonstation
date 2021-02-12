@@ -113,7 +113,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/specialroom/chapel{
-	dir = 1
+	dir = 4
 	},
 /area/station/chapel/sanctuary)
 "aE" = (
@@ -302,6 +302,11 @@
 "bp" = (
 /obj/window/reinforced/east,
 /obj/storage/crate/bin,
+/obj/machinery/light/incandescent/netural{
+	dir = 1;
+	nostick = 1;
+	wallmounted = 0
+	},
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "bq" = (
@@ -3560,6 +3565,9 @@
 /obj/stool/chair{
 	dir = 8
 	},
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay)
 "kI" = (
@@ -5637,7 +5645,10 @@
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
 	},
-/obj/machinery/light/incandescent/netural,
+/obj/machinery/light/incandescent/netural{
+	nostick = 1;
+	wallmounted = 0
+	},
 /turf/simulated/floor,
 /area/station/storage)
 "ri" = (
@@ -5735,7 +5746,9 @@
 	dir = 8
 	},
 /obj/machinery/light/incandescent/netural{
-	dir = 4
+	dir = 4;
+	nostick = 1;
+	wallmounted = 0
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -6430,11 +6443,14 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "tz" = (
-/obj/machinery/atmospherics/pipe/simple/insulated{
+/obj/machinery/atmospherics/pipe/tank/oxygen{
 	dir = 4
 	},
-/obj/window/south,
-/obj/machinery/light/incandescent/netural,
+/obj/machinery/light/incandescent/netural{
+	dir = 8;
+	nostick = 1;
+	wallmounted = 0
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "tA" = (
@@ -6876,7 +6892,9 @@
 "uG" = (
 /obj/machinery/atmospherics/pipe/tank/toxins,
 /obj/machinery/light/incandescent/netural{
-	dir = 1
+	dir = 1;
+	nostick = 1;
+	wallmounted = 0
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -7963,10 +7981,10 @@
 	},
 /area/station/hallway/primary/west)
 "xD" = (
-/obj/machinery/atmospherics/pipe/simple/insulated,
-/obj/window/east,
 /obj/machinery/light/incandescent/netural{
-	dir = 8
+	dir = 8;
+	nostick = 1;
+	wallmounted = 0
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -9004,7 +9022,9 @@
 /obj/item/clothing/suit/fire/heavy,
 /obj/item/clothing/mask/gas,
 /obj/machinery/light/incandescent/netural{
-	dir = 1
+	dir = 1;
+	nostick = 1;
+	wallmounted = 0
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -10629,7 +10649,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/engine/engineering)
+/area/station/engine/combustion_chamber)
 "EV" = (
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
@@ -10646,13 +10666,13 @@
 	dir = 4
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/engine/engineering)
+/area/station/engine/combustion_chamber)
 "EY" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 10
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
-/area/station/engine/engineering)
+/area/station/engine/combustion_chamber)
 "EZ" = (
 /obj/item/device/radio,
 /turf/simulated/floor,
@@ -12571,7 +12591,9 @@
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /obj/window/south,
 /obj/machinery/light/incandescent/netural{
-	dir = 8
+	dir = 8;
+	nostick = 1;
+	wallmounted = 0
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -13984,6 +14006,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/listeningpost)
+"OS" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/engine/combustion_chamber)
 "OT" = (
 /obj/machinery/door/airlock/pyro/syndicate{
 	desc = "Seems to be a pretty sturdy door.";
@@ -54260,7 +54288,7 @@ Pb
 Pb
 Pb
 aw
-aD
+aG
 aX
 bw
 bO
@@ -55166,7 +55194,7 @@ Pb
 Pb
 Pb
 aw
-aE
+aD
 aY
 aE
 ba
@@ -58825,12 +58853,12 @@ tv
 uy
 vy
 vy
-xD
 vy
 vy
 vy
 vy
-xD
+vy
+vy
 vy
 DS
 ES
@@ -59125,14 +59153,14 @@ rB
 sA
 tw
 uz
-vz
+tz
 vz
 vz
 vz
 vz
 Ax
 zF
-zF
+xD
 zF
 DT
 zF
@@ -61249,7 +61277,7 @@ uA
 Cx
 Dl
 DY
-tw
+CA
 Fz
 Gq
 Hu
@@ -61551,7 +61579,7 @@ vB
 Cy
 Dm
 zF
-tw
+CA
 wV
 Gr
 xL
@@ -61853,7 +61881,7 @@ BA
 Cz
 Dn
 DZ
-EV
+CC
 wW
 xL
 yL
@@ -62155,7 +62183,7 @@ zF
 BH
 Dk
 Ea
-EW
+vJ
 wX
 Gt
 yN
@@ -62457,7 +62485,7 @@ zF
 BH
 Dk
 BI
-sA
+vI
 vI
 vI
 vI
@@ -63049,8 +63077,8 @@ jM
 hq
 rB
 sC
-tz
-uF
+ty
+uG
 vH
 uA
 xI
@@ -63665,7 +63693,7 @@ BD
 CA
 Do
 Ec
-sC
+OS
 vI
 vI
 vI
@@ -64269,7 +64297,7 @@ yL
 vI
 BH
 zF
-sC
+OS
 wV
 xL
 yN
@@ -64571,7 +64599,7 @@ yN
 vI
 BK
 CE
-sC
+OS
 wW
 Gz
 xL
@@ -64873,7 +64901,7 @@ BF
 vJ
 Dp
 vH
-sC
+OS
 FC
 Gq
 Hx
