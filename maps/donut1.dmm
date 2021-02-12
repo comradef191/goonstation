@@ -1,35 +1,27 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/wall/auto/supernorn,
+/turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/science/testchamber)
 "ad" = (
-/turf/simulated/floor,
+/turf/simulated/floor/green/corner,
 /area/station/science/testchamber)
 "ae" = (
-/obj/machinery/camera{
-	c_tag = "Toxin Test Chamber";
-	dir = 4;
-	network = "Tox"
+/turf/simulated/floor/white/side{
+	dir = 4
 	},
-/turf/simulated/floor,
 /area/station/science/testchamber)
 "af" = (
-/obj/item/device/radio/beacon,
-/turf/simulated/floor,
-/area/station/science/testchamber)
-"ag" = (
-/obj/machinery/camera{
-	c_tag = "Toxins Test Chamber";
+/turf/simulated/floor/green/side{
 	dir = 8
 	},
-/turf/simulated/floor,
+/area/station/science/testchamber)
+"ag" = (
+/turf/simulated/floor/white/side{
+	dir = 8
+	},
 /area/station/science/testchamber)
 "ah" = (
-/obj/machinery/door/poddoor{
-	id = "launcher";
-	name = "Launcher Door"
-	},
-/turf/simulated/floor,
+/turf/simulated/floor/longtile/black,
 /area/station/science/testchamber)
 "aj" = (
 /obj/cable{
@@ -61,6 +53,9 @@
 	name = "astroturf"
 	},
 /area/station/medical/research)
+"aq" = (
+/turf/simulated/floor/white,
+/area/station/science/testchamber)
 "as" = (
 /obj/landmark/spawner{
 	name = "monkeyspawn_normal"
@@ -106,6 +101,13 @@
 /obj/window/reinforced/east,
 /turf/space,
 /area/space)
+"az" = (
+/obj/machinery/door/poddoor/pyro{
+	id = "launcher";
+	name = "Launcher Door"
+	},
+/turf/simulated/floor/longtile/black,
+/area/station/science/testchamber)
 "aA" = (
 /obj/window/reinforced/south,
 /obj/window/reinforced/west,
@@ -806,6 +808,9 @@
 /obj/access_spawn/medlab,
 /turf/simulated/floor/white,
 /area/station/medical/research)
+"cK" = (
+/turf/simulated/floor/white/side,
+/area/station/science/testchamber)
 "cL" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -1084,6 +1089,11 @@
 	},
 /turf/simulated/floor/white,
 /area/station/medical/research)
+"dE" = (
+/turf/simulated/floor/green/side{
+	dir = 6
+	},
+/area/station/science/testchamber)
 "dF" = (
 /obj/machinery/light_switch/south,
 /turf/simulated/floor/white,
@@ -2963,6 +2973,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
+"ja" = (
+/obj/machinery/camera{
+	c_tag = "Toxins Test Chamber";
+	dir = 8
+	},
+/turf/simulated/floor/green/side{
+	dir = 8
+	},
+/area/station/science/testchamber)
 "jb" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -4630,6 +4649,9 @@
 /obj/cable,
 /turf/simulated/floor/airless/plating,
 /area/station/solar/north)
+"nJ" = (
+/turf/simulated/floor/green/side,
+/area/station/science/testchamber)
 "nL" = (
 /obj/firedoor_spawn,
 /turf/simulated/floor/yellow/side{
@@ -4673,6 +4695,11 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/medical/medbay)
+"nU" = (
+/turf/simulated/floor/white/corner{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "nV" = (
 /obj/machinery/sleeper{
 	dir = 8
@@ -5169,6 +5196,11 @@
 	},
 /turf/simulated/floor,
 /area/station/storage)
+"po" = (
+/turf/simulated/floor/white/side{
+	dir = 5
+	},
+/area/station/science/testchamber)
 "pp" = (
 /obj/stool/chair,
 /obj/cable{
@@ -8623,6 +8655,11 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"yK" = (
+/turf/simulated/floor/green/side{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "yL" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 5;
@@ -9417,6 +9454,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/brig)
+"AX" = (
+/turf/simulated/floor/white/side{
+	dir = 9
+	},
+/area/station/science/testchamber)
 "AY" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
@@ -9844,6 +9886,11 @@
 	},
 /turf/simulated/floor,
 /area/station/bridge)
+"Cc" = (
+/turf/simulated/floor/white/corner{
+	dir = 4
+	},
+/area/station/science/testchamber)
 "Ce" = (
 /obj/table,
 /obj/cable{
@@ -10203,6 +10250,11 @@
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
+"Db" = (
+/turf/simulated/floor/green/side{
+	dir = 5
+	},
+/area/station/science/testchamber)
 "Dc" = (
 /obj/cable/blue{
 	icon_state = "4-8"
@@ -11800,6 +11852,11 @@
 /obj/storage/secure/closet/command/hop,
 /turf/simulated/floor,
 /area/station/bridge)
+"GW" = (
+/turf/simulated/floor/green/side{
+	dir = 4
+	},
+/area/station/science/testchamber)
 "GX" = (
 /obj/cable,
 /turf/simulated/floor,
@@ -11934,6 +11991,16 @@
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
+"Ht" = (
+/obj/machinery/camera{
+	c_tag = "Toxin Test Chamber";
+	dir = 4;
+	network = "Tox"
+	},
+/turf/simulated/floor/green/side{
+	dir = 4
+	},
+/area/station/science/testchamber)
 "Hu" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -14544,6 +14611,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/listeningpost)
+"OR" = (
+/turf/simulated/floor/green/corner{
+	dir = 8
+	},
+/area/station/science/testchamber)
 "OS" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4;
@@ -14559,6 +14631,11 @@
 	},
 /turf/simulated/floor/delivery,
 /area/listeningpost)
+"OU" = (
+/turf/simulated/floor/green/checker{
+	dir = 8
+	},
+/area/station/science/testchamber)
 "OV" = (
 /obj/storage/closet,
 /obj/machinery/alarm{
@@ -14583,6 +14660,11 @@
 	},
 /turf/simulated/floor,
 /area/station/storage/primary)
+"OX" = (
+/turf/simulated/floor/greenblack{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "OY" = (
 /obj/item/extinguisher,
 /obj/machinery/firealarm{
@@ -14720,6 +14802,11 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/south)
+"PA" = (
+/turf/simulated/floor/white/side{
+	dir = 6
+	},
+/area/station/science/testchamber)
 "PB" = (
 /turf/simulated/floor/arrival/corner{
 	dir = 8
@@ -14805,6 +14892,11 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"PQ" = (
+/turf/simulated/floor/white/side{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "PR" = (
 /obj/cable{
 	icon_state = "1-4"
@@ -14911,6 +15003,11 @@
 /obj/item/device/detective_scanner,
 /turf/simulated/floor,
 /area/station/security/main)
+"Qg" = (
+/turf/simulated/floor/green/side{
+	dir = 9
+	},
+/area/station/science/testchamber)
 "Qh" = (
 /obj/table,
 /obj/item/clothing/ears/earmuffs,
@@ -15336,6 +15433,11 @@
 /obj/machinery/power/data_terminal,
 /turf/simulated/floor,
 /area/station/security/main)
+"RQ" = (
+/turf/simulated/floor/green/corner{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "RR" = (
 /obj/stool/chair{
 	dir = 1
@@ -15353,6 +15455,11 @@
 /obj/storage/closet/syndicate/personal,
 /turf/simulated/floor/bot,
 /area/listeningpost)
+"RW" = (
+/turf/simulated/floor/green/corner{
+	dir = 4
+	},
+/area/station/science/testchamber)
 "RX" = (
 /obj/machinery/bot/guardbot/bad{
 	on = 0
@@ -15585,6 +15692,11 @@
 	},
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
+"SK" = (
+/turf/simulated/floor/green/side{
+	dir = 10
+	},
+/area/station/science/testchamber)
 "SL" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -15681,6 +15793,11 @@
 /obj/item/crowbar,
 /turf/simulated/floor,
 /area/station/ai_monitored/storage/eva)
+"SZ" = (
+/turf/simulated/floor/white/corner{
+	dir = 8
+	},
+/area/station/science/testchamber)
 "Ta" = (
 /obj/machinery/dispenser{
 	name = "Oxygen Tank Storage Unit";
@@ -15871,6 +15988,11 @@
 /obj/machinery/power/data_terminal,
 /turf/simulated/floor/red/checker,
 /area/station/security/checkpoint/arrivals)
+"TH" = (
+/turf/simulated/floor/greenblack/corner{
+	dir = 1
+	},
+/area/station/science/testchamber)
 "TJ" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -16118,6 +16240,10 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
+"Us" = (
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/yellow,
+/area/station/science/testchamber)
 "Ut" = (
 /obj/machinery/door/airlock/pyro/external,
 /turf/simulated/floor/plating,
@@ -16681,6 +16807,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
+"Wk" = (
+/turf/simulated/floor/green/checker{
+	dir = 4
+	},
+/area/station/science/testchamber)
 "Wn" = (
 /obj/machinery/door/airlock/pyro{
 	dir = 4
@@ -16791,6 +16922,11 @@
 "WI" = (
 /turf/simulated/floor/red/corner,
 /area/station/hallway/secondary/entry)
+"WJ" = (
+/turf/simulated/floor/greenblack/corner{
+	dir = 8
+	},
+/area/station/science/testchamber)
 "WK" = (
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 8
@@ -16802,6 +16938,9 @@
 	},
 /turf/simulated/floor/red/side,
 /area/station/hallway/secondary/entry)
+"WL" = (
+/turf/simulated/floor/white/corner,
+/area/station/science/testchamber)
 "WM" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
@@ -17214,6 +17353,11 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
+"Yi" = (
+/turf/simulated/floor/white/side{
+	dir = 10
+	},
+/area/station/science/testchamber)
 "Yj" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -47776,15 +47920,15 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Pb
 Pb
 Pb
@@ -48088,7 +48232,7 @@ aa
 aa
 aa
 aa
-aa
+Pb
 Pb
 Pb
 Pb
@@ -48381,17 +48525,17 @@ Pb
 aa
 aa
 aa
+ad
+GW
+GW
+Ht
+GW
+GW
+RW
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Pb
 Pb
 Pb
 Pb
@@ -48679,19 +48823,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
+aa
 ad
-ad
-ad
-ad
+dE
+WL
 ae
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+Cc
+Db
+RW
+aa
 aa
 aa
 Pb
@@ -48981,19 +49125,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
 ad
+dE
+WL
+PA
 ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+GW
+RW
+po
+Cc
+Db
+WJ
 aa
 aa
 Pb
@@ -49283,19 +49427,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
+nJ
+WL
+PA
 ad
-ad
-ad
-ad
+OU
 af
-ad
-ad
-ad
-ad
-ad
+Wk
+RW
+po
+Cc
+OX
 aa
 aa
 Pb
@@ -49585,21 +49729,21 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
+nJ
+cK
 ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+OU
+WL
+aq
+Cc
+Wk
+RW
+PQ
+OX
 aa
-Pb
+aa
 Pb
 Pb
 Pb
@@ -49887,21 +50031,21 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+nJ
+cK
+nJ
+yK
+aq
+Us
+aq
+nJ
+yK
+PQ
+OX
 ah
-Pb
+az
 Pb
 Pb
 Pb
@@ -50189,21 +50333,21 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+nJ
+cK
+OR
+Wk
+SZ
+aq
+nU
+OU
+RQ
+PQ
+OX
 aa
-Pb
+aa
 Pb
 Pb
 Pb
@@ -50491,19 +50635,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+nJ
+SZ
+Yi
+OR
+Wk
+GW
+OU
+RQ
+AX
+nU
+OX
 aa
 aa
 Pb
@@ -50793,19 +50937,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+OR
+SK
+SZ
+Yi
+OR
+af
+RQ
+AX
+nU
+Qg
+TH
 aa
 aa
 Pb
@@ -51095,19 +51239,19 @@ Pb
 Pb
 Pb
 Pb
-Pb
 aa
 aa
-ad
-ad
-ad
-ad
+aa
+OR
+SK
+SZ
 ag
-ad
-ad
-ad
-ad
-ad
+ag
+ag
+nU
+Qg
+RQ
+aa
 aa
 aa
 Pb
@@ -51398,20 +51542,20 @@ Pb
 Pb
 Pb
 Pb
+aa
+aa
+aa
+OR
+af
+af
+ja
+af
+af
+RQ
+aa
+aa
+aa
 Pb
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 Pb
 Pb
 Pb
@@ -51701,18 +51845,18 @@ Pb
 Pb
 Pb
 Pb
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Pb
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 Pb
 Pb
 Pb
@@ -52004,15 +52148,15 @@ Pb
 Pb
 Pb
 Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
-Pb
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 Pb
 Pb
 Pb
