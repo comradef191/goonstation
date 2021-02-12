@@ -5033,6 +5033,9 @@
 	icon_state = "0-8"
 	},
 /obj/firedoor_spawn,
+/obj/machinery/light/incandescent/netural{
+	dir = 8
+	},
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay)
 "oT" = (
@@ -8252,6 +8255,7 @@
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 8
 	},
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/power)
 "xT" = (
@@ -8904,6 +8908,10 @@
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor,
 /area/station/bridge)
+"zY" = (
+/obj/machinery/light/incandescent/netural,
+/turf/simulated/floor,
+/area/station/engine/power)
 "zZ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -9310,6 +9318,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/security/brig)
+"AX" = (
+/obj/machinery/light/incandescent/netural{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "AY" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 4
@@ -10499,6 +10513,7 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
 	},
+/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Ed" = (
@@ -11117,10 +11132,8 @@
 /obj/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/alarm{
-	alarm_zone = "Engine Generation";
-	dir = 4;
-	pixel_x = -24
+/obj/machinery/light/incandescent/netural{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -11161,6 +11174,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/alarm{
+	alarm_zone = "Engine Generation";
+	dir = 8;
+	pixel_x = 24
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "FK" = (
@@ -16341,6 +16359,19 @@
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"VS" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/firedoor_spawn,
+/obj/machinery/light/incandescent/netural{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbay)
 "VT" = (
 /obj/machinery/light_switch/west,
 /turf/simulated/floor,
@@ -62063,7 +62094,7 @@ lX
 kL
 ji
 jP
-oS
+VS
 pF
 jM
 qR
@@ -66905,7 +66936,7 @@ tF
 uL
 uL
 vO
-uL
+zY
 tC
 zG
 zG
@@ -68115,7 +68146,7 @@ vQ
 vQ
 xR
 tC
-zF
+AX
 zF
 zF
 BH
@@ -70226,8 +70257,8 @@ sH
 tP
 vM
 vX
-xf
 tR
+xf
 za
 zM
 AO
