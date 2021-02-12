@@ -178,6 +178,7 @@
 	name = "Med Research"
 	},
 /obj/machinery/atmospherics/unary/vent_pump,
+/obj/access_spawn/medlab,
 /turf/simulated/floor/grass{
 	name = "astroturf"
 	},
@@ -195,6 +196,7 @@
 /obj/machinery/door/window{
 	name = "Med Research"
 	},
+/obj/access_spawn/medlab,
 /turf/simulated/floor/grass{
 	name = "astroturf"
 	},
@@ -776,6 +778,7 @@
 	name = "Med Research"
 	},
 /obj/machinery/atmospherics/pipe/simple,
+/obj/access_spawn/medlab,
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "cI" = (
@@ -787,6 +790,7 @@
 /obj/machinery/door/window{
 	name = "Med Research"
 	},
+/obj/access_spawn/medlab,
 /turf/simulated/floor/white,
 /area/station/medical/research)
 "cL" = (
@@ -871,12 +875,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/specialroom/chapel,
 /area/station/chapel/sanctuary)
-"cZ" = (
-/obj/landmark/map{
-	name = "DONUT1"
-	},
-/turf/space,
-/area/space)
 "da" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -1001,10 +999,11 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/pyro{
+/obj/machinery/door/airlock/pyro/medical/morgue{
 	dir = 4;
 	name = "Morgue"
 	},
+/obj/access_spawn/medlab,
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "dw" = (
@@ -1034,10 +1033,11 @@
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "dA" = (
-/obj/machinery/door/window{
+/obj/machinery/door/airlock/pyro/medical/morgue{
 	dir = 4;
-	name = "Med Research"
+	name = "Morgue"
 	},
+/obj/access_spawn/medlab,
 /turf/simulated/floor/sanitary,
 /area/station/medical/morgue)
 "dB" = (
@@ -2032,6 +2032,7 @@
 /obj/landmark/spawner{
 	name = "monkeyspawn_normal"
 	},
+/obj/access_spawn/tox,
 /turf/simulated/floor,
 /area/station/science/lab)
 "go" = (
@@ -11731,6 +11732,12 @@
 /obj/machinery/light/incandescent/warm,
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"Il" = (
+/obj/landmark/map{
+	name = "DONUT1"
+	},
+/turf/space,
+/area/space)
 "Im" = (
 /obj/item/device/multitool,
 /turf/simulated/floor,
@@ -17278,7 +17285,7 @@ Pb
 Pb
 Pb
 Pb
-cZ
+Il
 "}
 (2,1,1) = {"
 Pb
