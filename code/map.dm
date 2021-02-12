@@ -21,6 +21,7 @@ var/global/list/mapNames = list(
 	"Cogmap 1 (Old)" = 	list("id" = "COGMAP_OLD", 	"settings" = "cogmap_old"),
 	"Cogmap 2" = 		list("id" = "COGMAP2", 		"settings" = "cogmap2", 		"playerPickable" = 1, 	"MinPlayersAllowed" = 40),
 	"Destiny" = 		list("id" = "DESTINY", 		"settings" = "destiny", 		"playerPickable" = 1,		"MaxPlayersAllowed" = 80),
+	"Donut 1" = 		list("id" = "DONUT1", 		"settings" = "donut1",			"playerPickable" = 1),
 	"Donut 2" = 		list("id" = "DONUT2", 		"settings" = "donut2",			"playerPickable" = ASS_JAM),
 	"Donut 3" = 		list("id" = "DONUT3", 		"settings" = "donut3",			"playerPickable" = 1, 	"MinPlayersAllowed" = 40),
 	"Horizon" = 		list("id" = "HORIZON", 		"settings" = "horizon", 		"playerPickable" = 1),
@@ -132,20 +133,13 @@ var/global/list/mapNames = list(
 			if(J.type in src.job_limits_override)
 				J.limit = src.job_limits_override[J.type]
 
-/datum/map_settings/donut1 //oh god why did i port this back and perspectivise it
+/datum/map_settings/donut1 // oh god why did i port this back and perspectivise it
 	name = "DONUT1"
 	goonhub_map = "https://cdn.discordapp.com/attachments/469379618168897538/809463370352427059/Map.png"
-	airlock_style = "pyro"
+
 	walls = /turf/simulated/wall/auto/supernorn
 	rwalls = /turf/simulated/wall/auto/reinforced/supernorn
 	auto_walls = 1
-
-	escape_centcom = /area/shuttle/escape/centcom/donut2
-	escape_transit = /area/shuttle/escape/transit/donut2
-	escape_station = /area/shuttle/escape/station/donut2
-	escape_def = SHUTTLE_WEST
-	escape_dir = WEST
-	auto_windows = 1
 
 	windows = /obj/window/auto
 	windows_thin = /obj/window/pyro
@@ -157,6 +151,15 @@ var/global/list/mapNames = list(
 	window_layer_north = GRILLE_LAYER+0.1
 	window_layer_south = FLY_LAYER+1
 	auto_windows = 1
+
+	ext_airlocks = /obj/machinery/door/airlock/pyro/external
+	airlock_style = "pyro"
+
+	escape_centcom = /area/shuttle/escape/centcom/donut2
+	escape_transit = /area/shuttle/escape/transit/donut2
+	escape_station = /area/shuttle/escape/station/donut2
+	escape_def = SHUTTLE_WEST
+	escape_dir = WEST
 
 	merchant_left_centcom = /area/shuttle/merchant_shuttle/left_centcom/cogmap
 	merchant_left_station = /area/shuttle/merchant_shuttle/left_station/cogmap
