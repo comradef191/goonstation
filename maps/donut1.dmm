@@ -156,12 +156,6 @@
 	dir = 4
 	},
 /area/station/chapel/office)
-"aN" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/south)
 "aO" = (
 /obj/landmark/start{
 	name = "Chaplain"
@@ -206,6 +200,15 @@
 	name = "astroturf"
 	},
 /area/station/medical/research)
+"aU" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/north)
 "aV" = (
 /obj/machinery/door/window{
 	name = "Med Research"
@@ -4995,6 +4998,10 @@
 	dir = 8
 	},
 /area/station/hallway/secondary/exit)
+"oG" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/secondary/exit)
 "oI" = (
 /obj/machinery/computer/atmosphere/siphonswitch{
 	otherarea = null
@@ -5207,14 +5214,6 @@
 /obj/cable{
 	icon_state = "1-4"
 	},
-/turf/simulated/floor,
-/area/station/storage)
-"pn" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
-/obj/machinery/light/incandescent/netural,
 /turf/simulated/floor,
 /area/station/storage)
 "po" = (
@@ -5906,6 +5905,10 @@
 /obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/storage)
+"ro" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/east)
 "rp" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -6316,6 +6319,14 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/teleporter)
+"su" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/obj/machinery/light/incandescent/netural,
+/turf/simulated/floor,
+/area/station/storage)
 "sv" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/teleporter)
@@ -7982,10 +7993,6 @@
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/simulated/floor,
 /area/station/storage)
-"wK" = (
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/east)
 "wL" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/machinery/light/incandescent/netural,
@@ -8211,6 +8218,16 @@
 	},
 /turf/simulated/floor,
 /area/station/security/checkpoint/customs)
+"xo" = (
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 1;
+	level = 2
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "xp" = (
 /obj/machinery/light_switch/east,
 /turf/simulated/floor,
@@ -9109,6 +9126,10 @@
 /obj/machinery/atmospherics/unary/vent_pump,
 /turf/simulated/floor,
 /area/station/bridge)
+"zY" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/west)
 "zZ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -10032,6 +10053,16 @@
 	},
 /turf/simulated/floor/circuit,
 /area/station/turret_protected/ai)
+"Cm" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "Cn" = (
 /obj/cable{
 	icon_state = "2-8"
@@ -10417,12 +10448,14 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Do" = (
-/obj/firedoor_spawn,
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 6
 	},
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -10437,9 +10470,11 @@
 /area/station/engine/engineering)
 "Dq" = (
 /obj/machinery/light_switch/north,
-/obj/firedoor_spawn,
 /obj/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -10738,11 +10773,13 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Ec" = (
-/obj/firedoor_spawn,
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 9
 	},
 /obj/machinery/light/incandescent/netural,
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Ed" = (
@@ -10764,7 +10801,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Eg" = (
-/obj/firedoor_spawn,
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Eh" = (
@@ -12291,7 +12330,7 @@
 /area/station/hallway/primary/west)
 "HY" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
-/obj/firedoor_spawn,
+/obj/machinery/door/firedoor/pyro,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "HZ" = (
@@ -15029,6 +15068,15 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"Qa" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/incandescent/netural{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "Qb" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -15117,16 +15165,6 @@
 	icon_state = "wall3"
 	},
 /area/listeningpost)
-"Qr" = (
-/obj/machinery/atmospherics/pipe/manifold{
-	dir = 1;
-	level = 2
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "Qu" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -15435,6 +15473,12 @@
 	},
 /turf/simulated/floor/black,
 /area/listeningpost)
+"RB" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/south)
 "RD" = (
 /obj/table,
 /obj/item/storage/toolbox/mechanical,
@@ -15519,16 +15563,6 @@
 /obj/machinery/power/data_terminal,
 /turf/simulated/floor,
 /area/station/security/main)
-"RP" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
-/obj/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "RQ" = (
 /turf/simulated/floor/green/corner{
 	dir = 1
@@ -16114,6 +16148,11 @@
 	dir = 8
 	},
 /area/station/hallway/primary/south)
+"TN" = (
+/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/artifact,
+/turf/simulated/floor,
+/area/station/storage)
 "TP" = (
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/floor,
@@ -16154,6 +16193,10 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/ai_monitored/storage/eva)
+"TW" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "TX" = (
 /obj/table,
 /obj/item/device/analyzer/healthanalyzer,
@@ -16459,6 +16502,17 @@
 /obj/table/reinforced/auto,
 /turf/simulated/floor/red/checker,
 /area/station/security/checkpoint/arrivals)
+"UN" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/obj/machinery/light/incandescent/netural,
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "UO" = (
 /obj/stool/chair/office/red{
 	dir = 8
@@ -16681,15 +16735,6 @@
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
-"Vz" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/north)
 "VA" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -16978,10 +17023,6 @@
 	dir = 8
 	},
 /area/listeningpost)
-"Ww" = (
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/secondary/exit)
 "Wx" = (
 /obj/cable{
 	icon_state = "2-8"
@@ -17015,17 +17056,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
-"WD" = (
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
-/obj/machinery/light/incandescent/netural,
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "WF" = (
 /obj/machinery/camera{
 	c_tag = "Arrival Shuttle Hallway Atmospherics Access";
@@ -17166,11 +17196,6 @@
 	},
 /turf/simulated/floor,
 /area/station/storage)
-"Xa" = (
-/obj/machinery/atmospherics/pipe/manifold,
-/obj/machinery/artifact,
-/turf/simulated/floor,
-/area/station/storage)
 "Xb" = (
 /obj/cable{
 	icon_state = "0-4"
@@ -17219,16 +17244,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
-"Xh" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 4;
-	level = 2
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "Xi" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -17400,10 +17415,6 @@
 	},
 /turf/simulated/floor,
 /area/station/storage/emergency)
-"XP" = (
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/west)
 "XQ" = (
 /obj/machinery/camera{
 	c_tag = "South Hallway Central Atmospherics Access"
@@ -17885,15 +17896,6 @@
 /obj/machinery/power/apc/autoname_west,
 /turf/simulated/floor,
 /area/station/janitor/supply)
-"Zn" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/light/incandescent/netural{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/storage)
 "Zo" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -18026,6 +18028,16 @@
 	},
 /turf/simulated/floor/airless/plating,
 /area/station/solar/north)
+"ZR" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/storage)
 "ZS" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -49630,7 +49642,7 @@ nC
 os
 ph
 oB
-RP
+Cm
 oq
 si
 qa
@@ -49932,7 +49944,7 @@ nC
 ot
 pi
 oq
-Qr
+xo
 rj
 si
 qE
@@ -50541,7 +50553,7 @@ oq
 ox
 ox
 uk
-WD
+UN
 nC
 nC
 nC
@@ -50838,7 +50850,7 @@ nD
 oq
 oq
 nD
-Xh
+ZR
 oq
 ox
 tg
@@ -51140,7 +51152,7 @@ nD
 qm
 pk
 nD
-Xh
+ZR
 oq
 ox
 th
@@ -51744,7 +51756,7 @@ nC
 oy
 pl
 oq
-Xh
+ZR
 rm
 ox
 th
@@ -52046,7 +52058,7 @@ nE
 oz
 oq
 oz
-Xh
+ZR
 rm
 ox
 th
@@ -52949,7 +52961,7 @@ lK
 mo
 mZ
 nH
-Zn
+Qa
 pm
 qj
 qM
@@ -52957,7 +52969,7 @@ rq
 pg
 tj
 pq
-pn
+su
 nC
 nC
 Pb
@@ -53259,7 +53271,7 @@ rq
 sp
 tk
 ul
-Xa
+TN
 wI
 nC
 Pb
@@ -55062,7 +55074,7 @@ ej
 lD
 iR
 iR
-Ww
+oG
 iR
 iR
 iR
@@ -58417,7 +58429,7 @@ qO
 qO
 qO
 ND
-XP
+zY
 qO
 qr
 qO
@@ -59022,9 +59034,9 @@ Pb
 Pb
 Pb
 JE
-aN
+RB
 PN
-aN
+RB
 Ru
 Ss
 TC
@@ -61427,7 +61439,7 @@ Ax
 Eb
 zF
 BH
-Eg
+TW
 zF
 zF
 BH
@@ -61729,7 +61741,7 @@ ET
 Ef
 zF
 BH
-Eg
+TW
 zF
 zF
 BH
@@ -66558,7 +66570,7 @@ zE
 rQ
 Ef
 zF
-Eg
+TW
 GA
 Hy
 Ie
@@ -66860,7 +66872,7 @@ zF
 FG
 zF
 zF
-Eg
+TW
 GB
 Hz
 Hz
@@ -67162,7 +67174,7 @@ zF
 FG
 zF
 zF
-Eg
+TW
 GC
 GA
 If
@@ -69259,7 +69271,7 @@ mH
 og
 mc
 pN
-Vz
+aU
 qV
 rB
 sF
@@ -73206,7 +73218,7 @@ pP
 pP
 pP
 pP
-wK
+ro
 pP
 pP
 KQ
