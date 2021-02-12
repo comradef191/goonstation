@@ -2725,19 +2725,6 @@
 /obj/cable,
 /turf/simulated/floor/airless/plating,
 /area/station/solar/north)
-"ik" = (
-/obj/cable{
-	icon_state = "0-4"
-	},
-/obj/cable{
-	icon_state = "0-8"
-	},
-/obj/firedoor_spawn,
-/obj/machinery/light/incandescent/netural{
-	dir = 4
-	},
-/turf/simulated/floor/bluewhite,
-/area/station/medical/medbay)
 "im" = (
 /obj/grille/steel,
 /turf/simulated/floor/plating/airless,
@@ -2976,10 +2963,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/northwest)
-"iZ" = (
-/obj/machinery/light/incandescent/netural,
-/turf/simulated/floor,
-/area/station/engine/power)
 "jb" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -7022,7 +7005,8 @@
 /area/station/hallway/primary/west)
 "ux" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/window/reinforced/north,
 /obj/window/reinforced/south,
@@ -7033,7 +7017,8 @@
 /area/space)
 "uy" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /turf/simulated/wall/auto/reinforced/supernorn,
@@ -7049,13 +7034,15 @@
 /area/station/engine/engineering)
 "uA" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "uB" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /obj/machinery/meter,
 /turf/simulated/floor,
@@ -7071,7 +7058,8 @@
 /area/station/engine/engineering)
 "uD" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 10
+	dir = 10;
+	level = 2
 	},
 /obj/window/west,
 /obj/machinery/meter,
@@ -7430,7 +7418,8 @@
 /area/station/engine/engineering)
 "vB" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -7447,25 +7436,32 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "vE" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/window/west,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "vF" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /obj/window/west,
 /obj/window/south,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "vG" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/window/south,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "vH" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "vI" = (
@@ -7942,7 +7938,8 @@
 /area/station/teleporter)
 "wR" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 6
+	dir = 6;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -7957,7 +7954,8 @@
 /area/station/engine/engineering)
 "wT" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /obj/window/west,
 /obj/machinery/meter,
@@ -8226,7 +8224,8 @@
 /area/station/engine/engineering)
 "xE" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /obj/window/west,
 /turf/simulated/floor,
@@ -8261,7 +8260,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "xJ" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
@@ -8375,6 +8376,13 @@
 /obj/storage/closet/emergency,
 /turf/simulated/floor,
 /area/station/storage/primary)
+"xZ" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 10;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "ya" = (
 /obj/item/cable_coil,
 /obj/item/cable_coil,
@@ -8605,7 +8613,8 @@
 /area/station/hallway/primary/west)
 "yI" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /obj/machinery/meter,
 /turf/simulated/floor,
@@ -8638,7 +8647,8 @@
 /area/station/engine/combustion_chamber)
 "yP" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /obj/machinery/meter,
 /obj/cable{
@@ -8862,7 +8872,9 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/primary/west)
 "zB" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/item/extinguisher,
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -8875,7 +8887,8 @@
 /area/station/engine/engineering)
 "zD" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /obj/machinery/door/window,
 /turf/simulated/floor,
@@ -9231,7 +9244,8 @@
 /area/station/engine/engineering)
 "Az" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /obj/window/north,
 /obj/machinery/door/window{
@@ -9241,14 +9255,16 @@
 /area/station/engine/engineering)
 "AA" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 10
+	dir = 10;
+	level = 2
 	},
 /obj/window/north,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "AB" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /obj/machinery/door/window{
 	dir = 1
@@ -9643,7 +9659,8 @@
 /area/station/engine/combustion_chamber)
 "BG" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /obj/machinery/meter,
 /turf/simulated/floor,
@@ -9685,13 +9702,15 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/engineering)
 "BN" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor/airless/plating,
 /area/space)
@@ -9973,7 +9992,8 @@
 /area/station/storage/emergency)
 "Cw" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 10
+	dir = 10;
+	level = 2
 	},
 /obj/window/west,
 /turf/simulated/floor,
@@ -10039,7 +10059,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "CF" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/firealarm{
 	dir = 4;
 	name = "E Fire Alarm";
@@ -10052,13 +10074,15 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 6
+	dir = 6;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/engineering)
 "CI" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/engineering)
@@ -10229,7 +10253,8 @@
 /area/station/storage/emergency)
 "Di" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /obj/machinery/door/window{
 	dir = 8
@@ -10244,26 +10269,33 @@
 /area/station/engine/engineering)
 "Dk" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Dl" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Dm" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Dn" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/window/west,
 /turf/simulated/floor,
@@ -10316,7 +10348,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Du" = (
@@ -10547,14 +10581,16 @@
 /area/station/engine/engineering)
 "DW" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /obj/window/west,
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "DX" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /obj/machinery/meter,
 /obj/machinery/light/incandescent/netural,
@@ -10621,7 +10657,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Ei" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -10629,7 +10667,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/light/incandescent/netural{
 	dir = 4
 	},
@@ -10964,7 +11004,9 @@
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
 "EV" = (
@@ -10980,13 +11022,15 @@
 "EX" = (
 /obj/machinery/atmospherics/pipe/simple/insulated,
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
 "EY" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 10
+	dir = 10;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -10996,7 +11040,8 @@
 /area/station/engine/engineering)
 "Fa" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/cable{
 	icon_state = "1-2"
@@ -11161,7 +11206,8 @@
 /area/station/storage/emergency)
 "Fy" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -11201,7 +11247,8 @@
 /area/station/engine/combustion_chamber)
 "FD" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -11239,7 +11286,9 @@
 /obj/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/meter,
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -11250,7 +11299,9 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/alarm{
 	alarm_zone = "Engine Generation";
 	dir = 8;
@@ -11467,7 +11518,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Gp" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
 "Gq" = (
@@ -11864,7 +11917,8 @@
 /area/station/hallway/primary/west)
 "Hq" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /obj/machinery/light/incandescent/netural{
 	dir = 8
@@ -11872,7 +11926,9 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Hr" = (
-/obj/machinery/atmospherics/pipe/simple,
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
 /obj/machinery/atmospherics/pipe/simple/insulated{
 	dir = 4
 	},
@@ -11928,7 +11984,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
@@ -12299,7 +12356,8 @@
 /area/station/hallway/primary/west)
 "IE" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -12348,7 +12406,8 @@
 /area/station/engine/combustion_chamber)
 "IL" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -12371,13 +12430,15 @@
 /area/station/engine/gas)
 "IP" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 6
+	dir = 6;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/gas)
 "IQ" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/gas)
@@ -12389,7 +12450,8 @@
 	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/gas)
@@ -12813,10 +12875,12 @@
 /area/station/engine/engineering)
 "JX" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
@@ -12845,7 +12909,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -12854,7 +12919,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -13040,7 +13106,8 @@
 /area/station/engine/engineering)
 "KD" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
@@ -13052,7 +13119,8 @@
 /area/station/engine/engineering)
 "KF" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/gas)
@@ -13072,19 +13140,22 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
 "KI" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 1
+	dir = 1;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
 "KJ" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /obj/machinery/meter,
 /turf/simulated/floor,
@@ -13290,7 +13361,8 @@
 /area/station/hallway/primary/west)
 "Ln" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /obj/machinery/meter,
 /turf/simulated/floor/plating,
@@ -13303,7 +13375,9 @@
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "Lp" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
@@ -13323,13 +13397,15 @@
 /area/station/engine/engineering)
 "Ls" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "Lt" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/gas)
@@ -13345,7 +13421,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -13357,7 +13434,8 @@
 /area/station/engine/gas)
 "Lx" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -13478,7 +13556,8 @@
 /area/station/hallway/primary/west)
 "LR" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 8
+	dir = 8;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/engineering)
@@ -13503,7 +13582,9 @@
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "LV" = (
-/obj/machinery/atmospherics/pipe/manifold,
+/obj/machinery/atmospherics/pipe/manifold{
+	level = 2
+	},
 /obj/machinery/light/incandescent/netural,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
@@ -13546,7 +13627,8 @@
 /area/station/engine/gas)
 "Mc" = (
 /obj/machinery/atmospherics/pipe/manifold{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -13882,7 +13964,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -13895,13 +13978,15 @@
 /area/station/engine/gas)
 "Nb" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 9
+	dir = 9;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
 "Nd" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 5
+	dir = 5;
+	level = 2
 	},
 /turf/simulated/floor,
 /area/station/engine/gas)
@@ -14122,6 +14207,13 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/entry)
+"NP" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/engine/engineering)
 "NQ" = (
 /obj/machinery/camera{
 	c_tag = "Arrival Shuttle Docking Arm"
@@ -14425,6 +14517,13 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/simulated/wall/auto/supernorn,
 /area/station/storage/primary)
+"OM" = (
+/obj/machinery/atmospherics/pipe/manifold{
+	dir = 8;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "ON" = (
 /obj/storage/closet/emergency,
 /obj/machinery/camera{
@@ -14447,7 +14546,8 @@
 /area/listeningpost)
 "OS" = (
 /obj/machinery/atmospherics/pipe/simple{
-	dir = 4
+	dir = 4;
+	level = 2
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/engine/combustion_chamber)
@@ -15044,6 +15144,15 @@
 	},
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/south)
+"Rg" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "Rh" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8
@@ -15281,12 +15390,6 @@
 	},
 /turf/simulated/floor/red,
 /area/listeningpost)
-"Sb" = (
-/obj/machinery/light/incandescent/netural{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/station/engine/engineering)
 "Sc" = (
 /obj/machinery/atmospherics/pipe/tank/air{
 	dir = 4
@@ -15838,6 +15941,10 @@
 /obj/item/device/analyzer/healthanalyzer,
 /turf/simulated/floor/red/side,
 /area/station/hallway/primary/south)
+"TZ" = (
+/obj/machinery/light/incandescent/netural,
+/turf/simulated/floor,
+/area/station/engine/power)
 "Ua" = (
 /obj/table,
 /obj/item/device/timer,
@@ -16065,6 +16172,19 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/entry)
+"UD" = (
+/obj/machinery/atmospherics/pipe/simple{
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
+"UE" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "UF" = (
 /obj/machinery/atmospherics/pipe/manifold{
 	dir = 8
@@ -16373,6 +16493,19 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/entry)
+"VG" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/firedoor_spawn,
+/obj/machinery/light/incandescent/netural{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbay)
 "VH" = (
 /obj/table/reinforced/auto,
 /obj/item/storage/box/id_kit,
@@ -16586,6 +16719,12 @@
 /obj/access_spawn/maint,
 /turf/simulated/floor/plating,
 /area/station/maintenance/south)
+"Ws" = (
+/obj/machinery/light/incandescent/netural{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "Wt" = (
 /turf/simulated/floor/grey/side{
 	dir = 4
@@ -16713,6 +16852,13 @@
 	icon_state = "fred2"
 	},
 /area/listeningpost)
+"WU" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 5;
+	level = 2
+	},
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "WV" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -16934,6 +17080,13 @@
 /obj/access_spawn/janitor,
 /turf/simulated/floor,
 /area/station/janitor/supply)
+"XF" = (
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 4;
+	level = 2
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/engineering)
 "XG" = (
 /obj/machinery/alarm{
 	alarm_zone = "South Maintenance";
@@ -58849,7 +59002,7 @@ pN
 ga
 Pb
 Pb
-sC
+NP
 sA
 sA
 sA
@@ -59151,7 +59304,7 @@ qQ
 ga
 Pb
 sA
-sC
+NP
 sA
 sA
 sA
@@ -59465,7 +59618,7 @@ vy
 vy
 DS
 ES
-vC
+OM
 Gl
 uH
 uH
@@ -60360,10 +60513,10 @@ rB
 sC
 tx
 uB
-vC
-vC
-vC
-vC
+OM
+OM
+OM
+OM
 vH
 Ay
 Bz
@@ -60670,7 +60823,7 @@ rx
 Ax
 Bz
 vH
-AD
+xZ
 DV
 zF
 uA
@@ -60679,7 +60832,7 @@ Hq
 HY
 zE
 zE
-vC
+OM
 KB
 Ie
 Ie
@@ -61272,7 +61425,7 @@ xF
 yI
 zC
 AA
-BB
+WU
 zF
 Dj
 Dj
@@ -61879,7 +62032,7 @@ AC
 uA
 Cx
 Dl
-DY
+UE
 CA
 Fz
 Gq
@@ -62164,7 +62317,7 @@ lX
 kL
 ji
 jP
-ik
+VG
 pF
 jM
 qR
@@ -62177,7 +62330,7 @@ uA
 xI
 uF
 vG
-AD
+xZ
 vB
 Cy
 Dm
@@ -63690,9 +63843,9 @@ vG
 zF
 zF
 BH
-AD
-BJ
-BB
+xZ
+Rg
+WU
 sA
 Gw
 zF
@@ -63987,7 +64140,7 @@ uF
 vB
 vB
 xJ
-yJ
+UD
 zD
 zF
 zF
@@ -67006,7 +67159,7 @@ tF
 uL
 uL
 vO
-iZ
+TZ
 tC
 zG
 zG
@@ -67324,7 +67477,7 @@ tx
 tB
 GA
 GA
-GC
+XF
 GA
 LZ
 sA
@@ -68216,7 +68369,7 @@ vQ
 vQ
 xR
 tC
-Sb
+Ws
 zF
 zF
 BH
@@ -69131,7 +69284,7 @@ Ei
 Fe
 FI
 Ds
-BB
+WU
 Im
 IQ
 JB
