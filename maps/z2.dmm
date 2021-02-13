@@ -82219,9 +82219,6 @@
 /obj/machinery/computer3/luggable/personal,
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/hukhukhuk)
-"edz" = (
-/turf/unsimulated/wall/auto/reinforced/supernorn,
-/area/space)
 "edC" = (
 /obj/stool/chair/comfy/shuttle/brown,
 /turf/unsimulated/floor/shuttle,
@@ -82666,10 +82663,6 @@
 	name = "wood floor"
 	},
 /area/centcom/offices/sord)
-"fDE" = (
-/obj/wingrille_spawn/auto,
-/turf/unsimulated/wall/auto/reinforced/supernorn,
-/area/space)
 "fGD" = (
 /obj/storage/cart/hotdog,
 /obj/item/clothing/suit/gimmick/hotdog,
@@ -84105,8 +84098,8 @@
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/hukhukhuk)
 "kNy" = (
-/turf/space,
-/area/shuttle_particle_spawn/west)
+/turf/unsimulated/wall/auto/reinforced/supernorn,
+/area/space)
 "kOu" = (
 /obj/indestructible/shuttle_corner{
 	dir = 1;
@@ -85030,8 +85023,9 @@
 /turf/unsimulated/floor/shuttle,
 /area/shuttle/escape/centcom/donut3)
 "nOd" = (
-/turf/space,
-/area/area_that_kills_you_if_you_enter_it)
+/obj/wingrille_spawn/auto,
+/turf/unsimulated/wall/auto/reinforced/supernorn,
+/area/space)
 "nQp" = (
 /obj/lattice{
 	dir = 6;
@@ -87313,9 +87307,6 @@
 	dir = 4
 	},
 /area/dojo/sakura)
-"vwP" = (
-/turf/space/no_replace,
-/area/area_that_kills_you_if_you_enter_it)
 "vwU" = (
 /obj/machinery/door/airlock/gannets/glass,
 /obj/decal/tile_edge/line/green{
@@ -87852,7 +87843,7 @@
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/right_centcom/donut2)
 "xFD" = (
-/turf/space,
+/turf/space/shuttle_transit,
 /area/shuttle/escape/transit/donut1)
 "xGt" = (
 /obj/item/sticker/gold_star{
@@ -88464,26 +88455,26 @@ axy
 axy
 aaa
 aaa
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
 aaa
 cvu
 cvu
@@ -88766,7 +88757,7 @@ axy
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -88785,7 +88776,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvu
@@ -89068,7 +89059,7 @@ cVw
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -89087,7 +89078,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvv
@@ -89370,7 +89361,7 @@ cVw
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -89379,7 +89370,7 @@ dly
 dly
 dly
 dly
-kNy
+dlW
 dly
 dly
 dly
@@ -89389,7 +89380,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -89672,7 +89663,7 @@ cXn
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -89681,7 +89672,7 @@ dly
 dly
 dly
 dly
-kNy
+dlW
 dly
 dly
 dly
@@ -89691,7 +89682,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvw
@@ -89974,7 +89965,7 @@ cVw
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -89993,7 +89984,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -90276,7 +90267,7 @@ cXn
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -90295,7 +90286,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvA
@@ -90578,7 +90569,7 @@ cVw
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -90597,7 +90588,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -90880,7 +90871,7 @@ cVw
 axy
 aaa
 aaa
-nOd
+dkG
 dly
 dly
 dly
@@ -90899,7 +90890,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -91182,7 +91173,7 @@ axy
 axy
 aaa
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -91201,7 +91192,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvx
@@ -91484,7 +91475,7 @@ axy
 axy
 aaa
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -91503,7 +91494,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -91786,7 +91777,7 @@ aaa
 aaa
 aaa
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -91805,7 +91796,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvv
@@ -92088,7 +92079,7 @@ axy
 axy
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -92107,7 +92098,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvv
@@ -92390,7 +92381,7 @@ axy
 axy
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -92409,7 +92400,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvu
@@ -92692,7 +92683,7 @@ cnw
 axy
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -92711,7 +92702,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvu
@@ -92994,7 +92985,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -93013,7 +93004,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvu
@@ -93296,7 +93287,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -93315,7 +93306,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -93598,7 +93589,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -93617,7 +93608,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -93900,7 +93891,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -93919,7 +93910,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -94202,7 +94193,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -94221,7 +94212,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -94504,7 +94495,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -94523,7 +94514,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -94806,7 +94797,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -94825,7 +94816,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvv
@@ -95108,7 +95099,7 @@ cnw
 cnw
 axy
 aaa
-vwP
+dkG
 dly
 dly
 dly
@@ -95127,7 +95118,7 @@ dly
 dly
 dly
 dly
-nOd
+dkG
 aaa
 cvu
 cvz
@@ -95410,26 +95401,26 @@ cnw
 cnw
 axy
 aaa
-vwP
-vwP
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
-nOd
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
+dkG
 aaa
 cvu
 cvz
@@ -114600,9 +114591,9 @@ cof
 cof
 cof
 cof
-edz
-edz
-edz
+kNy
+kNy
+kNy
 cof
 cof
 cnw
@@ -114909,19 +114900,19 @@ coS
 cof
 cnw
 cnw
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
-edz
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
+kNy
 cnw
 cnw
 cnw
@@ -115208,10 +115199,10 @@ coS
 coS
 cqb
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 iax
 iax
 cZT
@@ -115223,7 +115214,7 @@ cZT
 cZT
 iax
 iax
-edz
+kNy
 cnw
 cnw
 cnw
@@ -115510,10 +115501,10 @@ coS
 coS
 coS
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 iax
 cZT
 cZT
@@ -115525,7 +115516,7 @@ jpP
 cZT
 cZT
 iax
-edz
+kNy
 cnw
 cnw
 cnw
@@ -115808,14 +115799,14 @@ cof
 cof
 cof
 cof
-edz
+kNy
 coS
 coS
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 cZT
 fNY
@@ -115827,7 +115818,7 @@ kFQ
 jpP
 cZT
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -116110,14 +116101,14 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 coS
 coS
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 fNY
 kFQ
@@ -116129,7 +116120,7 @@ wGz
 kFQ
 jpP
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -116412,11 +116403,11 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 coS
 coS
 coS
-edz
+kNy
 cof
 cof
 cof
@@ -116431,7 +116422,7 @@ wGz
 wGz
 kFQ
 cZT
-edz
+kNy
 cof
 cof
 cof
@@ -116714,7 +116705,7 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 coS
 coS
 coS
@@ -117016,11 +117007,11 @@ cnw
 cnw
 cnw
 cnw
-fDE
+nOd
 coS
 cqc
 coS
-edz
+kNy
 cof
 cof
 cof
@@ -117035,7 +117026,7 @@ wGz
 wGz
 kFQ
 cZT
-edz
+kNy
 cof
 cof
 cof
@@ -117322,10 +117313,10 @@ cof
 coS
 cqd
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 uCk
 lin
@@ -117337,7 +117328,7 @@ rHB
 wGz
 uCk
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -117624,10 +117615,10 @@ cof
 coS
 cqi
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 uCk
 wGz
@@ -117639,7 +117630,7 @@ wGz
 wGz
 uCk
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -117926,10 +117917,10 @@ cof
 coS
 cqc
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 uCk
 wGz
@@ -117941,7 +117932,7 @@ oVv
 wGz
 uCk
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -118228,10 +118219,10 @@ cof
 coS
 cqd
 coS
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 uCk
 jZh
@@ -118243,7 +118234,7 @@ wGz
 vKX
 uCk
 cZT
-edz
+kNy
 cof
 cof
 cof
@@ -118530,7 +118521,7 @@ cof
 coS
 cqi
 coS
-edz
+kNy
 cof
 cof
 cof
@@ -118828,7 +118819,7 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 cps
 coS
 cqR
@@ -118847,7 +118838,7 @@ lER
 wGz
 xbf
 cZT
-edz
+kNy
 cof
 cof
 cof
@@ -119130,11 +119121,11 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 cpu
 coS
 cqX
-edz
+kNy
 cof
 cof
 cof
@@ -119149,7 +119140,7 @@ wGz
 iZy
 kFQ
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -119432,14 +119423,14 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 cpC
 coS
 cqX
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 gEs
 kFQ
@@ -119451,7 +119442,7 @@ sfP
 kFQ
 oNn
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -119734,14 +119725,14 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 cpC
 coS
 cra
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 cZT
 gEs
@@ -119753,7 +119744,7 @@ hko
 oNn
 cZT
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -120036,14 +120027,14 @@ cnw
 cnw
 cnw
 cnw
-edz
+kNy
 cpF
 coS
 cra
-edz
+kNy
 cnw
 cnw
-edz
+kNy
 cZT
 cZT
 cZT
@@ -120055,7 +120046,7 @@ cZT
 cZT
 cZT
 cZT
-edz
+kNy
 cnw
 cnw
 cnw
@@ -120345,7 +120336,7 @@ cra
 cof
 cnw
 cnw
-edz
+kNy
 lKU
 wxo
 wxo
@@ -120357,7 +120348,7 @@ wxo
 wxo
 wxo
 wxU
-edz
+kNy
 cnw
 cnw
 cnw
