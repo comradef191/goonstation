@@ -155,9 +155,9 @@ var/global/list/mapNames = list(
 	ext_airlocks = /obj/machinery/door/airlock/pyro/external
 	airlock_style = "pyro"
 
-	escape_centcom = /area/shuttle/escape/centcom/donut2
-	escape_transit = /area/shuttle/escape/transit/donut2
-	escape_station = /area/shuttle/escape/station/donut2
+	escape_centcom = /area/shuttle/escape/centcom/donut1
+	escape_transit = /area/shuttle/escape/transit/donut1
+	escape_station = /area/shuttle/escape/station/donut1
 	escape_def = SHUTTLE_WEST
 	escape_dir = WEST
 
