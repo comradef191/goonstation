@@ -1755,7 +1755,6 @@
 /area/jones/radiation)
 "afN" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -12600,7 +12599,6 @@
 /area/hospital/underground)
 "aFC" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "Somebody removed the control board without unlatching the door bolts.  Rude";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -16893,7 +16891,6 @@
 /area/lower_arctic/lower)
 "aQm" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It probably has something to do with the elevator.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -18965,7 +18962,6 @@
 /area/lower_arctic/lower)
 "aVU" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It probably has something to do with the elevator.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -19179,7 +19175,6 @@
 /area/upper_arctic/hall)
 "aWB" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	icon = 'icons/obj/doors/Doorext.dmi';
 	icon_state = "door_closed";
@@ -19455,7 +19450,6 @@
 	icon_state = "1-2"
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "";
 	dir = 4;
@@ -19561,7 +19555,6 @@
 /area/crater/biodome/research)
 "aXB" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm2";
 	layer = 10;
@@ -25097,7 +25090,6 @@
 "bkQ" = (
 /obj/table/wood/auto,
 /obj/overlay{
-	anchored = 1;
 	desc = "A portrait of a man in a business suit. You don't recognize him.";
 	icon = 'icons/obj/decals/wallsigns.dmi';
 	icon_state = "portrait";
@@ -25620,7 +25612,6 @@
 /area/drone)
 "bmg" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It probably makes some sort of drone part. Who knows.";
 	icon = 'icons/mob/hivebot.dmi';
@@ -26359,7 +26350,6 @@
 /area/crater/biodome/south)
 "bnL" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/obj/recycling.dmi';
@@ -26370,7 +26360,6 @@
 /area/drone/office)
 "bnM" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/obj/recycling.dmi';
@@ -26381,7 +26370,6 @@
 /area/drone/office)
 "bnN" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/obj/recycling.dmi';
@@ -26670,7 +26658,6 @@
 /area/drone/assembly)
 "bot" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "The chassis of an HK-class drone.";
 	dir = 1;
@@ -26685,7 +26672,6 @@
 /area/drone/assembly)
 "bov" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "The chassis of an HK-class drone.";
 	dir = 4;
@@ -26997,7 +26983,6 @@
 /area/drone)
 "bpl" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "The chassis of an SC-class drone.";
 	icon = 'icons/obj/ship.dmi';
@@ -27130,7 +27115,6 @@
 /area/iomoon)
 "bpB" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	icon = 'icons/obj/doors/Doorext.dmi';
 	icon_state = "door_closed";
@@ -28039,7 +28023,6 @@
 /area/drone/assembly)
 "brQ" = (
 /obj/overlay{
-	anchored = 1;
 	bound_height = 96;
 	bound_width = 96;
 	density = 1;
@@ -28314,7 +28297,6 @@
 	dir = 4
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -28769,7 +28751,6 @@
 /area/iomoon/base)
 "btu" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It wont budge.";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -28793,7 +28774,6 @@
 /area/iomoon/base/underground)
 "btw" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It wont budge.";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -29335,7 +29315,6 @@
 "buO" = (
 /obj/stool/chair,
 /obj/overlay{
-	anchored = 1;
 	desc = "A portrait of a man in a business suit. You don't recognize him.";
 	icon = 'icons/obj/decals/wallsigns.dmi';
 	icon_state = "portrait";
@@ -30502,7 +30481,6 @@
 "bxu" = (
 /obj/decal/fakeobjects/firelock_broken,
 /obj/overlay{
-	anchored = 1;
 	desc = "It seems to be rusted open.";
 	icon = 'icons/misc/rstation.dmi';
 	icon_state = "eng-open";
@@ -31607,7 +31585,6 @@
 	pixel_y = -6
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -31866,7 +31843,6 @@
 /area/space)
 "bAM" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "It seems to be rusted open.";
 	icon = 'icons/misc/rstation.dmi';
 	icon_state = "eng-open";
@@ -31898,7 +31874,6 @@
 /area/iomoon/base/underground)
 "bAQ" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "A networked tape drive.  It looks to be in fairly poor condition.  I bet the vacuum columns don't work worth a damn.";
 	icon = 'icons/obj/networked.dmi';
@@ -32141,7 +32116,6 @@
 	icon_state = "0-2"
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "A networked tape drive.  It looks to be in fairly poor condition.  I bet the vacuum columns don't work worth a damn.";
 	icon = 'icons/obj/networked.dmi';
@@ -32574,7 +32548,6 @@
 /area/precursor)
 "bCm" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -32585,7 +32558,6 @@
 /area/iomoon/base/underground)
 "bCn" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -32596,7 +32568,6 @@
 /area/iomoon/base/underground)
 "bCo" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -32607,7 +32578,6 @@
 /area/iomoon/base/underground)
 "bCp" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -33020,7 +32990,6 @@
 /area/iomoon)
 "bDg" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -33031,7 +33000,6 @@
 /area/iomoon/base/underground)
 "bDh" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -33043,7 +33011,6 @@
 /area/iomoon/base/underground)
 "bDi" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -34850,7 +34817,6 @@
 /area/iomoon)
 "bHa" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It wont budge.";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -35319,7 +35285,6 @@
 	name = "power conduit"
 	},
 /obj/overlay{
-	anchored = 1;
 	bound_height = 64;
 	bound_width = 64;
 	desc = "An enormous artifact of some sort. You feel uncomfortable just being near it.";
@@ -35513,7 +35478,6 @@
 /area/iomoon/robot_ruins/boss_chamber)
 "bIB" = (
 /obj/overlay{
-	anchored = 1;
 	bound_height = 160;
 	bound_width = 160;
 	desc = "An enormous artifact of some sort. You feel uncomfortable just being near it.";
@@ -35614,7 +35578,6 @@
 /area/solarium)
 "bIO" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -36084,7 +36047,6 @@
 /area/solarium)
 "bKi" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -36557,7 +36519,6 @@
 "bLD" = (
 /obj/decal/fakeobjects/firelock_broken,
 /obj/overlay{
-	anchored = 1;
 	desc = "You could probably squeeze through.";
 	icon = 'icons/misc/hstation.dmi';
 	icon_state = "bloodydoor";
@@ -36568,7 +36529,6 @@
 /area/crunch)
 "bLE" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "A networked tape drive.  It looks to be in fairly poor condition.  I bet the vacuum columns don't work worth a damn.";
 	icon = 'icons/obj/networked.dmi';
@@ -36684,7 +36644,6 @@
 	dir = 8
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "You could probably squeeze through.";
 	icon = 'icons/misc/hstation.dmi';
 	icon_state = "bloodydoor";
@@ -36969,7 +36928,6 @@
 /area/crunch)
 "bMD" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "";
 	dir = 4;
@@ -37296,7 +37254,6 @@
 /area/crunch)
 "bNy" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It looks pretty crusty in there.";
 	icon = 'icons/mob/hivebot.dmi';
@@ -37994,7 +37951,6 @@
 	id = "ddan"
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It would not be surprising if this was rusty when it WAS in operation, as well.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -38586,7 +38542,6 @@
 	location = "tour1"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "A portrait of a man wearing a ridiculous merchant hat.  That must be Discount Dan.";
 	icon = 'icons/obj/decals/wallsigns.dmi';
 	icon_state = "portrait";
@@ -38700,7 +38655,6 @@
 /area/crunch)
 "bRd" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It wont budge.";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -38725,7 +38679,6 @@
 /area/crunch)
 "bRg" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It looks pretty gooey in there.";
 	icon = 'icons/mob/hivebot.dmi';
@@ -39191,7 +39144,6 @@
 /area/crunch)
 "bSB" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It wont budge.";
 	icon = 'icons/obj/doors/Door1.dmi';
@@ -39776,7 +39728,6 @@
 /area/crypt/sigma)
 "bUk" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "It probably has something to do with the elevator.";
 	icon = 'icons/obj/machines/nuclear.dmi';
@@ -39988,7 +39939,6 @@
 /area/gauntlet/staging)
 "bUO" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 4;
 	icon = 'icons/turf/martian.dmi';
@@ -40151,7 +40101,6 @@
 /area/gauntlet/viewing)
 "bVp" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 1;
 	icon = 'icons/turf/martian.dmi';
@@ -40167,7 +40116,6 @@
 	pixel_x = 30
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 1;
 	icon = 'icons/turf/martian.dmi';
@@ -40192,7 +40140,6 @@
 	name = "martian machine"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 8;
 	icon = 'icons/turf/martian.dmi';
@@ -40296,7 +40243,6 @@
 /area/gauntlet/viewing)
 "bVI" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 8;
 	icon = 'icons/turf/martian.dmi';
@@ -41465,7 +41411,6 @@
 /area/meat_derelict/guts)
 "bYO" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 4;
 	icon = 'icons/turf/martian.dmi';
@@ -41473,7 +41418,6 @@
 	name = "organic wall"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 1;
 	icon = 'icons/turf/martian.dmi';
@@ -41858,7 +41802,6 @@
 "bZH" = (
 /obj/map/light/dimred,
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 4;
 	icon = 'icons/turf/martian.dmi';
@@ -41874,7 +41817,6 @@
 	pixel_x = 30
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "Gross.";
 	dir = 8;
 	icon = 'icons/turf/martian.dmi';
@@ -43180,7 +43122,6 @@
 /area/sim/tdome/tdome2)
 "cdA" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "A networked tape drive.  It looks to be in fairly poor condition.  I bet the vacuum columns don't work worth a damn.";
 	icon = 'icons/obj/networked.dmi';
@@ -43191,7 +43132,6 @@
 /area/meat_derelict/entry)
 "cdB" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "A networked tape drive.  It looks to be in fairly poor condition.  I bet the vacuum columns don't work worth a damn.";
 	icon = 'icons/obj/networked.dmi';
@@ -44640,7 +44580,6 @@
 /area/meat_derelict/entry)
 "che" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -44651,7 +44590,6 @@
 /area/meat_derelict/entry)
 "chf" = (
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "You have no idea what this does.";
 	icon = 'icons/misc/worlds.dmi';
@@ -45345,14 +45283,12 @@
 /area/centcom/offices/bubs)
 "cja" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
 	name = "finish line"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
@@ -45366,7 +45302,6 @@
 /area/sim/racing_track)
 "cjb" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -45393,7 +45328,6 @@
 /area/sim/racing_track)
 "cjd" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -45419,7 +45353,6 @@
 /area/sim/racing_track)
 "cjf" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -45618,14 +45551,12 @@
 /area/iomoon)
 "cjG" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
 	name = "finish line"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
@@ -45807,14 +45738,12 @@
 /area/sim/racing_entry)
 "ckc" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm2";
 	layer = 10;
 	name = "palm tree"
 	},
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach.dmi';
 	icon_state = "coconuts";
 	name = "coconuts"
@@ -45892,14 +45821,12 @@
 /area/cavetiny)
 "ckk" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
 	name = "finish line"
 	},
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "finishline_strip";
@@ -45914,7 +45841,6 @@
 /area/sim/racing_track)
 "ckl" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -45942,7 +45868,6 @@
 /area/sim/racing_track)
 "ckn" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -45971,7 +45896,6 @@
 /area/sim/racing_track)
 "ckp" = (
 /obj/overlay{
-	anchored = 1;
 	desc = "";
 	icon = 'icons/misc/racing.dmi';
 	icon_state = "car_mark";
@@ -46258,7 +46182,6 @@
 /area/sim/racing_entry)
 "clc" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -46745,7 +46668,6 @@
 /area/sim/racing_entry)
 "cmi" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach.dmi';
 	icon_state = "crab2";
 	name = "crab"
@@ -47345,12 +47267,12 @@
 /turf/unsimulated/wall/auto/sengoku,
 /area/dojo)
 "cnI" = (
-/obj/decal/wallscroll/scrollfancy,
-/turf/unsimulated/wall/auto/sengoku,
-/area/dojo)
+/obj/decal/fakeobjects/falseladder,
+/turf/unsimulated/floor/black,
+/area/cordon)
 "cnJ" = (
-/obj/lantern,
-/turf/unsimulated/wall/auto/sengoku,
+/obj/decal/fakeobjects/sealed_door,
+/turf/unsimulated/floor/black,
 /area/dojo)
 "cnK" = (
 /obj/decal/floatingtiles,
@@ -47365,28 +47287,24 @@
 	},
 /area/dojo)
 "cnN" = (
-/obj/decal/cleanable/blood/drip/med,
-/turf/unsimulated/floor{
-	icon_state = "wooden-2"
-	},
+/obj/decal/wallscroll/scrollfancy,
+/turf/unsimulated/wall/auto/sengoku,
 /area/dojo)
 "cnO" = (
 /turf/unsimulated/wall/water/border,
 /area/dojo)
 "cnP" = (
-/obj/decal/fakeobjects/lotus{
-	icon_state = "lotus_2"
-	},
+/obj/decal/fakeobjects/lotus,
 /turf/unsimulated/wall/water/border,
 /area/dojo)
 "cnQ" = (
 /turf/unsimulated/wall/sengoku_tall,
 /area/dojo)
 "cnR" = (
-/obj/lantern{
-	pixel_y = 10
+/obj/decal/cleanable/blood/drip/med,
+/turf/unsimulated/floor{
+	icon_state = "wooden-2"
 	},
-/turf/unsimulated/wall/sengoku_tall,
 /area/dojo)
 "cnS" = (
 /obj/landmark/viscontents_spawn{
@@ -47479,16 +47397,16 @@
 /turf/unsimulated/pool/no_animate,
 /area/space)
 "cnZ" = (
-/obj/decal/fakeobjects/swordrack{
-	pixel_y = 5
+/obj/decal/fakeobjects/lotus{
+	icon_state = "lotus_2"
 	},
-/turf/unsimulated/wall/sengoku_tall,
+/turf/unsimulated/wall/water/border,
 /area/dojo)
 "coa" = (
 /obj/lantern{
-	dir = 4
+	pixel_y = 10
 	},
-/turf/unsimulated/wall/auto/sengoku,
+/turf/unsimulated/wall/sengoku_tall,
 /area/dojo)
 "cob" = (
 /turf/unsimulated/floor/orangeblack/side{
@@ -47496,20 +47414,16 @@
 	},
 /area/centcom/outside)
 "coc" = (
-/obj/lantern{
-	dir = 8
+/obj/decal/fakeobjects/swordrack{
+	pixel_y = 5
 	},
-/turf/unsimulated/wall/auto/sengoku,
+/turf/unsimulated/wall/sengoku_tall,
 /area/dojo)
 "cod" = (
 /obj/decal/stage_edge,
 /turf/unsimulated/wall/water/border,
 /area/dojo)
 "coe" = (
-/obj/decal/fakeobjects/lotus,
-/turf/unsimulated/wall/water,
-/area/dojo)
-"cof" = (
 /obj/decal/stone_lamp,
 /turf/unsimulated/floor{
 	icon = 'icons/misc/beach.dmi';
@@ -47517,28 +47431,14 @@
 	name = "sand"
 	},
 /area/dojo)
+"cof" = (
+/obj/wingrille_spawn/auto,
+/turf/unsimulated/floor/plating,
+/area/space)
 "cog" = (
 /turf/unsimulated/wall/water,
 /area/dojo)
-"coh" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 6;
-	pixel_z = 10
-	},
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"coi" = (
-/obj/decal/wallscroll{
-	pixel_y = 32
-	},
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
 "coj" = (
-/obj/stool/bench/wooden,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cok" = (
 /obj/table/wood/auto/desk,
 /obj/decal/wallscroll/scroll2{
 	pixel_y = 32
@@ -47548,11 +47448,11 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"col" = (
+"cok" = (
 /obj/table/wood/auto/desk,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"com" = (
+"col" = (
 /obj/table/wood/auto/desk,
 /obj/decal/wallscroll/scroll3{
 	pixel_y = 32
@@ -47562,7 +47462,68 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
+"com" = (
+/obj/stool/bench/wooden,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "con" = (
+/obj/lantern{
+	dir = 4
+	},
+/turf/unsimulated/wall/auto/sengoku,
+/area/dojo)
+"coo" = (
+/obj/map/light/brightwhite,
+/obj/landmark/lrt/workshop,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
+"cop" = (
+/obj/lantern/white{
+	dir = 4
+	},
+/turf/unsimulated/wall/auto/paper,
+/area/dojo)
+"coq" = (
+/obj/lantern,
+/turf/unsimulated/wall/auto/sengoku,
+/area/dojo)
+"cor" = (
+/obj/lantern{
+	dir = 8
+	},
+/turf/unsimulated/wall/auto/sengoku,
+/area/dojo)
+"cos" = (
+/turf/unsimulated/floor/dojo/sand,
+/area/dojo)
+"cot" = (
+/obj/decal/fakeobjects/lotus,
+/turf/unsimulated/wall/water,
+/area/dojo)
+"cou" = (
+/turf/unsimulated/floor/stairs{
+	icon_state = "wood_stairs"
+	},
+/area/dojo)
+"cov" = (
+/obj/decal/stage_edge,
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
+"cox" = (
+/turf/unsimulated/floor/dojo/stone,
+/area/dojo)
+"coy" = (
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
+"coz" = (
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 6;
+	pixel_z = 10
+	},
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
+"coC" = (
 /obj/decal/fakeobjects/plantpot,
 /obj/shrub{
 	dir = 10;
@@ -47570,7 +47531,60 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"coo" = (
+"coD" = (
+/obj/table/auto,
+/obj/item/storage/pill_bottle/catdrugs,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"coE" = (
+/obj/lantern{
+	dir = 1
+	},
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
+"coG" = (
+/obj/decal/fakeobjects/moonrock{
+	desc = "A small stone circled by sand patterns.";
+	name = "small rock"
+	},
+/turf/unsimulated/floor/dojo/sand/circle,
+/area/dojo)
+"coH" = (
+/obj/stone,
+/turf/unsimulated/floor/dojo/sand/circle,
+/area/dojo)
+"coI" = (
+/obj/table/wood/round/auto,
+/obj/item/paper/book/scroll_sword,
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
+"coJ" = (
+/obj/table/auto,
+/obj/item/paper,
+/obj/item/pen{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"coK" = (
+/obj/table/auto,
+/obj/item/paper_bin,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"coL" = (
+/obj/lantern/white{
+	dir = 8
+	},
+/turf/unsimulated/wall/auto/sengoku,
+/area/dojo)
+"coM" = (
 /obj/decal/fakeobjects/kanji_1{
 	layer = 2
 	},
@@ -47580,200 +47594,64 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cop" = (
+"coN" = (
+/turf/unsimulated/floor/dojo/sand/circle,
+/area/dojo)
+"coP" = (
+/turf/unsimulated/floor/dojo/sand/horizontal,
+/area/dojo)
+"coQ" = (
 /obj/item/clothing/under/towel,
 /obj/item/clothing/shoes/sandal{
 	layer = 5
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"coq" = (
-/turf/unsimulated/floor/stairs{
-	icon_state = "wood_stairs"
-	},
+"coR" = (
+/obj/decal/stone_lamp,
+/turf/unsimulated/floor/dojo/sand,
 /area/dojo)
-"cor" = (
+"coS" = (
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"coT" = (
 /obj/table/wood/round/auto,
 /obj/item/paper/book/scroll_1,
 /turf/unsimulated/floor/dojo/sand,
 /area/dojo)
-"cos" = (
-/turf/unsimulated/floor/dojo/sand,
-/area/dojo)
-"cot" = (
+"coU" = (
 /obj/decal/fakeobjects/lotus{
 	icon_state = "lotus_2"
 	},
 /turf/unsimulated/wall/water,
 /area/dojo)
-"cou" = (
+"coV" = (
 /obj/decal/stage_edge,
 /obj/decal/stone_lamp,
 /turf/unsimulated/floor/wood/three,
 /area/dojo)
-"cov" = (
-/obj/decal/stage_edge,
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"cow" = (
-/turf/unsimulated/floor/dojo/sand/vertical,
-/area/dojo)
-"cox" = (
-/turf/unsimulated/floor/dojo/stone,
-/area/dojo)
-"coy" = (
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coz" = (
-/obj/decal/fakeobjects/birdhouse/light,
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coA" = (
-/turf/unsimulated/floor/dojo/sand/circle,
-/area/dojo)
-"coB" = (
-/turf/unsimulated/floor/dojo/sand/horizontal,
-/area/dojo)
-"coC" = (
-/obj/decal/fakeobjects/rake,
-/turf/unsimulated/floor/dojo/sand/horizontal,
-/area/dojo)
-"coD" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 6;
-	pixel_z = 10
-	},
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coE" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 8;
-	pixel_y = 10
-	},
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coF" = (
-/obj/decal/fakeobjects/moonrock{
-	desc = "A calming slab of rock. Nice to look at.";
-	dir = 8;
-	name = "rock"
-	},
-/turf/unsimulated/floor/dojo/sand/circle,
-/area/dojo)
-"coG" = (
-/obj/stone,
-/turf/unsimulated/floor/dojo/sand/circle,
-/area/dojo)
-"coH" = (
-/obj/decal/fakeobjects/moonrock{
-	desc = "A small stone circled by sand patterns.";
-	name = "small rock"
-	},
-/turf/unsimulated/floor/dojo/sand/circle,
-/area/dojo)
-"coI" = (
-/obj/lantern/white{
-	dir = 4
-	},
-/turf/unsimulated/wall/auto/sengoku,
-/area/dojo)
-"coJ" = (
-/obj/table/wood/round/auto,
-/obj/item/paper/book/scroll_sword,
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coK" = (
-/obj/map/light/brightwhite,
-/turf/unsimulated/floor/dojo/stone,
-/area/dojo)
-"coL" = (
-/obj/table/wood/round/auto,
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coM" = (
-/obj/lantern/white{
-	dir = 8
-	},
-/turf/unsimulated/wall/auto/sengoku,
-/area/dojo)
-"coN" = (
-/obj/lantern{
-	dir = 1
-	},
-/turf/unsimulated/floor/dojo/sand/horizontal,
-/area/dojo)
-"coO" = (
-/obj/lantern{
-	dir = 1
-	},
-/turf/unsimulated/floor/dojo/sand/circle,
-/area/dojo)
-"coP" = (
-/obj/lantern{
-	dir = 1
-	},
-/turf/unsimulated/floor/dojo/sand/vertical,
-/area/dojo)
-"coQ" = (
-/obj/decal/fakeobjects/birdhouse,
-/turf/unsimulated/floor/dojo/sand/vertical,
-/area/dojo)
-"coR" = (
-/obj/lantern{
-	dir = 1
-	},
-/turf/unsimulated/floor/dojo/sand,
-/area/dojo)
-"coS" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 10;
-	pixel_y = 10
-	},
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coT" = (
-/obj/decal/fakeobjects/kanji_2{
-	layer = 2
-	},
-/turf/unsimulated/floor/dojo/stone,
-/area/dojo)
-"coU" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 4;
-	pixel_y = 10
-	},
-/turf/unsimulated/floor/wood/three,
-/area/dojo)
-"coV" = (
-/obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_1"
-	},
-/turf/unsimulated/floor/dojo/bridge/vertical,
-/area/dojo)
 "coW" = (
-/obj/decal/stage_edge/dojo,
-/obj/decal/fakeobjects/birdhouse/light,
-/turf/unsimulated/floor/wood/three,
+/turf/unsimulated/floor/dojo/sand/vertical,
 /area/dojo)
 "coX" = (
-/obj/decal/fakeobjects/lotus,
-/turf/unsimulated/wall/water/border,
-/area/dojo)
-"coY" = (
 /obj/decal/fakeobjects/bridge_rail{
 	icon_state = "rail_7"
 	},
 /turf/unsimulated/wall/water/border,
 /area/dojo)
-"coZ" = (
+"coY" = (
 /obj/decal/fakeobjects/bridge_rail{
 	icon_state = "rail_5"
 	},
 /turf/unsimulated/wall/water/border,
+/area/dojo)
+"coZ" = (
+/obj/decal/fakeobjects/bridge_rail{
+	icon_state = "rail_3"
+	},
+/turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
 "cpa" = (
 /obj/decal/fakeobjects/bridge_rail{
@@ -47782,41 +47660,39 @@
 /turf/unsimulated/wall/water/border,
 /area/dojo)
 "cpb" = (
-/obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_3"
-	},
-/turf/unsimulated/floor/dojo/bridge/vertical,
+/obj/decal/fakeobjects/birdhouse/light,
+/turf/unsimulated/floor/wood/three,
 /area/dojo)
 "cpc" = (
+/turf/unsimulated/floor/dojo/stonestair/left,
+/area/dojo)
+"cpd" = (
+/turf/unsimulated/floor/dojo/stonestair/middle,
+/area/dojo)
+"cpe" = (
+/turf/unsimulated/floor/dojo/stonestair/right,
+/area/dojo)
+"cpf" = (
 /obj/decal/stage_edge/dojo,
 /turf/unsimulated/floor/wood/three,
 /area/dojo)
-"cpd" = (
-/turf/unsimulated/floor/dojo/stonestair/left,
-/area/dojo)
-"cpe" = (
-/turf/unsimulated/floor/dojo/stonestair/middle,
-/area/dojo)
-"cpf" = (
-/turf/unsimulated/floor/dojo/stonestair/right,
-/area/dojo)
 "cpg" = (
-/obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_9"
-	},
-/turf/unsimulated/floor/dojo/bridge/vertical,
-/area/dojo)
-"cph" = (
 /obj/decal/fakeobjects/bridge_rail{
 	icon_state = "rail_8"
 	},
 /turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
-"cpi" = (
+"cph" = (
 /obj/decal/fakeobjects/bridge_rail{
 	icon_state = "rail_5"
 	},
 /turf/unsimulated/floor/dojo/bridge/horizontal,
+/area/dojo)
+"cpi" = (
+/obj/decal/fakeobjects/bridge_rail{
+	icon_state = "rail_4"
+	},
+/turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
 "cpj" = (
 /obj/decal/fakeobjects/bridge_rail{
@@ -47825,36 +47701,40 @@
 /turf/unsimulated/floor/dojo/bridge/horizontal,
 /area/dojo)
 "cpk" = (
-/obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_4"
-	},
-/turf/unsimulated/floor/dojo/bridge/vertical,
+/obj/decal/fakeobjects/rake,
+/turf/unsimulated/floor/dojo/sand/horizontal,
 /area/dojo)
 "cpl" = (
-/obj/decal/stone_lamp,
-/turf/unsimulated/floor/dojo/sand,
-/area/dojo)
-"cpm" = (
 /obj/lantern{
 	dir = 1
 	},
-/turf/unsimulated/wall/water,
+/turf/unsimulated/floor/dojo/sand,
 /area/dojo)
-"cpn" = (
+"cpm" = (
 /obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_10"
+	icon_state = "rail_9"
 	},
 /turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
-"cpo" = (
+"cpn" = (
 /obj/lantern{
 	dir = 1
 	},
 /turf/unsimulated/wall/water/border,
 /area/dojo)
+"cpo" = (
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 8;
+	pixel_y = 10
+	},
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
 "cpp" = (
-/obj/lantern{
-	dir = 1
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 6;
+	pixel_z = 10
 	},
 /turf/unsimulated/floor/wood/three,
 /area/dojo)
@@ -47865,33 +47745,30 @@
 /obj/machinery/door/unpowered/wood/pyro{
 	name = "tea room"
 	},
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
-"cps" = (
-/obj/machinery/door/unpowered/wood/pyro{
-	name = "tea room"
-	},
 /turf/unsimulated/floor/tatami/east,
 /area/dojo)
+"cps" = (
+/obj/item/device/radio/signaler,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cpt" = (
+/obj/decal/fakeobjects/bridge_rail{
+	icon_state = "rail_10"
+	},
 /turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
 "cpu" = (
-/obj/storage/closet/dresser,
-/obj/item/clothing/under/gimmick/hakama/random,
-/obj/item/clothing/head/bandana/random_color,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
+/obj/storage/closet/wardrobe/blue,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cpv" = (
 /turf/unsimulated/floor/tatami/north,
 /area/dojo)
 "cpw" = (
-/obj/lantern/white{
-	dir = 4
-	},
-/turf/unsimulated/wall/auto/paper,
-/area/dojo)
-"cpx" = (
 /obj/storage/closet/dresser,
 /obj/item/clothing/under/suit,
 /obj/item/storage/briefcase,
@@ -47899,14 +47776,13 @@
 /obj/item/cigpacket/menthol,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cpy" = (
-/obj/decal/wallscroll/scroll3{
+"cpx" = (
+/obj/decal/wallscroll{
 	pixel_y = 32
 	},
-/obj/stool/bench/wooden,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cpz" = (
+"cpy" = (
 /obj/shrub{
 	dir = 8;
 	pixel_y = 10
@@ -47915,106 +47791,86 @@
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
 "cpA" = (
-/turf/simulated/wall/false_wall/sengoku,
-/area/dojo)
-"cpB" = (
 /obj/item/clothing/under/gimmick,
 /obj/item/clothing/mask/anime,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo)
-"cpC" = (
+"cpB" = (
 /obj/item/paper/book/scroll_shame,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo)
-"cpD" = (
-/obj/decal/fakeobjects/arch{
-	layer = 5
+"cpC" = (
+/obj/storage/closet/wardrobe/black,
+/turf/unsimulated/floor{
+	icon_state = "floor"
 	},
-/turf/unsimulated/wall/sengoku_tall,
-/area/dojo)
-"cpE" = (
+/area/space)
+"cpD" = (
 /obj/decal/fakeobjects/bridge_rail{
 	icon_state = "rail_9"
 	},
 /obj/indestructible/invisible_block,
 /turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
-"cpF" = (
-/obj/decal/fakeobjects/bridge_rail{
-	icon_state = "rail_10"
-	},
-/obj/indestructible/invisible_block,
+"cpE" = (
 /turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
+"cpF" = (
+/obj/storage/closet/wardrobe/yellow,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cpG" = (
-/obj/table/hibachi{
-	dir = 8
-	},
-/obj/item/reagent_containers/food/drinks/teapot{
-	pixel_y = 8
-	},
-/turf/unsimulated/floor/wood/two,
+/obj/table/wood/round/auto,
+/obj/item/reagent_containers/food/drinks/mug,
+/turf/unsimulated/floor/tatami/south,
 /area/dojo)
 "cpH" = (
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
 "cpI" = (
-/obj/table/wood/round/auto,
-/obj/item/matchbook,
-/obj/item/paper/book/scroll_2,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cpJ" = (
-/obj/table/wood/round/auto,
-/obj/towelbin,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cpK" = (
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
+/obj/storage/closet/wardrobe/grey,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cpL" = (
-/turf/unsimulated/floor/tatami/east,
-/area/dojo)
-"cpM" = (
 /obj/stool/bed,
 /obj/item/clothing/suit/bedsheet,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cpN" = (
-/obj/item/clothing/under/gimmick/mobile_suit,
-/obj/item/clothing/head/mobile_suit,
-/turf/unsimulated/floor/grass/leafy,
+"cpM" = (
+/turf/simulated/wall/false_wall/sengoku,
 /area/dojo)
-"cpO" = (
+"cpN" = (
 /obj/item/clothing/under/gimmick/maid,
 /obj/item/clothing/head/maid,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo)
-"cpP" = (
-/obj/table/wood/round/auto,
-/obj/item/device/light/candle/small,
-/turf/unsimulated/floor/wood/two,
+"cpO" = (
+/obj/decal/fakeobjects/moonrock{
+	desc = "A calming slab of rock. Nice to look at.";
+	dir = 8;
+	name = "rock"
+	},
+/turf/unsimulated/floor/dojo/sand/circle,
 /area/dojo)
 "cpQ" = (
-/obj/lantern/white{
-	dir = 8
-	},
-/turf/unsimulated/wall/auto/paper,
-/area/dojo)
-"cpR" = (
 /obj/table/wood/round/auto,
 /obj/item/storage/photo_album,
 /obj/item/playing_cards/tarot,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cpS" = (
-/obj/table/wood/auto/desk,
-/obj/shrub/dead{
-	desc = "Someone's pretty bad at bonsai";
-	pixel_y = 15
+"cpR" = (
+/obj/lantern/white{
+	dir = 4
 	},
-/obj/item/paper/book/scroll_3,
-/turf/unsimulated/floor/wood/two,
+/turf/unsimulated/wall/auto/sengoku,
+/area/dojo)
+"cpS" = (
+/obj/map/light/brightwhite,
+/turf/unsimulated/floor/dojo/stone,
 /area/dojo)
 "cpT" = (
 /obj/machinery/door/unpowered/wood/pyro,
@@ -48028,141 +47884,118 @@
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo/sakura)
 "cpW" = (
-/turf/unsimulated/grass,
-/area/dojo/sakura)
-"cpX" = (
 /obj/decal/fakeobjects/birdhouse/light,
 /turf/unsimulated/grasstodirt{
 	dir = 8
 	},
 /area/dojo/sakura)
+"cpX" = (
+/obj/table/wood/round/auto,
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
 "cpY" = (
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo/sakura)
-"cpZ" = (
-/obj/decal/fakeobjects/birdhouse/light,
-/turf/unsimulated/grasstodirt{
-	dir = 4
-	},
-/area/dojo/sakura)
 "cqa" = (
-/obj/shrub{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/decal/fakeobjects/plantpot,
-/obj/decal/wallscroll/scroll2{
-	pixel_y = 32
-	},
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cqb" = (
-/obj/shrub{
-	dir = 6;
-	pixel_z = 10
-	},
-/obj/decal/fakeobjects/plantpot,
-/obj/cup_rack{
-	pixel_y = 32
-	},
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cqc" = (
-/obj/decal/fakeobjects/birdhouse,
-/turf/unsimulated/floor/dojo/sand,
-/area/dojo)
-"cqd" = (
-/turf/unsimulated/grasstodirt{
+/obj/machinery/sleeper{
 	dir = 8
 	},
-/area/dojo/sakura)
-"cqe" = (
-/turf/unsimulated/grasstodirt{
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"cqb" = (
+/obj/machinery/sleep_console{
+	dir = 8
+	},
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"cqc" = (
+/obj/stool/chair{
 	dir = 4
 	},
-/area/dojo/sakura)
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
+"cqd" = (
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/item/reagent_containers/food/drinks/bottle/beer,
+/obj/table/auto,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cqf" = (
-/obj/stool,
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
-"cqg" = (
 /obj/stool,
 /turf/unsimulated/floor/tatami/east,
 /area/dojo)
-"cqh" = (
-/turf/unsimulated/floor/tatami,
-/area/dojo)
 "cqi" = (
-/obj/machinery/door/unpowered/wood/pyro{
-	dir = 4
+/obj/stool/chair{
+	dir = 8
 	},
-/turf/unsimulated/floor/dojo/stone,
-/area/dojo)
-"cqj" = (
-/obj/sakura_tree/tree_2{
-	pixel_x = 0
+/turf/unsimulated/floor{
+	icon_state = "floor"
 	},
-/turf/unsimulated/floor/grass/leafy,
-/area/dojo/sakura)
+/area/space)
 "cqk" = (
-/obj/sakura_tree/tree_2,
-/turf/unsimulated/grasstodirt{
-	dir = 4
+/obj/storage/closet/wardrobe/green,
+/turf/unsimulated/floor{
+	icon_state = "floor"
 	},
-/area/dojo/sakura)
+/area/space)
 "cql" = (
-/obj/table/wood/round/auto,
-/obj/item/reagent_containers/food/drinks/bowl,
-/turf/unsimulated/floor/tatami/north,
-/area/dojo)
-"cqm" = (
 /obj/table/wood/round/auto,
 /obj/item/reagent_containers/food/drinks/espressocup,
 /turf/unsimulated/floor/tatami/north,
 /area/dojo)
-"cqn" = (
+"cqm" = (
 /obj/stool,
 /turf/unsimulated/floor/tatami/north,
 /area/dojo)
-"cqo" = (
-/obj/machinery/door/unpowered/wood/pyro{
-	dir = 4
-	},
-/turf/unsimulated/floor/tatami/east,
+"cqn" = (
+/turf/unsimulated/floor/tatami/west,
 /area/dojo)
 "cqp" = (
-/obj/sakura_tree{
-	pixel_x = -10
+/turf/unsimulated/grasstodirt{
+	dir = 8
 	},
-/turf/unsimulated/grass,
 /area/dojo/sakura)
 "cqq" = (
-/obj/sakura_tree,
+/obj/item/clothing/head/fedora,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo/sakura)
 "cqr" = (
 /obj/table/wood/round/auto,
-/obj/item/reagent_containers/food/drinks/mug,
-/turf/unsimulated/floor/tatami/south,
-/area/dojo)
-"cqs" = (
-/obj/table/wood/round/auto,
 /obj/item/reagent_containers/food/drinks/noodlecup,
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
-"cqt" = (
+"cqs" = (
 /obj/stool,
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
-"cqu" = (
-/obj/shrub{
-	dir = 10;
-	pixel_y = 10
+"cqt" = (
+/obj/lantern{
+	dir = 1
 	},
-/obj/decal/fakeobjects/plantpot,
-/turf/unsimulated/floor/wood/two,
+/turf/unsimulated/floor/dojo/sand/horizontal,
 /area/dojo)
-"cqv" = (
+"cqu" = (
 /obj/storage/crate,
 /obj/item/reagent_containers/food/drinks/tea,
 /obj/item/reagent_containers/food/drinks/bottle/bojackson{
@@ -48171,52 +48004,54 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cqw" = (
+"cqv" = (
 /obj/table/hibachi,
 /obj/item/reagent_containers/food/drinks/teapot{
 	pixel_x = -3
 	},
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
+"cqw" = (
+/obj/lantern{
+	dir = 1
+	},
+/turf/unsimulated/floor/dojo/sand/circle,
+/area/dojo)
 "cqx" = (
-/obj/table/wood/auto/desk,
-/obj/item/matchbook,
+/obj/storage/closet/dresser,
+/obj/item/clothing/under/gimmick/hakama/random,
+/obj/item/clothing/head/bandana/random_color,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
 "cqy" = (
-/obj/lantern,
-/turf/unsimulated/wall/auto/paper,
+/obj/lantern{
+	dir = 1
+	},
+/turf/unsimulated/floor/dojo/sand/vertical,
 /area/dojo)
 "cqz" = (
-/obj/sakura_tree/tree_2,
-/obj/decal/fakeobjects/birdhouse/light,
-/turf/unsimulated/grasstodirt{
-	dir = 4
-	},
-/area/dojo/sakura)
-"cqA" = (
-/turf/unsimulated/floor/grass/leafy,
+/obj/decal/fakeobjects/birdhouse,
+/turf/unsimulated/floor/dojo/sand/vertical,
 /area/dojo)
-"cqB" = (
+"cqA" = (
 /obj/decal/fakeobjects/birdhouse,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo)
+"cqB" = (
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 10;
+	pixel_y = 10
+	},
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
 "cqC" = (
-/obj/item/clothing/suit/apron,
-/turf/unsimulated/wall/auto/paper,
+/obj/decal/fakeobjects/kanji_2{
+	layer = 2
+	},
+/turf/unsimulated/floor/dojo/stone,
 /area/dojo)
 "cqD" = (
-/obj/table/wood/round/auto,
-/obj/item/wrench,
-/obj/item/wirecutters,
-/obj/item/cable_coil,
-/obj/item/razor_blade,
-/obj/decal/fakeobjects/swordrack{
-	pixel_y = 32
-	},
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cqE" = (
 /obj/item/material_piece/organic/wood{
 	pixel_y = -10
 	},
@@ -48237,18 +48072,18 @@
 /obj/item/plank,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cqF" = (
+"cqE" = (
 /obj/storage/crate/furnacefuel,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cqG" = (
+"cqF" = (
 /obj/decal/fakeobjects/bellows,
 /obj/decal/wallscroll{
 	pixel_y = 32
 	},
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqH" = (
+"cqG" = (
 /obj/decal/fakeobjects/furnace,
 /obj/decal/cleanable/ash{
 	layer = 8
@@ -48260,7 +48095,7 @@
 	},
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqI" = (
+"cqH" = (
 /obj/table/wood/auto/desk,
 /obj/decal/fakeobjects/katana_fake,
 /obj/decal/fakeobjects/swordrack{
@@ -48268,35 +48103,26 @@
 	},
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqJ" = (
-/obj/table/wood/round/auto,
-/obj/item/screwdriver,
-/obj/item/weldingtool,
-/obj/item/tinyhammer,
-/obj/item/cable_coil/cut,
-/obj/item/scissors,
-/turf/unsimulated/floor/wood/two,
+"cqI" = (
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 4;
+	pixel_y = 10
+	},
+/turf/unsimulated/floor/wood/three,
 /area/dojo)
-"cqK" = (
+"cqJ" = (
 /obj/item/raw_material/bohrum,
 /obj/decal/cleanable/dirt,
 /turf/unsimulated/floor/tatami/west,
 /area/dojo)
 "cqL" = (
-/obj/stool/bench/wooden,
-/obj/decal/cleanable/dirt,
-/obj/item/dojohammer{
-	pixel_x = -8
-	},
-/turf/unsimulated/floor/dojo/stone,
-/area/dojo)
-"cqM" = (
 /obj/decal/fakeobjects/anvil,
 /obj/decal/cleanable/dirt,
 /obj/decal/cleanable/dirt,
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqN" = (
+"cqM" = (
 /obj/table/wood/auto/desk,
 /obj/decal/fakeobjects/katana_fake,
 /obj/decal/fakeobjects/katana_fake{
@@ -48305,22 +48131,9 @@
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
 "cqO" = (
-/obj/sakura_tree/tree_2{
-	pixel_x = 0
-	},
 /turf/unsimulated/grass,
 /area/dojo/sakura)
 "cqP" = (
-/obj/decal/wallscroll/scroll2{
-	pixel_y = 32
-	},
-/obj/table/wood/auto/desk,
-/obj/item/clipboard,
-/obj/item/paper_booklet,
-/obj/item/pen/fancy,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cqQ" = (
 /obj/decal/wallscroll/scroll3{
 	pixel_y = 32
 	},
@@ -48329,7 +48142,7 @@
 /obj/item/feather,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
-"cqR" = (
+"cqQ" = (
 /obj/decal/wallscroll{
 	pixel_y = 32
 	},
@@ -48337,90 +48150,77 @@
 /obj/item/paper_bin,
 /turf/unsimulated/floor/wood/two,
 /area/dojo)
+"cqR" = (
+/obj/item/clothing/glasses/regular,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cqS" = (
-/obj/item/storage/toolbox/mechanical,
-/obj/item/raw_material/scrap_metal,
-/turf/unsimulated/floor/wood/two,
-/area/dojo)
-"cqT" = (
 /obj/item/raw_material/mauxite,
 /turf/unsimulated/floor/tatami/west,
 /area/dojo)
-"cqU" = (
+"cqT" = (
 /obj/decal/cleanable/dirt,
 /turf/unsimulated/floor/tatami/east,
 /area/dojo)
-"cqV" = (
+"cqU" = (
 /obj/item/raw_material/bohrum,
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqW" = (
+"cqV" = (
 /obj/decal/cleanable/dirt,
 /obj/item/reagent_containers/glass/bucket,
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqX" = (
+"cqW" = (
 /obj/item/raw_material/scrap_metal,
 /obj/item/material_piece/slag,
 /obj/item/rods/steel,
 /obj/item/material_piece/bone,
 /turf/unsimulated/floor/dojo/stone,
 /area/dojo)
-"cqY" = (
-/turf/unsimulated/grasstodirt{
-	dir = 1
+"cqX" = (
+/obj/storage/closet/wardrobe/red,
+/turf/unsimulated/floor{
+	icon_state = "floor"
 	},
-/area/dojo/sakura)
-"cqZ" = (
+/area/space)
+"cqY" = (
 /obj/table/wood/round/auto,
 /obj/item/paper/book/scroll_5,
 /turf/unsimulated/grasstodirt{
 	dir = 1
 	},
 /area/dojo/sakura)
-"cra" = (
+"cqZ" = (
 /obj/decal/stone_lamp,
 /turf/unsimulated/grasstodirt{
 	dir = 9
 	},
 /area/dojo/sakura)
-"crb" = (
-/obj/stool/chair/wooden{
-	dir = 1
+"cra" = (
+/obj/storage/closet/wardrobe/white,
+/turf/unsimulated/floor{
+	icon_state = "floor"
 	},
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
-"crc" = (
-/obj/machinery/door/unpowered/wood/pyro{
-	dir = 4;
-	name = "smithy"
-	},
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
+/area/space)
 "crd" = (
-/obj/item/raw_material/cobryl,
-/obj/decal/cleanable/dirt,
-/turf/unsimulated/floor/tatami/north,
-/area/dojo)
+/obj/storage/closet/wardrobe/pink,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "cre" = (
-/obj/lantern/white{
-	dir = 1
-	},
-/turf/unsimulated/floor/tatami/west,
-/area/dojo)
-"crf" = (
-/obj/decal/fakeobjects/plantpot,
-/obj/shrub{
-	dir = 10;
-	pixel_y = 10
-	},
-/turf/unsimulated/floor/tatami/south,
-/area/dojo)
-"crg" = (
-/obj/reagent_dispensers/watertank,
 /turf/unsimulated/floor/tatami/east,
 /area/dojo)
-"crh" = (
+"crf" = (
+/obj/lantern/white{
+	dir = 8
+	},
+/turf/unsimulated/wall/auto/paper,
+/area/dojo)
+"crg" = (
 /obj/storage/crate/wooden,
 /obj/item/raw_material/mauxite,
 /obj/item/raw_material/mauxite,
@@ -48429,22 +48229,22 @@
 /obj/item/raw_material/mauxite,
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
-"cri" = (
+"crh" = (
 /obj/table/wood/round/auto,
 /obj/item/rods/steel/fullstack,
 /turf/unsimulated/floor/tatami/west,
 /area/dojo)
-"crj" = (
+"cri" = (
 /obj/table/wood/round/auto,
 /obj/item/sheet/steel,
 /turf/unsimulated/floor/tatami/east,
 /area/dojo)
-"crk" = (
+"crj" = (
 /obj/table/wood/round/auto,
 /obj/item/slag_shovel,
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
-"crl" = (
+"crk" = (
 /obj/storage/crate/wooden,
 /obj/item/raw_material/bohrum,
 /obj/item/raw_material/bohrum,
@@ -48453,28 +48253,37 @@
 /obj/item/raw_material/bohrum,
 /turf/unsimulated/floor/tatami/south,
 /area/dojo)
+"crl" = (
+/obj/storage/closet/wardrobe/orange,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "crm" = (
 /obj/grassplug,
 /turf/unsimulated/dirt,
 /area/dojo/sakura)
 "crn" = (
-/obj/grassplug,
-/turf/unsimulated/grasstodirt{
-	dir = 4
-	},
-/area/dojo/sakura)
-"cro" = (
-/obj/item/clothing/head/fedora,
+/obj/sakura_tree,
 /turf/unsimulated/floor/grass/leafy,
 /area/dojo/sakura)
-"crp" = (
-/obj/decal/fakeobjects/falseladder,
-/turf/unsimulated/floor/black,
-/area/cordon)
-"crq" = (
-/obj/decal/fakeobjects/sealed_door,
-/turf/unsimulated/floor/black,
+"cro" = (
+/obj/decal/fakeobjects/bridge_rail{
+	icon_state = "rail_1"
+	},
+/turf/unsimulated/floor/dojo/bridge/vertical,
 /area/dojo)
+"crp" = (
+/obj/decal/stage_edge/dojo,
+/obj/decal/fakeobjects/birdhouse/light,
+/turf/unsimulated/floor/wood/three,
+/area/dojo)
+"crq" = (
+/obj/machinery/door/airlock/pyro/external,
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "crr" = (
 /obj/storage/secure/filing_cabinet,
 /turf/unsimulated/floor/black/side{
@@ -50409,7 +50218,6 @@
 	id = "ddan"
 	},
 /obj/overlay{
-	anchored = 1;
 	density = 1;
 	desc = "Part of a drone chassis.";
 	dir = 8;
@@ -78379,7 +78187,6 @@
 /area/centcom/garden)
 "dKw" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -78477,7 +78284,6 @@
 /area/centcom/garden)
 "dKH" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -78868,7 +78674,6 @@
 	icon_state = "line1"
 	},
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -78938,7 +78743,6 @@
 /area/centcom/garden)
 "dLJ" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -79712,7 +79516,6 @@
 /area/centcom/garden)
 "dNr" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -80273,7 +80076,6 @@
 /area/centcom/garden)
 "dOJ" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -80306,7 +80108,6 @@
 /area/centcom/garden)
 "dOL" = (
 /obj/overlay{
-	anchored = 1;
 	icon = 'icons/misc/beach2.dmi';
 	icon_state = "palm1";
 	layer = 10;
@@ -81744,9 +81545,10 @@
 /turf/unsimulated/floor/wood/two,
 /area/afterlife/bar)
 "dSB" = (
-/obj/map/light/brightwhite,
-/obj/landmark/lrt/workshop,
-/turf/unsimulated/floor/wood/two,
+/obj/lantern{
+	dir = 1
+	},
+/turf/unsimulated/wall/water,
 /area/dojo)
 "dSC" = (
 /obj/decal/boxingrope{
@@ -82585,6 +82387,12 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/right_centcom/destiny)
+"exf" = (
+/obj/sakura_tree/tree_2{
+	pixel_x = 0
+	},
+/turf/unsimulated/grass,
+/area/dojo/sakura)
 "ezH" = (
 /obj/table/glass/auto,
 /obj/item/reagent_containers/food/snacks/mushroom/amanita{
@@ -82735,16 +82543,34 @@
 /obj/decal/fakeobjects/dreambeach/sticks,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
+"fcd" = (
+/obj/sakura_tree/tree_2{
+	pixel_x = 0
+	},
+/turf/unsimulated/floor/grass/leafy,
+/area/dojo/sakura)
 "fen" = (
 /obj/structure/woodwall,
 /turf/unsimulated/floor/plating,
 /area/retentioncenter)
+"ffo" = (
+/obj/machinery/sleeper/compact{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "fge" = (
 /turf/space,
 /turf/unsimulated/floor/caution/corner/misc{
 	dir = 5
 	},
 /area/hospital/samostrel)
+"fgy" = (
+/obj/item/device/radio/intercom{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "fgz" = (
 /turf/space,
 /turf/unsimulated/wall/setpieces/leadwall,
@@ -82760,6 +82586,23 @@
 	},
 /turf/unsimulated/floor/carpet/red/fancy/narrow/ne,
 /area/centcom/offices/sovexe)
+"fiM" = (
+/obj/sakura_tree/tree_2,
+/turf/unsimulated/grasstodirt{
+	dir = 4
+	},
+/area/dojo/sakura)
+"fiU" = (
+/obj/shrub{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/decal/fakeobjects/plantpot,
+/obj/decal/wallscroll/scroll2{
+	pixel_y = 32
+	},
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "fmD" = (
 /obj/machinery/door/unpowered/wood{
 	icon = 'icons/obj/doors/door_office.dmi';
@@ -82963,6 +82806,12 @@
 	icon_state = "floor"
 	},
 /area/centcom/lounge)
+"geg" = (
+/obj/sakura_tree{
+	pixel_x = -10
+	},
+/turf/unsimulated/grass,
+/area/dojo/sakura)
 "gfz" = (
 /obj/table/wood/round/auto,
 /obj/item/paper_bin,
@@ -82974,6 +82823,10 @@
 	icon_state = "floor"
 	},
 /area/centcom/lounge)
+"gfA" = (
+/obj/item/crowbar,
+/turf/simulated/floor/shuttle,
+/area/space)
 "ggw" = (
 /obj/table/wood/auto,
 /obj/item/reagent_containers/food/drinks/bottle/rum,
@@ -83122,6 +82975,10 @@
 /obj/machinery/light,
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/tarmunora)
+"gXr" = (
+/obj/item/clothing/suit/apron,
+/turf/unsimulated/wall/auto/paper,
+/area/dojo)
 "gYs" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-48"
@@ -83238,6 +83095,13 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/left_centcom/cogmap)
+"hyl" = (
+/obj/machinery/door/unpowered/wood/pyro{
+	dir = 4;
+	name = "smithy"
+	},
+/turf/unsimulated/floor/tatami/west,
+/area/dojo)
 "hyU" = (
 /obj/decal/fakeobjects/firelock_broken{
 	desc = "This shuttle door is really jammed.  What's the point of it then?  WHAT IS THE POINT";
@@ -83292,6 +83156,12 @@
 	},
 /turf/unsimulated/floor/carpet/purple/fancy/narrow/T_south,
 /area/centcom/offices/rodney)
+"hEP" = (
+/obj/lantern/white{
+	dir = 1
+	},
+/turf/unsimulated/floor/tatami/west,
+/area/dojo)
 "hKB" = (
 /obj/table/auto,
 /obj/machinery/light/small/iomoon{
@@ -83409,10 +83279,23 @@
 	icon_state = "wall3"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/cogmap)
+"iax" = (
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/unsimulated/floor/plating,
+/area/space)
 "icJ" = (
 /obj/burning_barrel,
 /turf/unsimulated/floor/setpieces/rootfloor,
 /area/centcom/offices/marknstein)
+"idX" = (
+/obj/machinery/sleeper/compact{
+	dir = 8
+	},
+/obj/machinery/sleeper/compact{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "ihA" = (
 /obj/machinery/cruiser_destroyable/cruiser_exit,
 /turf/space,
@@ -83423,6 +83306,10 @@
 	icon_state = "13"
 	},
 /area/shuttle/escape/centcom/donut3)
+"ilm" = (
+/obj/wingrille_spawn/auto/crystal,
+/turf/simulated/floor/shuttle,
+/area/space)
 "imR" = (
 /obj/decal/skeleton{
 	desc = "The remains of some poor cosmonaut fellow.";
@@ -83530,10 +83417,20 @@
 /obj/decal/fakeobjects/dreambeach/palm_leaf,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
+"iCf" = (
+/obj/machinery/computer/shuttle{
+	dir = 4
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "iEd" = (
 /obj/decal/stage_edge/dojo,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
+"iFi" = (
+/obj/machinery/door/window/eastleft,
+/turf/simulated/floor/shuttle,
+/area/space)
 "iHl" = (
 /obj/machinery/computer/ordercomp{
 	dir = 4
@@ -83625,6 +83522,11 @@
 	icon_state = "diagonalWall"
 	},
 /area/hospital/samostrel)
+"iXC" = (
+/turf/unsimulated/grasstodirt{
+	dir = 1
+	},
+/area/dojo/sakura)
 "iZu" = (
 /obj/machinery/light{
 	on = 1
@@ -83649,6 +83551,14 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/efrem)
+"jgy" = (
+/obj/stool,
+/turf/unsimulated/floor/tatami/west,
+/area/dojo)
+"jhh" = (
+/obj/machinery/door/unpowered/shuttle,
+/turf/simulated/floor/shuttle,
+/area/space)
 "jhk" = (
 /turf/space,
 /turf/cordon,
@@ -83761,6 +83671,10 @@
 	icon_state = "shore-42"
 	},
 /area/titlescreen)
+"jxl" = (
+/obj/machinery/door/window/eastright,
+/turf/simulated/floor/shuttle,
+/area/space)
 "jxX" = (
 /turf/unsimulated/wall/auto/sengoku{
 	icon_state = "1";
@@ -83789,6 +83703,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/mrfishstick)
+"jGJ" = (
+/obj/stool/chair/comfy/shuttle/pilot{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "jIa" = (
 /obj/decal/fakeobjects/dreambeach/palm_leaf,
 /turf/unsimulated/floor/dream/beach,
@@ -83876,6 +83796,17 @@
 	icon_state = "fpurple2"
 	},
 /area/centcom/lounge)
+"jSX" = (
+/obj/table/wood/round/auto,
+/obj/item/wrench,
+/obj/item/wirecutters,
+/obj/item/cable_coil,
+/obj/item/razor_blade,
+/obj/decal/fakeobjects/swordrack{
+	pixel_y = 32
+	},
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "jTj" = (
 /obj/wingrille_spawn/auto,
 /turf/unsimulated/floor/shuttle,
@@ -83986,6 +83917,12 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/right_centcom/cogmap)
+"kjx" = (
+/obj/stool/chair/wooden{
+	dir = 1
+	},
+/turf/unsimulated/floor/tatami/west,
+/area/dojo)
 "kjA" = (
 /turf/space,
 /turf/unsimulated/wall{
@@ -84096,6 +84033,12 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/diner_centcom)
+"kzR" = (
+/obj/grassplug,
+/turf/unsimulated/grasstodirt{
+	dir = 4
+	},
+/area/dojo/sakura)
 "kAr" = (
 /turf/unsimulated/floor/grey/side{
 	dir = 4
@@ -84124,6 +84067,11 @@
 	name = "plating"
 	},
 /area/hospital/samostrel)
+"kEE" = (
+/obj/item/clothing/under/gimmick/mobile_suit,
+/obj/item/clothing/head/mobile_suit,
+/turf/unsimulated/floor/grass/leafy,
+/area/dojo)
 "kIs" = (
 /obj/wingrille_spawn/auto,
 /turf/unsimulated/floor/shuttle{
@@ -84154,6 +84102,10 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/hukhukhuk)
+"kNV" = (
+/obj/random_item_spawner/med_kit,
+/turf/simulated/floor/shuttle,
+/area/space)
 "kOu" = (
 /obj/indestructible/shuttle_corner{
 	dir = 1;
@@ -84175,6 +84127,11 @@
 	icon_state = "Stairs_wide"
 	},
 /area/centcom)
+"kQY" = (
+/obj/table/wood/round/auto,
+/obj/towelbin,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "kRQ" = (
 /obj/grille/steel,
 /obj/window/reinforced{
@@ -84203,6 +84160,15 @@
 /turf/space,
 /turf/unsimulated/floor/blackwhite/whitegrime,
 /area/hospital/samostrel)
+"kVN" = (
+/obj/machinery/door/airlock/pyro/external{
+	icon_state = "airlock_locked";
+	locked = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "floor"
+	},
+/area/space)
 "kXl" = (
 /obj/landmark{
 	name = "samostrel"
@@ -84218,6 +84184,10 @@
 	icon_state = "shore-41"
 	},
 /area/titlescreen)
+"ldP" = (
+/obj/reagent_dispensers/watertank,
+/turf/unsimulated/floor/tatami/east,
+/area/dojo)
 "leI" = (
 /obj/stool/bar{
 	pixel_y = 6
@@ -84334,6 +84304,10 @@
 	dir = 5
 	},
 /area/hospital/samostrel)
+"lsS" = (
+/obj/item/tank/oxygen,
+/turf/simulated/floor/shuttle,
+/area/space)
 "luV" = (
 /obj/indestructible/shuttle_corner{
 	icon_state = "wall3_trans"
@@ -84351,6 +84325,11 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"lvW" = (
+/obj/table/wood/round/auto,
+/obj/item/device/light/candle/small,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "lwy" = (
 /obj/decal/fakeobjects/shuttlethruster{
 	desc = "A small impulse drive.";
@@ -84391,6 +84370,12 @@
 	icon_state = "shore-31"
 	},
 /area/titlescreen)
+"lzw" = (
+/obj/machinery/shuttle/engine/propulsion{
+	dir = 8
+	},
+/turf/simulated/shuttle/wall,
+/area/space)
 "lEt" = (
 /turf/space,
 /turf/unsimulated/floor/plating/scorched,
@@ -84417,6 +84402,18 @@
 	dir = 5
 	},
 /area/retentioncenter)
+"lKU" = (
+/obj/decal/fakeobjects/firelock_broken{
+	density = 1;
+	desc = "It's jammed, apparently.  Or just really locked.";
+	dir = 4;
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "bdoorleft1";
+	name = "Hanger Door";
+	opacity = 1
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "lLo" = (
 /turf/unsimulated/floor/shuttle{
 	icon_state = "floor2"
@@ -84518,6 +84515,15 @@
 /turf/space,
 /turf/unsimulated/floor/carpet/office,
 /area/hospital/samostrel)
+"miO" = (
+/obj/table/wood/round/auto,
+/obj/item/screwdriver,
+/obj/item/weldingtool,
+/obj/item/tinyhammer,
+/obj/item/cable_coil/cut,
+/obj/item/scissors,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "mje" = (
 /obj/storage/closet/office,
 /turf/unsimulated/floor/wood/two,
@@ -84589,6 +84595,13 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"mvZ" = (
+/obj/sakura_tree/tree_2,
+/obj/decal/fakeobjects/birdhouse/light,
+/turf/unsimulated/grasstodirt{
+	dir = 4
+	},
+/area/dojo/sakura)
 "myk" = (
 /obj/machinery/light{
 	dir = 1;
@@ -84617,6 +84630,11 @@
 	name = "plating"
 	},
 /area/hospital/samostrel)
+"mCU" = (
+/obj/item/raw_material/cobryl,
+/obj/decal/cleanable/dirt,
+/turf/unsimulated/floor/tatami/north,
+/area/dojo)
 "mDK" = (
 /turf/space/no_replace,
 /turf/unsimulated/wall{
@@ -84642,6 +84660,10 @@
 	dir = 4
 	},
 /area/ship_interior/cruisertest)
+"mOJ" = (
+/obj/stool/bed,
+/turf/simulated/floor/shuttle,
+/area/space)
 "mPz" = (
 /obj/decal/fakeobjects{
 	anchored = 1;
@@ -84789,6 +84811,12 @@
 	},
 /turf/unsimulated/floor/wood/two,
 /area/centcom/offices/mrfishstick)
+"nkc" = (
+/obj/table/wood/round/auto,
+/obj/item/matchbook,
+/obj/item/paper/book/scroll_2,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "nlV" = (
 /obj/item/clothing/mask/cigarette,
 /turf/space,
@@ -84850,6 +84878,11 @@
 	name = "the high ground"
 	},
 /area/centcom/offices/enakai)
+"ntP" = (
+/obj/window/reinforced/north,
+/obj/reagent_dispensers/watertank,
+/turf/simulated/floor/shuttle,
+/area/space)
 "nvp" = (
 /obj/storage/crate/bin{
 	desc = "She'll get around to these. Eventually...";
@@ -84950,6 +84983,13 @@
 	dir = 1
 	},
 /area/hospital/samostrel)
+"nBM" = (
+/obj/decal/wallscroll/scroll3{
+	pixel_y = 32
+	},
+/obj/stool/bench/wooden,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "nCt" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-15"
@@ -85147,6 +85187,10 @@
 	name = "plating"
 	},
 /area/hospital/samostrel)
+"ogo" = (
+/obj/decal/fakeobjects/birdhouse,
+/turf/unsimulated/floor/dojo/sand,
+/area/dojo)
 "ogV" = (
 /obj/landmark/spawner{
 	name = "monkeyspawn_syndicate"
@@ -85192,6 +85236,10 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/right_centcom/donut2)
+"opO" = (
+/obj/window/reinforced/east,
+/turf/simulated/floor/shuttle,
+/area/space)
 "oqW" = (
 /obj/machinery/door/unpowered/shuttle,
 /turf/space,
@@ -85350,6 +85398,20 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"oUS" = (
+/obj/stool/bench/wooden,
+/obj/decal/cleanable/dirt,
+/obj/item/dojohammer{
+	pixel_x = -8
+	},
+/turf/unsimulated/floor/dojo/stone,
+/area/dojo)
+"oVP" = (
+/obj/decal/fakeobjects/arch{
+	layer = 5
+	},
+/turf/unsimulated/wall/sengoku_tall,
+/area/dojo)
 "oWW" = (
 /obj/decal/fakeobjects{
 	anchored = 1;
@@ -85415,6 +85477,17 @@
 /turf/space,
 /turf/unsimulated/floor/caution/south,
 /area/hospital/samostrel)
+"piK" = (
+/obj/shrub{
+	dir = 6;
+	pixel_z = 10
+	},
+/obj/decal/fakeobjects/plantpot,
+/obj/cup_rack{
+	pixel_y = 32
+	},
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "pkO" = (
 /obj/fakeobjects{
 	icon = 'icons/misc/critter.dmi';
@@ -85446,6 +85519,9 @@
 	icon_state = "wall3"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/destiny)
+"ptq" = (
+/turf/unsimulated/floor/grass/leafy,
+/area/dojo)
 "ptv" = (
 /obj/admin_plaque{
 	name = "Mark's Code Dungeon";
@@ -85723,6 +85799,9 @@
 	icon_state = "shore-6"
 	},
 /area/titlescreen)
+"qlf" = (
+/turf/simulated/shuttle/wall,
+/area/space)
 "qnn" = (
 /obj/item/extinguisher,
 /turf/space,
@@ -85763,6 +85842,10 @@
 /obj/wingrille_spawn/auto,
 /turf/unsimulated/floor/engine,
 /area/shuttle/merchant_shuttle/diner_centcom)
+"qtP" = (
+/obj/lantern,
+/turf/unsimulated/wall/auto/paper,
+/area/dojo)
 "qvu" = (
 /obj/table/auto,
 /turf/space,
@@ -85837,6 +85920,13 @@
 	},
 /turf/space/shuttle_transit,
 /area/shuttle_transit_space/west)
+"qFK" = (
+/obj/indestructible/shuttle_corner{
+	dir = 8;
+	icon_state = "wall_trans"
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "qGG" = (
 /obj/machinery/light,
 /turf/unsimulated/floor/shuttle,
@@ -85874,6 +85964,16 @@
 	icon_state = "floor"
 	},
 /area/centcom/lounge)
+"qLg" = (
+/obj/table/wood/auto/desk,
+/obj/item/matchbook,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
+"qMA" = (
+/obj/window/reinforced/south,
+/obj/item/extinguisher,
+/turf/simulated/floor/shuttle,
+/area/space)
 "qMN" = (
 /obj/machinery/light{
 	dir = 1
@@ -85950,6 +86050,12 @@
 	icon_state = "shore-14"
 	},
 /area/titlescreen)
+"qVt" = (
+/obj/machinery/door/unpowered/wood/pyro{
+	dir = 4
+	},
+/turf/unsimulated/floor/dojo/stone,
+/area/dojo)
 "qZX" = (
 /obj/machinery/light/small/floor,
 /turf/unsimulated/floor/shuttle{
@@ -85979,6 +86085,14 @@
 	opacity = 0
 	},
 /area/titlescreen)
+"rhG" = (
+/obj/shrub{
+	dir = 10;
+	pixel_y = 10
+	},
+/obj/decal/fakeobjects/plantpot,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "riq" = (
 /obj/decal/fakeobjects/pipe{
 	dir = 4
@@ -86079,6 +86193,12 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/escape/centcom/donut3)
+"ruz" = (
+/obj/indestructible/shuttle_corner{
+	icon_state = "wall_trans"
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "rwy" = (
 /obj/decal/poster/wallsign/hazard_exheat,
 /turf/unsimulated/wall/setpieces/leadwall{
@@ -86268,6 +86388,13 @@
 	},
 /turf/unsimulated/outdoors/snow,
 /area/centcom/offices/virvatuli)
+"rSl" = (
+/obj/indestructible/shuttle_corner{
+	dir = 4;
+	icon_state = "wall_trans"
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "rTJ" = (
 /obj/fitness/stacklifter,
 /turf/unsimulated/floor/wood/two,
@@ -86297,6 +86424,15 @@
 	icon_state = "wall3dir"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/destiny)
+"rWM" = (
+/obj/table/wood/auto/desk,
+/obj/shrub/dead{
+	desc = "Someone's pretty bad at bonsai";
+	pixel_y = 15
+	},
+/obj/item/paper/book/scroll_3,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "rZN" = (
 /obj/wingrille_spawn/auto,
 /obj/machinery/shuttle/engine/heater{
@@ -86434,6 +86570,12 @@
 	},
 /turf/unsimulated/floor/shuttle,
 /area/shuttle/escape/centcom/destiny)
+"stT" = (
+/obj/machinery/door/unpowered/wood/pyro{
+	dir = 4
+	},
+/turf/unsimulated/floor/tatami/east,
+/area/dojo)
 "suO" = (
 /obj/machinery/shuttle/engine/heater{
 	dir = 1;
@@ -86490,17 +86632,7 @@
 	},
 /area/hospital/samostrel)
 "sGw" = (
-/obj/storage/closet/dresser,
-/obj/item/clothing/under/gimmick/hakama/random,
-/obj/item/clothing/head/bandana/random_color,
-/obj/item/clothing/head/helmet/men,
-/obj/item/clothing/head/helmet/men,
-/obj/item/clothing/suit/armor/douandtare,
-/obj/item/clothing/suit/armor/douandtare,
-/obj/item/clothing/gloves/kote,
-/obj/item/clothing/gloves/kote,
-/obj/item/shinai_bag,
-/turf/unsimulated/floor/wood/two,
+/turf/unsimulated/floor/tatami,
 /area/dojo)
 "sIU" = (
 /obj/machinery/chem_master{
@@ -86535,6 +86667,14 @@
 /obj/decal/fakeobjects/dreambeach/biggest/big_palm,
 /turf/unsimulated/floor/dream/beach,
 /area/titlescreen)
+"sSU" = (
+/obj/decal/fakeobjects/plantpot,
+/obj/shrub{
+	dir = 10;
+	pixel_y = 10
+	},
+/turf/unsimulated/floor/tatami/south,
+/area/dojo)
 "sTc" = (
 /turf/unsimulated/wall/setpieces/leadwall/cap{
 	dir = 8
@@ -86629,6 +86769,13 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"tkJ" = (
+/obj/decal/fakeobjects/bridge_rail{
+	icon_state = "rail_10"
+	},
+/obj/indestructible/invisible_block,
+/turf/unsimulated/floor/dojo/bridge/vertical,
+/area/dojo)
 "tkW" = (
 /obj/decal/fakeobjects/teleport_pad,
 /obj/marker/supplymarker,
@@ -86636,6 +86783,16 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/right_centcom/cogmap)
+"tlG" = (
+/obj/decal/wallscroll/scroll2{
+	pixel_y = 32
+	},
+/obj/table/wood/auto/desk,
+/obj/item/clipboard,
+/obj/item/paper_booklet,
+/obj/item/pen/fancy,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "tmc" = (
 /turf/unsimulated/wall{
 	dir = 6;
@@ -86704,9 +86861,19 @@
 /obj/dialogueobj/dreambee,
 /turf/unsimulated/floor/carpet/red/fancy/narrow/eastwest,
 /area/titlescreen)
+"tFN" = (
+/turf/unsimulated/grasstodirt{
+	dir = 4
+	},
+/area/dojo/sakura)
 "tGB" = (
 /turf/unsimulated/floor/grey/side,
 /area/centcom/offices/cogwerks)
+"tOR" = (
+/obj/item/storage/toolbox/mechanical,
+/obj/item/raw_material/scrap_metal,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "tPH" = (
 /obj/decal/cleanable/cobweb2,
 /turf/unsimulated/floor/plating,
@@ -86987,6 +87154,12 @@
 	dir = 5
 	},
 /area/ship_interior/cruisertest)
+"uYT" = (
+/obj/machinery/door/unpowered/wood/pyro{
+	name = "tea room"
+	},
+/turf/unsimulated/floor/tatami/west,
+/area/dojo)
 "vab" = (
 /turf/unsimulated/floor/dream/beach{
 	icon_state = "shore-45"
@@ -87109,6 +87282,12 @@
 /turf/space,
 /turf/space,
 /area/space)
+"vwx" = (
+/obj/decal/fakeobjects/birdhouse/light,
+/turf/unsimulated/grasstodirt{
+	dir = 4
+	},
+/area/dojo/sakura)
 "vwU" = (
 /obj/machinery/door/airlock/gannets/glass,
 /obj/decal/tile_edge/line/green{
@@ -87193,6 +87372,19 @@
 /area/centcom/offices{
 	icon_state = "blue"
 	})
+"vKk" = (
+/obj/storage/closet/dresser,
+/obj/item/clothing/under/gimmick/hakama/random,
+/obj/item/clothing/head/bandana/random_color,
+/obj/item/clothing/head/helmet/men,
+/obj/item/clothing/head/helmet/men,
+/obj/item/clothing/suit/armor/douandtare,
+/obj/item/clothing/suit/armor/douandtare,
+/obj/item/clothing/gloves/kote,
+/obj/item/clothing/gloves/kote,
+/obj/item/shinai_bag,
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "vNH" = (
 /obj/indestructible/shuttle_corner{
 	dir = 8;
@@ -87259,6 +87451,10 @@
 	opacity = 0
 	},
 /area/titlescreen)
+"wol" = (
+/obj/item/extinguisher,
+/turf/simulated/floor/shuttle,
+/area/space)
 "woz" = (
 /obj/machinery/light{
 	dir = 4;
@@ -87304,15 +87500,43 @@
 	icon_state = "wall3"
 	},
 /area/hospital/samostrel)
+"wuW" = (
+/obj/item/device/radio/signaler,
+/turf/simulated/floor/shuttle,
+/area/space)
 "wvy" = (
 /turf/unsimulated/floor/carpet/red/fancy/narrow/nw,
 /area/centcom/offices/sovexe)
+"wxo" = (
+/obj/decal/fakeobjects/firelock_broken{
+	density = 1;
+	desc = "It's sealed shut";
+	dir = 4;
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "bdoormid1";
+	name = "Hanger Door";
+	opacity = 1
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "wxJ" = (
 /obj/machinery/door/airlock/external,
 /turf/unsimulated/floor/shuttle{
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/destiny)
+"wxU" = (
+/obj/decal/fakeobjects/firelock_broken{
+	density = 1;
+	desc = "It's sealed shut";
+	dir = 4;
+	icon = 'icons/obj/doors/SL_doors.dmi';
+	icon_state = "bdoorright1";
+	name = "Hanger Door";
+	opacity = 1
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "wAz" = (
 /turf/space,
 /turf/unsimulated/floor/engine/caution/corner2{
@@ -87432,6 +87656,9 @@
 /turf/space,
 /turf/simulated/floor/caution/corner/sw,
 /area/ship_interior/cruisertest)
+"wZe" = (
+/turf/simulated/floor/shuttle,
+/area/space)
 "xac" = (
 /obj/machinery/light/small/iomoon{
 	dir = 8
@@ -87560,6 +87787,12 @@
 	icon_state = "floor3"
 	},
 /area/hospital/samostrel)
+"xtv" = (
+/obj/stool/chair/comfy/shuttle/brown{
+	dir = 8
+	},
+/turf/simulated/floor/shuttle,
+/area/space)
 "xuB" = (
 /turf/simulated/wall/auto/shuttle{
 	icon_state = "4"
@@ -87592,6 +87825,13 @@
 	},
 /turf/unsimulated/outdoors/grass,
 /area/shuttle/merchant_shuttle/right_centcom/donut2)
+"xFD" = (
+/obj/indestructible/shuttle_corner{
+	dir = 1;
+	icon_state = "wall_trans"
+	},
+/turf/unsimulated/floor/plating,
+/area/space)
 "xGt" = (
 /obj/item/sticker/gold_star{
 	pixel_x = -3
@@ -87734,6 +87974,11 @@
 	icon_state = "beach-3"
 	},
 /area/titlescreen)
+"xZe" = (
+/obj/table/wood/round/auto,
+/obj/item/reagent_containers/food/drinks/bowl,
+/turf/unsimulated/floor/tatami/north,
+/area/dojo)
 "xZz" = (
 /obj/admin_plaque{
 	name = "Vaughn Moon's Office"
@@ -87773,6 +88018,15 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/merchant_shuttle/left_centcom/cogmap)
+"yfk" = (
+/obj/table/hibachi{
+	dir = 8
+	},
+/obj/item/reagent_containers/food/drinks/teapot{
+	pixel_y = 8
+	},
+/turf/unsimulated/floor/wood/two,
+/area/dojo)
 "yfx" = (
 /obj/decal/fakeobjects/pipe{
 	desc = "The air from it smells faintly of mildew.";
@@ -104353,38 +104607,38 @@ bTY
 bTY
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cnH
+cnH
+con
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnZ
+cog
+cot
+cpq
+cpq
+cpq
+cop
+cpq
+cpq
+cop
+cpq
+cpq
+cpq
+cpq
+cnH
+cnH
+cnH
+cpq
+cpq
+cpq
+cpq
+cpq
 aaa
 cbu
 ccF
@@ -104656,36 +104910,36 @@ bTY
 aaa
 aaa
 cnH
-cnH
-coa
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
+cnL
+cnL
+coM
+coq
+coW
+coW
+coN
+coW
+coq
 cnP
 cog
-coe
+dSB
 cpq
+cqx
+yfk
+lvW
 cpq
+fiU
+cnL
+cnL
+yfk
+rhG
 cpq
-cpw
+ogo
+cos
+cpl
 cpq
-cpq
-cpw
-cpq
-cpq
-cpq
-cpq
-cnH
-cnH
-cnH
-cpq
-cpq
-cpq
-cpq
+coQ
+vKk
+vKk
 cpq
 aaa
 cbu
@@ -104957,37 +105211,37 @@ bUz
 bTY
 aaa
 aaa
-cnH
-cnL
+cnN
 cnL
 coo
-cnJ
-cow
-cow
-coA
-cow
-cnJ
+cnL
+cou
+cox
+coN
+cpO
+coN
+cnH
 coX
-cog
 cpm
-cpq
-cpu
-cpG
-cpP
-cpq
-cqa
-cnL
-cnL
+cpm
+uYT
+cpv
+cpH
+cqn
+cpT
+cpH
+jgy
+xZe
 cpG
 cqu
 cpq
-cqc
-cos
-coR
-cpq
-cop
+cox
+cox
+cox
+cpT
+cpH
 sGw
-sGw
+hEP
 cpq
 aaa
 cbu
@@ -105259,36 +105513,36 @@ bUz
 bTY
 aaa
 aaa
-cnI
+cnH
 cnL
-dSB
 cnL
+coQ
 coq
 cox
-coA
-coF
-coA
+coP
+coN
+cqt
 cnH
 coY
 cpg
-cpg
+cpt
 cpr
 cpv
 cpH
-cpK
+cre
 cpT
 cpH
 cqf
 cql
 cqr
 cqv
+qtP
+cox
+cnO
+cog
 cpq
-cox
-cox
-cox
-cpT
-cpH
-cqh
+coz
+cqn
 cre
 cpq
 aaa
@@ -105562,36 +105816,36 @@ bTY
 aaa
 aaa
 cnH
-cnL
-cnL
-cop
-cnJ
+cnH
+cor
+cnH
+cnH
 cox
-coB
-coA
+coN
+coH
 coN
 cnH
-coZ
+cpa
 cph
 cpn
-cps
-cpv
-cpH
-cpL
-cpT
-cpH
-cqg
+cpq
+coQ
+nkc
+lvW
+cpq
+cpx
+sGw
 cqm
 cqs
-cqw
-cqy
-cox
-cnO
-cog
+cnL
 cpq
-coh
-cpK
-cpL
+cox
+cnZ
+cot
+cpq
+cop
+stT
+cpq
 cpq
 aaa
 daS
@@ -105864,36 +106118,36 @@ bTY
 aaa
 aaa
 cnH
-cnH
-coc
-cnH
-cnH
+cnM
+cod
+cog
+coT
 cox
-coA
+coW
 coG
-coA
+coW
 cnH
 cpa
-cpi
-cpo
+cpj
+cnO
 cpq
 cop
-cpI
-cpP
 cpq
-coi
-cqh
+crf
+cpq
+piK
+cnL
 cqn
-cqt
+cnL
 cnL
 cpq
 cox
 cnP
-coe
+cog
 cpq
-cpw
-cqo
-cpq
+cnL
+sGw
+cre
 cpq
 aaa
 daM
@@ -106165,37 +106419,37 @@ bUz
 bTY
 aaa
 aaa
-cnH
+coq
 cnM
 cod
 cog
-cor
+cos
 cox
-cow
+coN
 coH
-cow
+cqw
 cnH
 cpa
 cpj
-cnO
+cnZ
 cpq
 cpw
-cpq
+kQY
 cpQ
 cpq
-cqb
-cnL
-cpK
-cnL
-cnL
 cpq
+cpq
+stT
+crf
+cpq
+qtP
 cox
-coX
+cnO
 cog
 cpq
-cnL
-cqh
-cpL
+tlG
+cpv
+cpH
 cpq
 aaa
 daN
@@ -106467,37 +106721,37 @@ bUz
 bTY
 aaa
 aaa
-cnJ
+cnH
 cnM
 cod
 cog
 cos
 cox
-coA
-coG
-coO
-cnH
+coP
+coN
+coP
+coq
 cpa
 cpj
-cnP
+cnO
 cpq
 cpx
-cpJ
-cpR
+cqn
+cpv
+cpU
+cqn
+cpv
+cpH
+cqn
+lvW
 cpq
-cpq
-cpq
-cqo
-cpQ
-cpq
-cqy
 cox
 cnO
 cog
 cpq
 cqP
-cpv
-cpH
+kjx
+cqn
 cpq
 aaa
 daM
@@ -106775,31 +107029,31 @@ cod
 cog
 cos
 cox
-coB
-coA
-coB
-cnJ
+coN
+cpO
+coN
+cnH
 cpa
 cpj
 cnO
 cpq
-coi
-cpK
+nBM
+cre
 cpv
 cpU
-cpK
-cpv
-cpH
-cpK
-cpP
+cre
+cqn
+cqn
+cre
+qLg
 cpq
 cox
 cnO
-cog
+cot
 cpq
 cqQ
-crb
-cpK
+cre
+cre
 cpq
 aaa
 daM
@@ -107069,17 +107323,17 @@ bUA
 bUz
 bUz
 bTY
-aaa
-aaa
-cnH
+cnG
+cnG
+coq
 cnM
 cod
 cog
 cos
 cox
-coA
-coF
-coA
+coW
+coN
+cqy
 cnH
 cpa
 cpj
@@ -107087,21 +107341,21 @@ cnO
 cpq
 cpy
 cpL
-cpv
-cpU
-cpL
-cpK
-cpK
-cpL
+rWM
+cpq
+coQ
+cre
+cre
+cnL
 cqx
-cpq
+qtP
 cox
-cnO
-coe
+cnZ
+cog
 cpq
-cqR
-cpL
-cpL
+cnL
+cpv
+sSU
 cpq
 aaa
 daM
@@ -107372,37 +107626,37 @@ bUz
 bUz
 bTY
 cnG
-cnG
+cnI
 cnJ
-cnM
+cnR
 cod
 cog
 cos
 cox
-cow
-coA
+cpk
+coP
 coP
 cnH
 cpa
 cpj
-cnO
+cpn
 cpq
-cpz
 cpM
-cpS
+cpM
+cpq
+cpq
+crf
+qVt
+qVt
+cpq
+cpq
+cpq
+cox
+cpq
 cpq
 cop
-cpL
-cpL
-cnL
-cpu
-cqy
-cox
-cnP
-cog
 cpq
-cnL
-cpv
+hyl
 crf
 cpq
 aaa
@@ -107674,38 +107928,38 @@ bUz
 bUz
 bTY
 cnG
-crp
-crq
-cnN
+cnG
+cnH
+cnM
 cod
 cog
 cos
 cox
-coC
-coB
-coB
+cox
+cox
+cqz
 cnH
 cpa
 cpj
-cpo
-cpq
+cnO
+cnH
 cpA
-cpA
-cpq
-cpq
-cpQ
-cqi
-cqi
-cpq
-cpq
-cpq
+kEE
+cnH
+coR
+ogo
+cox
+cox
+cos
+coR
+cnH
 cox
 cpq
-cpq
-cpw
-cpq
-crc
-cpQ
+jSX
+miO
+tOR
+cre
+ldP
 cpq
 aaa
 dbb
@@ -107975,17 +108229,17 @@ bUA
 bUz
 bUz
 bTY
-cnG
-cnG
+aaa
+aaa
 cnH
-cnM
-cod
-cog
-cos
+cnH
+cnH
+cnH
+cnH
+con
 cox
 cox
-cox
-coQ
+cnH
 cnH
 cpa
 cpj
@@ -107993,12 +108247,12 @@ cnO
 cnH
 cpB
 cpN
-cnH
-cpl
-cqc
-cox
-cox
+coq
 cos
+cox
+cox
+cox
+cox
 cpl
 cnH
 cox
@@ -108006,7 +108260,7 @@ cpq
 cqD
 cqJ
 cqS
-cpL
+cpv
 crg
 cpq
 aaa
@@ -108280,35 +108534,35 @@ bTY
 aaa
 aaa
 cnH
-cnH
-cnH
-cnH
-cnH
-coa
-cox
-cox
-cnH
-cnH
-cpa
-cpj
 cnO
-cnH
-cpC
-cpO
-cnJ
+cot
+cog
+coU
 cos
 cox
 cox
-cox
-cox
-coR
+cos
+coq
+coY
+cph
+cnO
+cnH
+cnH
+cnH
 cnH
 cox
-cpq
+cox
+cnZ
+cog
+cox
+cox
+cox
+cox
+gXr
 cqE
-cqK
+cre
 cqT
-cpv
+cqn
 crh
 cpq
 aaa
@@ -108581,36 +108835,36 @@ bUz
 bTY
 aaa
 aaa
-cnH
+coq
 cnO
 coe
+cnO
 cog
-cot
 cos
 cox
 cox
-cos
-cnJ
+cox
+cro
 coZ
 cpi
-cnO
-cnH
-cnH
-cnH
-cnH
-cox
-cox
 cnP
 cog
+coU
+cog
+cnH
+cox
+cox
+cnO
+cot
 cox
 cox
 cox
 cox
-cqC
+cpq
 cqF
-cpL
+oUS
 cqU
-cpK
+cre
 cri
 cpq
 aaa
@@ -108883,36 +109137,36 @@ bUz
 bTY
 aaa
 aaa
-cnJ
-cnO
-cof
+cnH
+cnZ
+cog
+cog
+cot
+cos
+cox
+cox
+cpl
+cnH
 cnO
 cog
+cog
+cog
+cot
+coU
+coq
 cos
 cox
 cox
 cox
-coV
-cpb
-cpk
-coX
-cog
-cot
-cog
+cox
+cpl
 cnH
-cox
-cox
-cnO
-coe
-cox
-cox
-cox
-cox
+ptq
 cpq
 cqG
 cqL
 cqV
-cpL
+mCU
 crj
 cpq
 aaa
@@ -109186,27 +109440,27 @@ bTY
 aaa
 aaa
 cnH
-cnP
-cog
-cog
-coe
-cos
-cox
-cox
-coR
 cnH
+cnH
+cnH
+cnH
+cor
+cnH
+cpR
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnQ
 cnO
-cog
-cog
-cog
-coe
-cot
-cnJ
+cnH
+coR
 cos
 cox
 cox
-cox
-cox
+cos
 coR
 cnH
 cqA
@@ -109214,7 +109468,7 @@ cpq
 cqH
 cqM
 cqW
-crd
+cpv
 crk
 cpq
 aaa
@@ -109488,36 +109742,36 @@ bTY
 aaa
 aaa
 cnH
-cnH
-cnH
-cnH
-cnH
-coc
-cnH
+cnQ
+coz
+cnL
+cou
+coy
+cpp
 coI
-cnH
-cnH
-cnH
-cnH
-cnH
+cqB
+coy
+coy
+coy
+cpo
 cnH
 cnQ
 cnO
 cnH
-cpl
-cos
-cox
-cox
-cos
-cpl
 cnH
-cqB
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
 cpq
-cqI
-cqN
-cqX
-cpv
-crl
+cpq
+crf
+cpq
+qVt
+cpq
 cpq
 aaa
 dbb
@@ -109790,37 +110044,37 @@ bTY
 aaa
 aaa
 cnH
-cnQ
-coh
+coa
 cnL
-coq
-coy
-coD
-coJ
-coS
+cnL
+coV
 coy
 coy
 coy
+coy
+cos
+cos
+coR
 coE
 cnH
 cnQ
 cnO
 cnH
+cpV
+cpV
+fcd
+cpV
+fcd
+cpV
+fcd
+cpV
+fcd
+cpV
+exf
+iXC
+cpY
+crm
 cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cpq
-cpq
-cpQ
-cpq
-cqi
-cpq
-cpq
 aaa
 daM
 dcf
@@ -110092,32 +110346,32 @@ bTY
 aaa
 aaa
 cnH
-cnR
+cnQ
+cpx
 cnL
-cnL
-cou
-coy
-coy
-coy
-coy
+cov
+cpb
+cox
+cox
+cox
+crp
 cos
 cos
-cpl
-cpp
+coy
 cnH
 cnQ
 cnO
 cnH
-cpV
-cpV
-cqj
-cpV
-cqj
-cpV
-cqj
-cpV
-cqj
-cpV
+cqO
+cqO
+cqO
+geg
+cqO
+geg
+cqO
+geg
+cqO
+geg
 cqO
 cqY
 cpY
@@ -110394,33 +110648,33 @@ bTY
 aaa
 aaa
 cnH
-cnQ
-coi
+coc
+com
 cnL
 cov
-coz
 cox
 cox
 cox
-coW
-cos
+cox
+cox
+cpf
 cos
 coy
-cnH
-cnQ
+coq
+oVP
 cnO
 cnH
 cpW
-cpW
-cpW
+cqp
+cqp
+cqp
+cqp
 cqp
 cpW
 cqp
-cpW
 cqp
-cpW
 cqp
-cpW
+cqp
 cqZ
 cpY
 crm
@@ -110696,34 +110950,34 @@ bTY
 aaa
 aaa
 cnH
-cnZ
+cnQ
 coj
 cnL
 cov
 cox
 cox
 cox
-cox
+cqC
 cox
 cpc
-cos
-coy
-cnJ
+cox
+cox
+cpm
 cpD
-cnO
-cnH
-cpX
-cqd
-cqd
-cqd
-cqd
-cqd
-cpX
-cqd
-cqd
-cqd
-cqd
-cra
+cpm
+cpm
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
+cpY
 cpY
 crm
 cnH
@@ -110997,23 +111251,23 @@ bUz
 bTY
 aaa
 aaa
-cnH
-cnQ
+cnN
+coc
 cok
 cnL
 cov
 cox
 cox
+cpS
 cox
-coT
 cox
 cpd
 cox
 cox
-cpg
 cpE
-cpg
-cpg
+cpE
+cpE
+cpE
 cpY
 cpY
 cpY
@@ -111299,21 +111553,21 @@ bUz
 bTY
 aaa
 aaa
-cnI
-cnZ
+cnH
+cnQ
 col
 cnL
 cov
 cox
 cox
-coK
+cox
 cox
 cox
 cpe
 cox
 cox
 cpt
-cpt
+tkJ
 cpt
 cpt
 cpY
@@ -111602,7 +111856,7 @@ bTY
 aaa
 aaa
 cnH
-cnQ
+coc
 com
 cnL
 cov
@@ -111612,26 +111866,26 @@ cox
 cox
 cox
 cpf
-cox
-cox
-cpn
-cpF
-cpn
-cpn
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-cpY
-crm
+cos
+coy
+coq
+cnQ
+cnO
+cnH
+vwx
+tFN
+fiM
+tFN
+fiM
+tFN
+mvZ
+tFN
+fiM
+tFN
+fiM
+vwx
+fiM
+kzR
 cnH
 aaa
 daC
@@ -111904,35 +112158,35 @@ bTY
 aaa
 aaa
 cnH
-cnZ
-coj
+cnQ
+cpx
 cnL
 cov
+cpb
 cox
 cox
 cox
-cox
-cox
-cpc
+crp
+cos
 cos
 coy
-cnJ
+cnH
 cnQ
 cnO
 cnH
-cpZ
-cqe
-cqk
-cqe
-cqk
-cqe
-cqz
-cqe
-cqk
-cqe
-cqk
-cpZ
-cqk
+cpV
+cpV
+cpV
+crn
+cpV
+crn
+cpV
+crn
+cpV
+crn
+cpV
+crn
+cpV
 crn
 cnH
 aaa
@@ -112206,18 +112460,18 @@ bTY
 aaa
 aaa
 cnH
-cnQ
-coi
+coa
 cnL
-cov
-coz
-cox
-cox
-cox
-coW
-cos
-cos
+cnL
+coV
 coy
+coy
+coy
+coy
+cos
+cos
+coR
+coE
 cnH
 cnQ
 cnO
@@ -112225,15 +112479,15 @@ cnH
 cpV
 cpV
 cpV
-cqq
 cpV
-cqq
 cpV
-cqq
 cpV
-cqq
 cpV
-cqq
+cpV
+cpV
+cpV
+cpV
+cpV
 cpV
 cqq
 cnH
@@ -112508,36 +112762,36 @@ bTY
 aaa
 aaa
 cnH
-cnR
-cnL
+cnQ
+coC
 cnL
 cou
 coy
+cpo
+cpX
+cqI
 coy
 coy
 coy
-cos
-cos
-cpl
 cpp
 cnH
 cnQ
 cnO
 cnH
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cpV
-cro
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
 cnH
 aaa
 daE
@@ -112810,37 +113064,37 @@ bTY
 aaa
 aaa
 cnH
-cnQ
-con
-cnL
-coq
-coy
-coE
+cnH
+cnH
+cnH
+cnH
+cnH
+cnH
 coL
-coU
-coy
-coy
-coy
-coD
+cnH
+cnH
+cnH
+cnH
+cnH
 cnH
 cnQ
 cnO
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
+cog
 aaa
 daE
 daE
@@ -113111,38 +113365,38 @@ aaa
 aaa
 aaa
 aaa
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-coM
-cnH
-cnH
-cnH
-cnH
-cnH
-cnH
-cnQ
-cnO
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
-cog
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 daE
 daE
@@ -113411,39 +113665,39 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
 aaa
 aaa
 cvH
@@ -113713,40 +113967,40 @@ aaa
 aaa
 aaa
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 aaa
 aaa
 aaa
@@ -114015,40 +114269,40 @@ bMw
 bMw
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -114317,40 +114571,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cof
+cof
+cof
+cof
+cxL
+cxL
+cxL
+cof
+cof
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -114619,40 +114873,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cof
+coD
+coS
+coS
+coS
+coS
+cqa
+coS
+cof
+cnw
+cnw
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -114921,40 +115175,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cof
+coJ
+coS
+coS
+coS
+coS
+cqb
+coS
+cxL
+cnw
+cnw
+cxL
+iax
+iax
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+iax
+iax
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -115223,40 +115477,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cof
+coK
+coS
+coS
+coS
+coS
+coS
+coS
+cxL
+cnw
+cnw
+cxL
+iax
+cZT
+cZT
+qFK
+ilm
+ilm
+ilm
+ruz
+cZT
+cZT
+iax
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -115525,40 +115779,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cof
+cof
+cof
+cof
+cxL
+coS
+coS
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+cZT
+qFK
+qlf
+wZe
+iCf
+wZe
+qlf
+ruz
+cZT
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -115827,40 +116081,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+coS
+coS
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+qFK
+qlf
+fgy
+wZe
+jGJ
+wZe
+wZe
+qlf
+ruz
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -116129,40 +116383,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+coS
+coS
+coS
+cxL
+cof
+cof
+cof
+cZT
+qlf
+wol
+wZe
+wZe
+wZe
+wZe
+wZe
+wZe
+qlf
+cZT
+cxL
+cof
+cof
+cof
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -116431,40 +116685,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+coS
+coS
+coS
+crq
+coS
+coS
+crq
+cZT
+jhh
+wZe
+xtv
+xtv
+xtv
+xtv
+xtv
+wZe
+jhh
+cZT
+crq
+coS
+coS
+kVN
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -116733,40 +116987,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqc
+coS
+cxL
+cof
+cof
+cof
+cZT
+qlf
+wol
+wZe
+wZe
+wZe
+wZe
+wZe
+wZe
+qlf
+cZT
+cxL
+cof
+cof
+cof
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -117035,40 +117289,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqd
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+ilm
+lsS
+xtv
+xtv
+xtv
+xtv
+xtv
+wZe
+ilm
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -117337,40 +117591,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqi
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+ilm
+wZe
+wZe
+wZe
+wZe
+wZe
+wZe
+wZe
+ilm
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -117639,40 +117893,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqc
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+ilm
+wZe
+mOJ
+wZe
+mOJ
+wZe
+mOJ
+wZe
+ilm
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -117941,40 +118195,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqd
+coS
+cxL
+cnw
+cnw
+cxL
+cZT
+ilm
+gfA
+wZe
+wZe
+wZe
+wZe
+wZe
+wuW
+ilm
+cZT
+cxL
+cof
+cof
+cof
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -118243,40 +118497,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+coS
+cqi
+coS
+cxL
+cof
+cof
+cof
+cZT
+qlf
+wol
+mOJ
+wZe
+mOJ
+wZe
+mOJ
+wZe
+qlf
+cZT
+crq
+coS
+coS
+kVN
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -118545,40 +118799,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+cps
+coS
+cqR
+crq
+coS
+coS
+crq
+cZT
+jhh
+wZe
+opO
+iFi
+opO
+jxl
+opO
+wZe
+jhh
+cZT
+cxL
+cof
+cof
+cof
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -118847,40 +119101,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+cpu
+coS
+cqX
+cxL
+cof
+cof
+cof
+cZT
+qlf
+qMA
+wZe
+wZe
+wZe
+wZe
+wZe
+ntP
+qlf
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -119149,40 +119403,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+cpC
+coS
+cqX
+cxL
+cnw
+cnw
+cxL
+cZT
+xFD
+qlf
+ffo
+kNV
+idX
+kNV
+ffo
+qlf
+rSl
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -119451,40 +119705,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+cpC
+coS
+cra
+cxL
+cnw
+cnw
+cxL
+cZT
+cZT
+xFD
+lzw
+lzw
+qlf
+lzw
+lzw
+rSl
+cZT
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -119753,40 +120007,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cxL
+cpF
+coS
+cra
+cxL
+cnw
+cnw
+cxL
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cZT
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -120055,40 +120309,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+cpF
+coS
+cra
+cof
+cnw
+cnw
+cxL
+lKU
+wxo
+wxo
+wxo
+wxo
+wxo
+wxo
+wxo
+wxo
+wxo
+wxU
+cxL
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -120357,40 +120611,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+cpF
+coS
+crd
+cof
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -120659,40 +120913,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+cpI
+cqk
+crl
+cof
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -120961,40 +121215,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cof
+cof
+cof
+cof
+cof
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -121263,40 +121517,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -121565,40 +121819,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+cnw
+axy
+aaa
 daq
 daq
 daq
@@ -121867,40 +122121,40 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+axy
+aaa
 daq
 daq
 daq
@@ -122169,18 +122423,6 @@ aab
 aab
 bMw
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
-daq
 aaa
 aaa
 aaa
@@ -122197,12 +122439,24 @@ aaa
 aaa
 aaa
 aaa
-daq
-daq
-daq
-daq
-daq
-daq
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 daq
 daq
 daq
