@@ -158,7 +158,7 @@ var/global/list/mapNames = list(
 	escape_centcom = /area/shuttle/escape/centcom/donut1
 	escape_transit = /area/shuttle/escape/transit/donut1
 	escape_station = /area/shuttle/escape/station/donut1
-	escape_def = SHUTTLE_WEST
+	escape_def = SHUTTLE_DONUT1
 	escape_dir = WEST
 
 	merchant_left_centcom = /area/shuttle/merchant_shuttle/left_centcom/cogmap
