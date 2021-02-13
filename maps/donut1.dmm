@@ -556,12 +556,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/west)
-"aNR" = (
-/obj/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/airless/sanitary,
-/area/station/security/prison)
 "aOL" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9;
@@ -2560,6 +2554,12 @@
 	},
 /turf/simulated/floor/neutral,
 /area/station/crew_quarters/quartersB)
+"dsi" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless/sanitary,
+/area/station/security/prison)
 "dsj" = (
 /obj/window/reinforced/south,
 /obj/cable{
@@ -3313,6 +3313,11 @@
 	},
 /turf/simulated/floor,
 /area/station/security/brig)
+"egn" = (
+/obj/cable,
+/obj/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/maintenance/south)
 "egV" = (
 /obj/machinery/atmospherics/valve,
 /turf/simulated/floor,
@@ -4665,11 +4670,6 @@
 	},
 /turf/simulated/floor,
 /area/station/security/brig)
-"fEl" = (
-/obj/cable,
-/obj/wingrille_spawn/auto,
-/turf/simulated/floor/plating,
-/area/station/maintenance/south)
 "fEs" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 9
@@ -4884,6 +4884,9 @@
 	},
 /turf/simulated/floor,
 /area/station/science/lab)
+"fVp" = (
+/turf/space,
+/area/shuttle/merchant_shuttle/right_station/cogmap)
 "fVC" = (
 /obj/cable{
 	icon_state = "2-4"
@@ -5665,15 +5668,6 @@
 	},
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/science/lab)
-"gOP" = (
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/south)
 "gPo" = (
 /obj/machinery/door/airlock/pyro/medical{
 	name = "Toxins";
@@ -6854,15 +6848,6 @@
 	},
 /turf/simulated/floor,
 /area/station/security/prison)
-"ifp" = (
-/obj/machinery/door/airlock/pyro/external{
-	dir = 4
-	},
-/obj/cable/white{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/south)
 "ign" = (
 /obj/cable{
 	icon_state = "0-8"
@@ -7700,12 +7685,6 @@
 "jcf" = (
 /turf/space,
 /area/shuttle_sound_spawn)
-"jcN" = (
-/obj/cable/white{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/south)
 "jdC" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
@@ -9209,6 +9188,12 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/power)
+"lff" = (
+/obj/cable/white{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/south)
 "lfl" = (
 /obj/landmark{
 	icon_state = "x3";
@@ -14056,9 +14041,15 @@
 	temperature = 500
 	},
 /area/station/engine/combustion_chamber)
-"rcj" = (
-/turf/space,
-/area/shuttle/merchant_shuttle/right_station/cogmap)
+"rbD" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4
+	},
+/obj/cable/white{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/south)
 "rcA" = (
 /obj/storage/closet/wardrobe/grey,
 /turf/simulated/floor,
@@ -17747,6 +17738,15 @@
 	icon_state = "floor2"
 	},
 /area/shuttle/brig/prison)
+"vwD" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/south)
 "vxs" = (
 /obj/table/wood/auto,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
@@ -78237,7 +78237,7 @@ jbn
 viy
 qcS
 lUe
-eHM
+oyH
 eHM
 eHM
 eHM
@@ -78539,7 +78539,7 @@ mhT
 ehs
 qcS
 lUe
-eHM
+oyH
 sPE
 sPE
 sPE
@@ -78841,7 +78841,7 @@ jbn
 uaY
 qcS
 lUe
-eHM
+oyH
 sPE
 sPE
 sPE
@@ -79143,7 +79143,7 @@ vkF
 nXi
 qcS
 iQw
-fEl
+egn
 sPE
 sPE
 sPE
@@ -79736,13 +79736,13 @@ ozA
 ozA
 dNO
 vkF
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
 fLl
 lUe
 iUw
@@ -80038,16 +80038,16 @@ ozA
 ozA
 dNO
 ems
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
 jbn
 tUd
-gOP
+vwD
 vNn
 viy
 sPE
@@ -80340,18 +80340,18 @@ ozA
 ozA
 dNO
 vHs
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
 mhT
 ehs
 qcS
 lUe
-eHM
+oyH
 sPE
 sPE
 sPE
@@ -80642,18 +80642,18 @@ dNO
 dNO
 dNO
 ems
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
 jbn
 uaY
 qcS
 lUe
-eHM
+oyH
 eHM
 eHM
 eHM
@@ -80944,18 +80944,18 @@ rsD
 rsD
 iNg
 ems
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
-rcj
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
+fVp
 iNg
 lUe
 qcS
 lUe
-eHM
+oyH
 toQ
 toQ
 toQ
@@ -82161,7 +82161,7 @@ toQ
 toQ
 iQw
 uaY
-jcN
+lff
 lUe
 ems
 toQ
@@ -82463,7 +82463,7 @@ toQ
 toQ
 oyH
 ydR
-ifp
+rbD
 ydR
 oyH
 toQ
@@ -93223,8 +93223,8 @@ iQT
 gCZ
 sHi
 ylw
-aNR
-aNR
+dsi
+dsi
 tMK
 eHM
 eHM
