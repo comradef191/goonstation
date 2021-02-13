@@ -13,6 +13,9 @@
 #elif defined(MAP_OVERRIDE_COGMAP2)
 
 
+#elif defined(MAP_OVERRIDE_DONUT1)
+
+
 #elif defined(MAP_OVERRIDE_DONUT2)
 
 
