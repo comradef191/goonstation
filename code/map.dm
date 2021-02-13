@@ -964,6 +964,8 @@ var/global/list/mapNames = list(
 
 /area/shuttle/escape/centcom
 	icon_state = "shuttle_escape"
+	donut1
+		icon_state = "shuttle_escape-dnt2"
 	donut2
 		icon_state = "shuttle_escape-dnt2"
 	donut3
@@ -979,14 +981,14 @@ var/global/list/mapNames = list(
 	manta
 		icon_state = "shuttle_escape-manta"
 		filler_turf = "/turf/space/fluid"
-	donut3
-		icon_state = "shuttle_escape-dnt3"
 
 /area/shuttle/escape/station
 	#ifdef UNDERWATER_MAP
 	ambient_light = OCEAN_LIGHT
 	#endif
 	icon_state = "shuttle_escape"
+	donut1
+		icon_state = "shuttle_escape-dnt2"
 	donut2
 		icon_state = "shuttle_escape-dnt2"
 	donut3
@@ -1004,6 +1006,9 @@ var/global/list/mapNames = list(
 
 /area/shuttle/escape/transit
 	icon_state = "shuttle_escape"
+	donut1
+		icon_state = "shuttle_escape-dnt2"
+		warp_dir = WEST
 	donut2
 		icon_state = "shuttle_escape-dnt2"
 		warp_dir = WEST
