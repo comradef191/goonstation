@@ -648,6 +648,10 @@
 	dir = 10
 	},
 /area/station/science/testchamber)
+"aVR" = (
+/obj/storage/secure/closet/animal,
+/turf/simulated/floor,
+/area/station/security/prison)
 "aVZ" = (
 /turf/simulated/floor/white,
 /area/station/science/testchamber)
@@ -96520,7 +96524,7 @@ gCZ
 iQT
 gCZ
 csF
-gCZ
+aVR
 iQT
 cth
 cth
@@ -96822,7 +96826,7 @@ gCZ
 iQT
 gCZ
 csF
-gCZ
+aVR
 iQT
 gCZ
 gCZ
@@ -97732,7 +97736,7 @@ nfC
 vcW
 gCZ
 gCZ
-hyH
+gCZ
 csF
 gCZ
 iQT
@@ -98336,7 +98340,7 @@ hHB
 noN
 gCZ
 gCZ
-laH
+hyH
 csF
 gCZ
 gCZ
