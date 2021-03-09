@@ -18361,7 +18361,9 @@
 /turf/simulated/floor/wood/two,
 /area/station/crew_quarters/cafeteria)
 "bqS" = (
-/obj/firedoor_spawn,
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
 /turf/simulated/floor/white,
 /area/station/medical/medbay/lobby)
 "bqU" = (
@@ -18742,8 +18744,10 @@
 /turf/simulated/floor,
 /area/station/quartermaster/office)
 "bsj" = (
-/obj/firedoor_spawn,
 /obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/pyro{
 	dir = 4
 	},
 /turf/simulated/floor/white,
@@ -18992,8 +18996,10 @@
 /turf/simulated/floor/white,
 /area/station/medical/medbay/lobby)
 "btb" = (
-/obj/firedoor_spawn,
 /obj/disposalpipe/segment/mail{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/pyro{
 	dir = 4
 	},
 /turf/simulated/floor/white,
@@ -20410,11 +20416,6 @@
 	dir = 5
 	},
 /area/station/medical/medbay)
-"cGN" = (
-/obj/disposalpipe/segment,
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "cHb" = (
 /obj/table/auto,
 /obj/machinery/glass_recycler,
@@ -22680,6 +22681,11 @@
 	dir = 8
 	},
 /area/station/medical/medbay)
+"fRa" = (
+/obj/disposalpipe/segment,
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "fRo" = (
 /obj/stool{
 	desc = "A soft little bed the general size and shape of a space bee.";
@@ -23759,12 +23765,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/delivery,
 /area/station/crew_quarters/courtroom)
-"hmU" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/southeast)
 "hnm" = (
 /obj/machinery/camera{
 	c_tag = "autotag";
@@ -25405,6 +25405,10 @@
 /obj/disposalpipe/junction/right/west,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
+"jfC" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "jfJ" = (
 /obj/cable{
 	icon_state = "2-9"
@@ -27383,6 +27387,12 @@
 	},
 /turf/simulated/floor/black,
 /area/station/engine/engineering/breakroom)
+"lGM" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southeast)
 "lGQ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -28606,6 +28616,12 @@
 	},
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
+"nps" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "nry" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -33918,12 +33934,6 @@
 "sXL" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/science/lab)
-"sXV" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "sYO" = (
 /obj/machinery/light{
 	dir = 8
@@ -36127,10 +36137,6 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/science/lab)
-"vqb" = (
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "vqc" = (
 /obj/table/reinforced/bar/auto,
 /obj/machinery/light{
@@ -80821,7 +80827,7 @@ aoJ
 aKD
 aLF
 aMU
-vqb
+jfC
 aPu
 aPu
 aRe
@@ -81123,7 +81129,7 @@ aDS
 aDS
 aDS
 aMX
-cGN
+fRa
 aPv
 aPv
 aPv
@@ -82061,7 +82067,7 @@ bdd
 bdd
 btA
 bGw
-sXV
+nps
 aqj
 bhb
 foN
@@ -82363,7 +82369,7 @@ bdc
 bdd
 btA
 bGw
-sXV
+nps
 aqj
 eiP
 arr
@@ -85972,8 +85978,8 @@ aPu
 aPu
 aPu
 aPu
-vqb
-vqb
+jfC
+jfC
 aPu
 aPu
 aPu
@@ -86274,8 +86280,8 @@ ban
 aPu
 bbP
 aPu
-vqb
-vqb
+jfC
+jfC
 bfc
 bfY
 bhl
@@ -86910,8 +86916,8 @@ rlS
 rCO
 uww
 bnL
-hmU
-hmU
+lGM
+lGM
 vJu
 oPh
 ohr
