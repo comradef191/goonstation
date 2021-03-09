@@ -247,6 +247,8 @@
 	src.lastattacked = src //idk but it fixes bug
 	render_target = "\ref[src]"
 	mob_properties = list()
+	src.chat_text = new
+	START_TRACKING
 
 /// do you want your mob to have custom hairstyles and stuff? don't use spawns but set all of those properties here
 /mob/proc/initializeBioholder()
@@ -277,6 +279,13 @@
 
 	src.closeContextActions()
 
+	src.update_grab_loc()
+
+	if (src.s_active && !(s_active.master in src))
+		src.detach_hud(src.s_active)
+		src.s_active = null
+
+/mob/proc/update_grab_loc()
 	//robust grab : keep em close
 	for (var/obj/item/grab/G in equipped_list(check_for_magtractor = 0))
 		if (G.state < GRAB_NECK) continue
@@ -289,11 +298,8 @@
 		G.set_affected_loc()
 		G.affecting.glide_size = src.glide_size
 
-	if (src.s_active && !(s_active.master in src))
-		src.detach_hud(src.s_active)
-		src.s_active = null
-
 /mob/disposing()
+	STOP_TRACKING
 	for(var/mob/dead/target_observer/TO in observers)
 		observers -= TO
 		TO.ghostize()
@@ -547,7 +553,9 @@
 	if (ismob(AM))
 		var/mob/tmob = AM
 		if (ishuman(tmob))
-			src:viral_transmission(AM,"Contact",1)
+			if(isliving(src))
+				var/mob/living/L = src
+				L.viral_transmission(AM,"Contact",1)
 
 			if ((tmob.bioHolder.HasEffect("magnets_pos") && src.bioHolder.HasEffect("magnets_pos")) || (tmob.bioHolder.HasEffect("magnets_neg") && src.bioHolder.HasEffect("magnets_neg")))
 				//prevent ping-pong loops by deactivating for a second, as they can crash the server under some circumstances
@@ -646,6 +654,7 @@
 					logTheThing("combat", src, tmob, "trades places with (Help Intent) [constructTarget(tmob,"combat")], pushing them into a fire.")
 				deliver_move_trigger("swap")
 				tmob.deliver_move_trigger("swap")
+				tmob.update_grab_loc()
 				src.now_pushing = 0
 
 				return
@@ -1659,18 +1668,19 @@
 	var/list/viral_list = list()
 	for (var/datum/ailment_data/AD in src.ailments)
 		viral_list += AD
-	var/list/ejectables = list()
+	var/list/ejectables = list_ejectables()
+	for(var/obj/item/organ/organ in ejectables)
+		if(organ.donor == src)
+			organ.on_removal()
 	if (!custom_gib_handler)
 		if (iscarbon(src))
-			ejectables = list_ejectables()
 			if (bdna && btype)
-				. = gibs(src.loc, viral_list, ejectables, bdna, btype) // For forensics (Convair880).
+				. = gibs(src.loc, viral_list, ejectables, bdna, btype, source=src) // For forensics (Convair880).
 			else
-				. = gibs(src.loc, viral_list, ejectables)
+				. = gibs(src.loc, viral_list, ejectables, source=src)
 		else
 			. = robogibs(src.loc, viral_list)
 	else
-		ejectables = list_ejectables()
 		. = call(custom_gib_handler)(src.loc, viral_list, ejectables, bdna, btype)
 
 	// splash our fluids around
@@ -2866,6 +2876,9 @@
 /mob/proc/handle_stamina_updates()
 	.= 0
 
+/mob/proc/update_canmove()
+	return
+
 /*/mob/proc/glove_weaponcheck()
 	if (ishuman(src))
 		var/mob/living/carbon/human/H = src
@@ -2876,6 +2889,8 @@
 
 /mob/proc/sell_soul(var/amount, var/reduce_health=1, var/allow_overflow=0)
 	if(!src.mind)
+		return 0
+	if(isnpcmonkey(src))
 		return 0
 	if(allow_overflow)
 		amount = max(1, min(src.mind.soul, amount)) // can't sell less than 1
@@ -2895,9 +2910,7 @@
 	src.mind.soul -= amount
 
 	if(src.mind.soul <= 0)
-		total_souls_sold++
-		total_souls_value++
-
+		souladjust(1)
 	return 1
 
 /mob/proc/get_id()
@@ -2962,8 +2975,90 @@
 		var/atom/A = input(usr, "What do you want to pick up?") as() in items
 		A.interact(src)
 
-/mob/proc/can_eat(var/atom/A)
-	return 1
+/// 'A' is the thing being eaten, user is the thing using the thing, and src is of course the thing eating it
+/mob/proc/can_eat(var/obj/item/A, var/mob/user, var/bypass_utensils = 0)
+	if(!istype(A) || !user)
+		return FALSE // who's eating what, now?
+
+	/// Making sure the thing actually exists and isn't cheating the bite-rate. And is also edible, so we don't get people trying to stuff multitools in their mouth
+	if(!src.bioHolder?.HasEffect("mattereater") && GET_COOLDOWN(src, "eat") && (A.edible || A.material?.edible))
+		src.can_not_eat(A, user, "on_cooldown")
+		return FALSE
+	else if (!A.amount)
+		src.can_not_eat(A, user, "all_gone")
+		return FALSE
+
+	/// Special cases with special circumstances, mostly so awful monsters can eat awful monster food
+	var/edibility_check = SEND_SIGNAL(src, COMSIG_ITEM_CONSUMED_PRE, src, user, A)
+	if(HAS_FLAG(edibility_check, THING_IS_EDIBLE))
+		return TRUE
+
+	/// Now we can check if the thing is actually, in fact, supposed to be edible
+	if(!(A.edible || (A.material && A.material.edible)))
+		return FALSE
+
+	/// Godmode
+	if(src != user && check_target_immunity(src))
+		src.can_not_eat(A, user, "godmode")
+		return FALSE
+
+	/// Finally, check if we have proper etiquette
+	if(HAS_FLAG(edibility_check, EATING_NEEDS_A_FORK))
+		src.can_not_eat(A, user, "lack_fork")
+		return FALSE
+	if(HAS_FLAG(edibility_check, EATING_NEEDS_A_SPOON))
+		src.can_not_eat(A, user, "lack_spoon")
+		return FALSE
+
+	/// And finally finally, if it should actually be edible, do we have somewhere to put it?
+	if (ishuman(src))
+		var/mob/living/carbon/human/H = src
+		var/obj/item/organ/stomach/tummy = H.get_organ("stomach")
+		if (!istype(tummy) || (tummy.broken || tummy.get_damage() > tummy.MAX_DAMAGE))
+			src.can_not_eat(A, user, "busted_guts")
+			return FALSE
+
+	/// okay eat the darn thing
+	return TRUE
+
+/// Oh no, we can't eat that! Let's tell the mob why
+/mob/proc/can_not_eat(var/atom/A, var/mob/user, var/fail_reason)
+	if(!istype(A) || !user) return
+	switch(fail_reason)
+		if("on_cooldown")
+			if(src == user)
+				boutput(src, "<span class='alert'>Hold on! You're still getting the last bit down!</span>")
+			else
+				user.tri_message("<span class='notice'>[user] tries to stuff [A] into [src]'s mouth, but it's still full!</span>",\
+				user, "<span class='notice'>You try to stuff [A] into [src]'s mouth, but it's still full!</span>",\
+				src, "<span class='notice'>[user] tries to stuff [A] into your mouth, but you're still working on the last bite!</span>")
+		if("all_gone")
+			if(src == user)
+				boutput(src, "<span class='alert'>None of [A] left, oh no!</span>")
+			else
+				user.tri_message("<span class='alert'>[user] tries to feed [A] to [src], but there's nothing left of it!</span>",\
+				user, "<span class='alert'>You try to feed [A] to [src], but there's nothing left of it!</span>",\
+				src, "<span class='alert'>[user] tries to feed [A] to you, but there's nothing left of it!</span>")
+			user.u_equip(A)
+			qdel(A)
+		if("busted_guts")
+			if(src == user)
+				boutput(src, "<span class='alert'>You can't eat that! Or anything else, at least until you fix your stomach!</span>")
+			else
+				user.tri_message("<span class='alert'>[user] tries to feed [A] to [src], but there's nowhere for it to go!</span>",\
+				user, "<span class='alert'>You try to feed [A] to [src], but [his_or_her(src)] throat seems blocked off!</span>",\
+				src, "<span class='alert'>[user] tries to feed [A] to you, but your lack of a working stomach bounces it off the back of your mouth!</span>")
+		if("lack_fork", "lack_spoon")
+			var/missing = fail_reason == "lack_fork" ? "fork" : "spoon"
+			var/literal_beast = HAS_FLAG(src.mob_flags, SHOULD_HAVE_A_TAIL)
+			user.visible_message("<span class='alert'>[user] stares glumly at [src].</span>",
+			"<span class='alert'>You can't just cram that in your [literal_beast ? "filthy snout" : "mouth"] you [literal_beast ? "literal" : "greedy"] beast! You need a [missing] to eat [A]!</span>")
+		if("godmode")
+			user.tri_message("<span class='alert'>[user] tries to feed [A] to [src], but nothing happens!</span>",\
+			user, "<span class='alert'>You try to feed [A] to [src], but nothing happens!</span>",\
+			src, "<span class='alert'>[user] tries to feed [A] to you, but nothing happens!</span>")
+		else
+			boutput(user, "<span class='alert'>You can't eat that!</span>")
 
 /mob/proc/on_eat(var/atom/A)
 	return

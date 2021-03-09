@@ -82,7 +82,8 @@
 
 /datum/artifact/energygun
 	associated_object = /obj/item/gun/energy/artifact
-	rarity_class = 2
+	type_name = "Energy Gun"
+	rarity_weight = 350
 	validtypes = list("ancient","eldritch","precursor")
 	react_elec = list(0.02,0,5)
 	react_xray = list(10,75,100,11,"CAVITY")

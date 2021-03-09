@@ -243,7 +243,7 @@
 	else
 		if(src.mind)
 			src.mind.transfer_to(O)
-	O.set_loc(src.loc)
+	O.set_loc(get_turf(src.loc))
 	boutput(O, "<B>You are playing as a Cyborg. Cyborgs can interact with most electronic objects in its view point.</B>")
 	boutput(O, "<B>You must follow all laws that the AI has.</B>")
 	boutput(O, "Use \"say :s (message)\" to speak to fellow cyborgs and the AI through binary.")
@@ -457,8 +457,8 @@
 					/mob/living/carbon/human/machoman/verb/macho_superthrow,\
 					/mob/living/carbon/human/machoman/verb/macho_soulsteal,\
 					/mob/living/carbon/human/machoman/verb/macho_stare,\
-					/mob/living/carbon/human/machoman/verb/macho_heartpunch\
-					) //they can keep macho heal
+					/mob/living/carbon/human/machoman/verb/macho_heartpunch,\
+					/mob/living/carbon/human/machoman/verb/macho_slimjim_snap) //they can keep macho heal and the arena thing
 				W.verbs -= dangerousVerbs //this is just diabolical
 				W.reagents.add_reagent("anti_fart", 800) //as is this
 			boutput(W, "<span class='notice'>You weren't able to absorb all the macho waves you were bombarded with! You have been left an incomplete macho man, with a frail body, and only one macho power. However, you inflict double damage with most melee weapons. Use your newfound form wisely to prove your worth as a macho champion of justice. Do not kill innocent crewmembers.</span>")

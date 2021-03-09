@@ -1596,10 +1596,10 @@ Returns:
 			call(procpath)(arglist(argcopy))
 
 /datum/admins/proc/pixelexplosion()
-	SET_ADMIN_CAT(ADMIN_CAT_DEBUG)
-	set name = "Pixel animation mode"
-	set desc="Enter pixel animation mode"
-	alert("Due to me being a lazy fuck you have to close & reopen your client to exit this mode. ITS A DEBUG THING OKAY")
+	SET_ADMIN_CAT(ADMIN_CAT_FUN)
+	set name = "Pixel explosion mode"
+	set desc = "Enter pixel explosion mode."
+	alert("Clicking on things will now explode them into pixels!")
 	pixelmagic()
 
 /datum/targetable/pixelpicker
@@ -1626,9 +1626,17 @@ Returns:
 	M.update_cursor()
 
 /proc/dothepixelthing(var/atom/A)
+	if (isturf(A)) //deleting turfs is bad!
+		return
+
+	if (ismob(A)) //deleting mobs crashes them - lets transfer their client to a ghost first
+		var/mob/M = A
+		M.ghostize()
+
 	var/list/pixels = list()
-	var/icon/I = icon(A.icon, A.icon_state, A.dir)
+	var/icon/I = getFlatIcon(A)
 	var/atom/movable/AT = A.loc
+
 	playsound(AT, 'sound/effects/ExplosionFirey.ogg', 75, 1)
 	for(var/y = 1, y <= I.Height(), y++)
 		for(var/x = 1, x <= I.Width(), x++)
@@ -1668,6 +1676,18 @@ Returns:
 		alpha = 255
 		transform = matrix()
 		..()
+
+/datum/admins/proc/turn_off_pixelexplosion()
+	SET_ADMIN_CAT(ADMIN_CAT_FUN)
+	set name = "Turn off pixel explosion mode"
+	set desc = "Turns off pixel explosion mode."
+
+	var/mob/M = usr
+	if (istype(M.targeting_ability, /datum/targetable/pixelpicker))
+		var/datum/targetable/pixelpicker/pixel_picker = M.targeting_ability
+		M.targeting_ability = null
+		qdel(pixel_picker)
+		M.update_cursor()
 
 /obj/item/craftedmelee/spear
 	name = "spear"
@@ -1829,9 +1849,6 @@ Returns:
 	inhand_image_icon = 'icons/mob/inhand/hand_books.dmi'
 	item_state = "ouijaboard"
 	w_class = 3.0
-	var/ready = 1
-	var/list/users = list()
-	var/use_delay = 30
 
 	New()
 		. = ..()
@@ -1845,10 +1862,7 @@ Returns:
 	Click(location,control,params)
 		if(isobserver(usr) || iswraith(usr))
 
-			if(!users.Find(usr))
-				users[usr] = 0
-
-			if((world.time - users[usr]) >= use_delay)
+			if(GET_COOLDOWN(src, usr) == 0)
 				var/list/words = list()
 				for(var/i=0, i<rand(5, 10), i++)
 					var/picked = pick(strings("ouija_board.txt", "ouija_board_words"))
@@ -1858,21 +1872,23 @@ Returns:
 					var/selected = input(usr, "Select a word:", src.name) as null|anything in words
 					if(!selected) return
 
-					if((world.time - users[usr]) < use_delay)
+					if(ON_COOLDOWN(src, usr, 3 SECONDS))
 						usr.show_text("Please wait a moment before using the board again.", "red")
 						return
 
-					users[usr] = world.time
-
-					SPAWN_DBG(0)
-						if(src && selected)
-							animate_float(src, 1, 5, 1)
-							for (var/mob/O in observersviewers(7, src))
-								O.show_message("<B><span class='notice'>The board spells out a message ... \"[selected]\"</span></B>", 1)
+					if(src && selected)
+						animate_float(src, 1, 5, 1)
+						if(prob(20) && !ON_COOLDOWN(src, "bother chaplains", 1 MINUTE))
+							var/area/AR = get_area(src)
+							for(var/mob/M in by_cat[TR_CAT_CHAPLAINS])
+								if(M.client)
+									boutput(M, "<span class='notice'>You sense a disturbance emanating from \a [src] in \the [AR.name].</span>")
+						for (var/mob/O in observersviewers(7, src))
+							O.show_message("<B><span class='notice'>The board spells out a message ... \"[selected]\"</span></B>", 1)
 #ifdef HALLOWEEN
-							if (istype(usr.abilityHolder, /datum/abilityHolder/ghost_observer))
-								var/datum/abilityHolder/ghost_observer/GH = usr.abilityHolder
-								GH.change_points(30)
+						if (istype(usr.abilityHolder, /datum/abilityHolder/ghost_observer))
+							var/datum/abilityHolder/ghost_observer/GH = usr.abilityHolder
+							GH.change_points(30)
 #endif
 			else
 				usr.show_text("Please wait a moment before using the board again.", "red")
@@ -1921,21 +1937,24 @@ Returns:
 	anchored = 1
 	opacity = 0
 
-	var/datum/particleSystem/barrelSmoke/particles
+	var/datum/particleSystem/barrelSmoke/smoke_part
 	var/datum/light/light
 
 	New()
-		particles = particleMaster.SpawnSystem(new /datum/particleSystem/barrelSmoke(src))
+		smoke_part = particleMaster.SpawnSystem(new /datum/particleSystem/barrelSmoke(src))
 		light = new /datum/light/point
 		light.attach(src)
 		light.set_brightness(1)
 		light.set_color(0.5, 0.3, 0)
 		light.enable()
-
 		..()
 
 	disposing()
 		particleMaster.RemoveSystem(/datum/particleSystem/barrelSmoke, src)
+		smoke_part = null
+		light.disable()
+		light.detach()
+		light = null
 		..()
 
 	attackby(obj/item/W as obj, mob/user as mob)
@@ -2509,7 +2528,6 @@ Returns:
 		if ((!( src.current ) || src.loc == src.current))
 			src.current = locate(min(max(src.x + src.xo, 1), world.maxx), min(max(src.y + src.yo, 1), world.maxy), src.z)
 		if ((src.x == 1 || src.x == world.maxx || src.y == 1 || src.y == world.maxy))
-			//SN src = null
 			qdel(src)
 			return
 		step_towards(src, src.current)
@@ -3234,6 +3252,7 @@ Returns:
 	density = 1
 	anchored = 1
 	icon = 'icons/obj/fluid.dmi'
+	plane = PLANE_FLOOR
 	icon_state = "pool"
 
 /obj/pool_springboard
