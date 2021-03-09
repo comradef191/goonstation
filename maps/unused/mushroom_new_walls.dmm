@@ -21473,6 +21473,12 @@
 	},
 /turf/simulated/floor/engine/vacuum,
 /area/station/engine/proto)
+"emT" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "enP" = (
 /obj/decal/tile_edge/line/red{
 	dir = 4;
@@ -22681,11 +22687,6 @@
 	dir = 8
 	},
 /area/station/medical/medbay)
-"fRa" = (
-/obj/disposalpipe/segment,
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "fRo" = (
 /obj/stool{
 	desc = "A soft little bed the general size and shape of a space bee.";
@@ -25405,10 +25406,6 @@
 /obj/disposalpipe/junction/right/west,
 /turf/simulated/floor,
 /area/station/hallway/primary/south)
-"jfC" = (
-/obj/machinery/door/firedoor/pyro,
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "jfJ" = (
 /obj/cable{
 	icon_state = "2-9"
@@ -27387,12 +27384,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/engine/engineering/breakroom)
-"lGM" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/station/maintenance/southeast)
 "lGQ" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -28616,12 +28607,6 @@
 	},
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
-"nps" = (
-/obj/machinery/door/firedoor/pyro{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/station/hallway/primary/central)
 "nry" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -31236,7 +31221,7 @@
 /area/station/engine/elect)
 "qih" = (
 /obj/landmark/start{
-	name = "Barman"
+	name = "Bartender"
 	},
 /turf/simulated/floor/black,
 /area/station/crew_quarters/baroffice)
@@ -32386,6 +32371,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/southeast)
+"rsH" = (
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "rsO" = (
 /obj/stool/bench/blue/auto,
 /obj/machinery/light{
@@ -35928,6 +35917,11 @@
 	},
 /turf/simulated/floor/purple,
 /area/station/science)
+"uYl" = (
+/obj/disposalpipe/segment,
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "vaj" = (
 /turf/simulated/wall/auto/reinforced/jen{
 	icon_state = "R3"
@@ -37511,6 +37505,12 @@
 	},
 /turf/simulated/floor/purple,
 /area/station/science/lab)
+"wQy" = (
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/southeast)
 "wRm" = (
 /obj/stool/chair/office/purple{
 	dir = 4
@@ -80827,7 +80827,7 @@ aoJ
 aKD
 aLF
 aMU
-jfC
+rsH
 aPu
 aPu
 aRe
@@ -81129,7 +81129,7 @@ aDS
 aDS
 aDS
 aMX
-fRa
+uYl
 aPv
 aPv
 aPv
@@ -82067,7 +82067,7 @@ bdd
 bdd
 btA
 bGw
-nps
+emT
 aqj
 bhb
 foN
@@ -82369,7 +82369,7 @@ bdc
 bdd
 btA
 bGw
-nps
+emT
 aqj
 eiP
 arr
@@ -85978,8 +85978,8 @@ aPu
 aPu
 aPu
 aPu
-jfC
-jfC
+rsH
+rsH
 aPu
 aPu
 aPu
@@ -86280,8 +86280,8 @@ ban
 aPu
 bbP
 aPu
-jfC
-jfC
+rsH
+rsH
 bfc
 bfY
 bhl
@@ -86916,8 +86916,8 @@ rlS
 rCO
 uww
 bnL
-lGM
-lGM
+wQy
+wQy
 vJu
 oPh
 ohr
